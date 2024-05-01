@@ -1,0 +1,1117 @@
+fileFormatVersion: 2
+guid: f08a1c6b4bc3e0f4db114ce2f19ca3a5
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Mist Knight_0
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 848
+        width: 63
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 468467ac8bffe2648bb1e0db9492f870
+      internalID: -1061976451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mist Knight_1
+      rect:
+        serializedVersion: 2
+        x: 94
+        y: 848
+        width: 61
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba962df3dfa40a2478699db5175399fe
+      internalID: 1363717560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mist Knight_2
+      rect:
+        serializedVersion: 2
+        x: 177
+        y: 848
+        width: 61
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4460f845307a0ee4fbdb44a3b7023a8d
+      internalID: -1962106401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mist Knight_3
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 848
+        width: 61
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66a15676ea2f57143b306fc453b71073
+      internalID: -788255454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mist Knight_4
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 848
+        width: 62
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c7251207e62652459d7ecc959dc6179
+      internalID: -689682172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mist Knight_5
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 848
+        width: 65
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8ec0879b2c02ed4ca8619244d0e3982
+      internalID: -676878516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mist Knight_6
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 750
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e634c3e507e8c9342b4cac5765f98a86
+      internalID: -1299948230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mist Knight_7
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 750
+        width: 86
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf478edb58242a74b8675e009740aaa8
+      internalID: 1222012383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mist Knight_8
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 750
+        width: 83
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a3b57fb2a1f4a0428368491fa9b9bb2
+      internalID: 969007074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mist Knight_9
+      rect:
+        serializedVersion: 2
+        x: 324
+        y: 750
+        width: 79
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cef5fe1679572324981b21f4fd4e386f
+      internalID: -1777517071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mist Knight_10
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 750
+        width: 82
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3fc3a9be8c4b464b8353e7ee779ee5b
+      internalID: -1379535906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mist Knight_11
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 750
+        width: 81
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52aace743cd877842a98c13fe8c5827e
+      internalID: 1986602806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mist Knight_12
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 644
+        width: 92
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37feabbc2d7951b4c955a0c79026f2ea
+      internalID: 1583074736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mist Knight_13
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 521
+        width: 158
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2017680cafb7d2f4eb81ce7643afa7a9
+      internalID: 1440008306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mist Knight_14
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 521
+        width: 159
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b99e02fb954f5ae48872b1c9537fb6d3
+      internalID: 1660622651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mist Knight_15
+      rect:
+        serializedVersion: 2
+        x: 643
+        y: 521
+        width: 160
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c50b77aefa21fa4d87c4a1cf45a61d4
+      internalID: -766551210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mist Knight_16
+      rect:
+        serializedVersion: 2
+        x: 849
+        y: 521
+        width: 152
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03386b553425d204c94b175b10c90332
+      internalID: -1463546482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mist Knight_17
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 521
+        width: 89
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7c14370cdda46d43b3fcd3ef4e74b6f
+      internalID: 1296571906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mist Knight_18
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 521
+        width: 91
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8124f65d950a37d4f970190faef33245
+      internalID: 1627796128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mist Knight_19
+      rect:
+        serializedVersion: 2
+        x: 1042
+        y: 521
+        width: 81
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d976e5a75a390064980aaf3550cec156
+      internalID: -854058524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mist Knight_20
+      rect:
+        serializedVersion: 2
+        x: 1143
+        y: 521
+        width: 81
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7764cf3f309b259479667b0bc654d344
+      internalID: -223457633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mist Knight_21
+      rect:
+        serializedVersion: 2
+        x: 1241
+        y: 521
+        width: 81
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cedb4249fd178f14c82088d118faa3b5
+      internalID: 33328718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mist Knight_22
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 377
+        width: 84
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f904ee4343590646adf81426e138479
+      internalID: -83408550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mist Knight_23
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 377
+        width: 88
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eabbf08ea28ae624d81bdf82b4dc8e22
+      internalID: 814784134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mist Knight_24
+      rect:
+        serializedVersion: 2
+        x: 230
+        y: 377
+        width: 84
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b06370aee412c8c4ea84a73fd0f5e224
+      internalID: -1807385462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mist Knight_25
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 377
+        width: 88
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de0ecee6df0bfc141b7860eaf3a64c80
+      internalID: -1519002898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mist Knight_26
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 377
+        width: 84
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4e05c239065dfc4ca0eeec3872a7bc7
+      internalID: 726224161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mist Knight_27
+      rect:
+        serializedVersion: 2
+        x: 552
+        y: 377
+        width: 88
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6616f43e9fcb2fc4a9a1879e0e5995ee
+      internalID: -802940323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mist Knight_28
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 377
+        width: 84
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8133d633f530dc64da5e8bfafec58ea3
+      internalID: -1224560143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mist Knight_29
+      rect:
+        serializedVersion: 2
+        x: 765
+        y: 377
+        width: 114
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6845ef11759885348ba809e7e296f748
+      internalID: -2099195785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mist Knight_30
+      rect:
+        serializedVersion: 2
+        x: 903
+        y: 377
+        width: 110
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ab2b0ad1ed400b4fb53341d2c77dcc7
+      internalID: 1173885070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mist Knight_31
+      rect:
+        serializedVersion: 2
+        x: 1036
+        y: 377
+        width: 114
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbb0925ff1c811e47b868d93fc72f2d2
+      internalID: 1488232768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mist Knight_32
+      rect:
+        serializedVersion: 2
+        x: 1172
+        y: 377
+        width: 108
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ff3323b478b10c438f8b0d72f672a83
+      internalID: -1834245895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mist Knight_33
+      rect:
+        serializedVersion: 2
+        x: 1303
+        y: 377
+        width: 112
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1153eda0bab2fdd46b900b73b13beb4c
+      internalID: 481216819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mist Knight_34
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 241
+        width: 99
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 133c7322202454f488229f49fdb3c982
+      internalID: 882569696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mist Knight_35
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 241
+        width: 80
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b744541532e5e5a4a8f541417deea700
+      internalID: -1773287687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mist Knight_36
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 113
+        width: 74
+        height: 83
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e021f6a6e0ed0e40b26d05f5fedba2f
+      internalID: -622935719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mist Knight_37
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 113
+        width: 79
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 360c362f0b1eff4489947f8106e266e1
+      internalID: -493816489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mist Knight_38
+      rect:
+        serializedVersion: 2
+        x: 231
+        y: 113
+        width: 59
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e406768ac850b3240923fc357c1d6e6a
+      internalID: -1748615427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mist Knight_39
+      rect:
+        serializedVersion: 2
+        x: 325
+        y: 118
+        width: 57
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac1f013aa52af094bb40ce5eddba2ebb
+      internalID: 1110081530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mist Knight_40
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 117
+        width: 53
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2572464dce4f554381c7560057431c0
+      internalID: 1283915644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mist Knight_42
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 117
+        width: 59
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfd36a6788aa4f64e9354f05358fd96c
+      internalID: 1165013876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mist Knight_45
+      rect:
+        serializedVersion: 2
+        x: 589
+        y: 115
+        width: 61
+        height: 57
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cdfa619e2b07f746802c7eb63c628b8
+      internalID: 1662059287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Mist Knight_0: -1061976451
+      Mist Knight_1: 1363717560
+      Mist Knight_10: -1379535906
+      Mist Knight_11: 1986602806
+      Mist Knight_12: 1583074736
+      Mist Knight_13: 1440008306
+      Mist Knight_14: 1660622651
+      Mist Knight_15: -766551210
+      Mist Knight_16: -1463546482
+      Mist Knight_17: 1296571906
+      Mist Knight_18: 1627796128
+      Mist Knight_19: -854058524
+      Mist Knight_2: -1962106401
+      Mist Knight_20: -223457633
+      Mist Knight_21: 33328718
+      Mist Knight_22: -83408550
+      Mist Knight_23: 814784134
+      Mist Knight_24: -1807385462
+      Mist Knight_25: -1519002898
+      Mist Knight_26: 726224161
+      Mist Knight_27: -802940323
+      Mist Knight_28: -1224560143
+      Mist Knight_29: -2099195785
+      Mist Knight_3: -788255454
+      Mist Knight_30: 1173885070
+      Mist Knight_31: 1488232768
+      Mist Knight_32: -1834245895
+      Mist Knight_33: 481216819
+      Mist Knight_34: 882569696
+      Mist Knight_35: -1773287687
+      Mist Knight_36: -622935719
+      Mist Knight_37: -493816489
+      Mist Knight_38: -1748615427
+      Mist Knight_39: 1110081530
+      Mist Knight_4: -689682172
+      Mist Knight_40: 1283915644
+      Mist Knight_41: -293082406
+      Mist Knight_42: 1165013876
+      Mist Knight_43: 1002135215
+      Mist Knight_44: -676661173
+      Mist Knight_45: 1662059287
+      Mist Knight_46: -1371372389
+      Mist Knight_47: 1230446203
+      Mist Knight_48: 726323349
+      Mist Knight_49: -1957948986
+      Mist Knight_5: -676878516
+      Mist Knight_50: 1183400250
+      Mist Knight_51: 906206146
+      Mist Knight_52: -1000680871
+      Mist Knight_53: -45982927
+      Mist Knight_54: -238815250
+      Mist Knight_55: 511750608
+      Mist Knight_56: 282826384
+      Mist Knight_57: 1171862711
+      Mist Knight_58: 975139427
+      Mist Knight_59: -956459663
+      Mist Knight_6: -1299948230
+      Mist Knight_60: -2117248985
+      Mist Knight_7: 1222012383
+      Mist Knight_8: 969007074
+      Mist Knight_9: -1777517071
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
