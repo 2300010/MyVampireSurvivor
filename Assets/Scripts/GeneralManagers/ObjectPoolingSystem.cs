@@ -37,12 +37,6 @@ public class ObjectPoolingSystem : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public GameObject GetPoolObject()
     {
         poolIndex %= poolSize;

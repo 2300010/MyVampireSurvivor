@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
@@ -37,6 +35,7 @@ public class WeaponManager : MonoBehaviour, Ipoolable
         if (!collider.CompareTag("Player"))
         {
             DealDamage(collider.GameObject(), currentWeaponDamage);
+            //Debug.Log("Recieved damage = " + currentWeaponDamage);
             gameObject.SetActive(false);
         }
     }

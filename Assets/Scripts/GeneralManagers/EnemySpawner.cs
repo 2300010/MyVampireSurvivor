@@ -1,8 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.Linq.Expressions;
-using UnityEditor.PackageManager.UI;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
@@ -15,13 +10,7 @@ public class EnemySpawner : MonoBehaviour
     void Start()
     {
         //Debug.Log(Screen.width);
-        InvokeRepeating("SpawnEnemy", 2f, 2f);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
+        //InvokeRepeating("SpawnEnemy", 2f, 2f);
     }
 
     public void SpawnEnemy()

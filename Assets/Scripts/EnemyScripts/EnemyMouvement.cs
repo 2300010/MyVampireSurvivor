@@ -8,11 +8,6 @@ public class EnemyMouvement : MonoBehaviour
     Vector2 target;
     [SerializeField] float speed = 1.5f;
 
-    private void OnEnable()
-    {
-        
-    }
-
     // Update is called once per frame
     void Update()
     {
