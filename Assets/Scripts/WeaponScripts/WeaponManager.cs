@@ -7,14 +7,9 @@ public class WeaponManager : MonoBehaviour
 {
     [SerializeField] int weaponDamage;
     private Vector3 direction;
-    private float speed = 5f;
+
 
     public Vector3 Direction { get => direction; set => direction = value; }
-
-    private void OnEnable()
-    {
-        transform.position += direction * speed;
-    }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {

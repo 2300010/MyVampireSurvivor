@@ -5,9 +5,11 @@ using UnityEngine;
 public class WeaponMouvement : MonoBehaviour
 {
 
+    [SerializeField] float speed;
+
     // Update is called once per frame
     void Update()
     {
-        transform.position += Vector3.right * 5f * Time.deltaTime;
+        transform.position += transform.position * speed * Time.deltaTime;
     }
 }
