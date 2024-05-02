@@ -133,6 +133,7 @@ GameObject:
   m_Component:
   - component: {fileID: 333224751}
   - component: {fileID: 333224752}
+  - component: {fileID: 333224753}
   m_Layer: 0
   m_Name: EnemySpawner
   m_TagString: Untagged
@@ -167,7 +168,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3eb98d1c45df7046912463e6c684662, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab: {fileID: 5304977079917933010, guid: 9b5d69ff227d9ea449e6a9d0fd2ed69a, type: 3}
+  enemyPrefab:
+  - {fileID: 5304977079917933010, guid: 9b5d69ff227d9ea449e6a9d0fd2ed69a, type: 3}
+  - {fileID: 8784107017162170728, guid: e3367344ecf05d14797bbf8c37ac6772, type: 3}
+  - {fileID: 8309452524733630582, guid: 37bed0bfe9c9a45468124fdf638aa24f, type: 3}
+--- !u!114 &333224753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 333224750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 494a3d9ef06c3a44eb31714b3bd66648, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &390578628
 GameObject:
   m_ObjectHideFlags: 0
@@ -537,6 +553,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -2310528140447899336, guid: af59404cebe1572408bf19d120c20221, type: 3}
+      propertyPath: weaponSpawnRadius
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 298844276117129421, guid: af59404cebe1572408bf19d120c20221, type: 3}
       propertyPath: m_Name
       value: Player

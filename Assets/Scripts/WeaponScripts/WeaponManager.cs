@@ -6,16 +6,14 @@ using UnityEngine;
 public class WeaponManager : MonoBehaviour
 {
     [SerializeField] int weaponDamage;
+    private Vector3 direction;
+    private float speed = 5f;
 
-    private void Start()
+    public Vector3 Direction { get => direction; set => direction = value; }
+
+    private void OnEnable()
     {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        transform.position += direction * speed;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)

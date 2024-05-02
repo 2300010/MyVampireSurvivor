@@ -21,6 +21,8 @@ public class RNG : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
+        random = new System.Random();
     }
 
     // Start is called before the first frame update
@@ -35,13 +37,7 @@ public class RNG : MonoBehaviour
         
     }
 
-    public int IntRNG(int minValue, int maxValue)
-    {
-        return random.Next(minValue, maxValue);
-    }
+    public int IntRNG(int minValue, int maxValue) => random.Next(minValue, maxValue);
 
-    public float FloatRNG(float minValue, float maxValue)
-    {
-        return (float)random.NextDouble() * (maxValue - minValue) + minValue;
-    }
+    public float FloatRNG(float minValue, float maxValue) => (float)random.NextDouble() * (maxValue - minValue) + minValue;
 }

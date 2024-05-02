@@ -1,17 +1,15 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq.Expressions;
+using UnityEditor.PackageManager.UI;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class EnemySpawner : MonoBehaviour
 {
     [SerializeField] GameObject[] enemyPrefab;
-    private RNG localRNG;
-
-    private void Awake()
-    {
-        enemyPrefab = new GameObject[enemyPrefab.Length];
-    }
+    GameObject selectedEnemy;
 
     // Start is called before the first frame update
     void Start()
@@ -22,20 +20,44 @@ public class EnemySpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     public void SpawnEnemy()
     {
-        Instantiate(EnemySelection(), new Vector2(3f, 3f), Quaternion.identity); 
+        int randomNbrOfEnemies = RNG.Instance.IntRNG(2, 5);
+
+        Debug.Log("Nbr of enemies: " + randomNbrOfEnemies);
+
+        for (int i = 0; i < randomNbrOfEnemies; i++)
+        {
+            Vector3 spawnPos = Random.insideUnitCircle * Screen.width;
+
+            Instantiate(EnemySelection(), spawnPos, Quaternion.identity);
+        }
     }
 
     private GameObject EnemySelection()
     {
-        GameObject selectedEnemy;
+        
+        int nbrOfEnemies = enemyPrefab.Length;
 
-        switch (RNG.Instance.IntRNG(1, enemyPrefab.Length))
+        int x = RNG.Instance.IntRNG(1, nbrOfEnemies + 1);
+
+        switch (x)
         {
+            case 1:
+                selectedEnemy = enemyPrefab[0];
+                break;
+            case 2:
+                selectedEnemy = enemyPrefab[1];
+                break;
+            case 3:
+                selectedEnemy = enemyPrefab[2];
+                break;
+            default:
+                Debug.Log("Value not legal!");
+                break;
 
         }
 
