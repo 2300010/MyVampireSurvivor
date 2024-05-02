@@ -14,6 +14,7 @@ public class EnemySpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //Debug.Log(Screen.width);
         InvokeRepeating("SpawnEnemy", 2f, 2f);
     }
 
@@ -26,12 +27,13 @@ public class EnemySpawner : MonoBehaviour
     public void SpawnEnemy()
     {
         int randomNbrOfEnemies = RNG.Instance.IntRNG(2, 5);
+        float spawnOffset = 6.5f;
 
-        Debug.Log("Nbr of enemies: " + randomNbrOfEnemies);
+        //Debug.Log("Nbr of enemies: " + randomNbrOfEnemies);
 
         for (int i = 0; i < randomNbrOfEnemies; i++)
         {
-            Vector3 spawnPos = Random.insideUnitCircle * Screen.width;
+            Vector2 spawnPos = Random.insideUnitCircle.normalized * spawnOffset;
 
             Instantiate(EnemySelection(), spawnPos, Quaternion.identity);
         }

@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5137629458366648642}
   - component: {fileID: 3055142010755598308}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Square
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -97,9 +97,10 @@ GameObject:
   - component: {fileID: 6620368949764589625}
   - component: {fileID: 4461275814346920481}
   - component: {fileID: 3092736534474027271}
-  m_Layer: 0
+  - component: {fileID: -3524114950319976001}
+  m_Layer: 6
   m_Name: Officer Skeleton
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -166,10 +167,10 @@ BoxCollider2D:
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 0
   m_ForceReceiveLayers:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 0
   m_ContactCaptureLayers:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -218,3 +219,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHp: 0
+--- !u!114 &-3524114950319976001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8309452524733630582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a1e2ab1ac2a6ab54aa10501c0347a8c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 1.5

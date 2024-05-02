@@ -4,15 +4,30 @@ using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private static PlayerManager instance;
+    public static PlayerManager Instance => instance;
+
+
+    float xPosition;
+    float yPosition;
+
+    public float XPosition { get => xPosition; }
+    public float YPosition { get => yPosition; }
+
+    private void Awake()
     {
-        
+        instance = this;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        GetPlayerPosition();
+    }
+
+    private void GetPlayerPosition()
+    {
+        xPosition = gameObject.transform.localPosition.x;
+        yPosition = gameObject.transform.localPosition.y;
     }
 }
