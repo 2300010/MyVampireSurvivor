@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1131353887782544379}
   - component: {fileID: 3487938114736657241}
-  - component: {fileID: 6722749618560827257}
   - component: {fileID: 6713468387877537868}
   m_Layer: 0
   m_Name: ScythePrefab
@@ -80,19 +79,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.55255866, y: 0.70882577}
   m_EdgeRadius: 0
---- !u!114 &6722749618560827257
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 112894435131411826}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4dcf13f45afc3794c93216741e192283, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 2
 --- !u!114 &6713468387877537868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -105,7 +91,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6a209c769b47834fbc77ad9e03f0ba3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponDamage: 3
+  baseLifetime: 2.5
+  baseWeaponDamage: 2
+  baseSpeed: 2.5
 --- !u!1 &7724186172889415200
 GameObject:
   m_ObjectHideFlags: 0

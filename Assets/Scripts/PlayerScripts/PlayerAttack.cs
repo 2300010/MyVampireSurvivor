@@ -28,15 +28,12 @@ public class PlayerAttack : MonoBehaviour
 
         for (int i = 0; i < instancesToSpawn; i++)
         {
-            Vector3 randomOffset = Random.insideUnitCircle.normalized * weaponSpawnRadius;
-            Vector3 spawnPosition = transform.position + randomOffset;
+            Quaternion rotation = Quaternion.Euler(0f, 0f, RNG.Instance.FloatRNG(0, 360));
 
-            Vector3 directionToPlayer = transform.position - spawnPosition;
+            GameObject weaponToSpawn = ObjectPoolingSystem.GetInstance().GetPoolObject();
+            weaponToSpawn.transform.SetPositionAndRotation(transform.position, rotation);
 
-            GameObject weapon = Instantiate(scythePrefab, spawnPosition, Quaternion.identity);
-
-            WeaponManager weaponManager = weapon.GetComponent<WeaponManager>();
-            weaponManager.Direction = directionToPlayer;
+            weaponToSpawn.SetActive(true);  
         }
     }
 }
