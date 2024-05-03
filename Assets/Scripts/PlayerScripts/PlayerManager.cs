@@ -6,12 +6,14 @@ public class PlayerManager : MonoBehaviour
     public static PlayerManager Instance => instance;
 
     int exp;
+    int level;
     float xPosition;
     float yPosition;
 
     public float XPosition { get => xPosition; }
     public float YPosition { get => yPosition; }
     public int Exp { get => exp; set => exp = value; }
+    public int Level { get => level; set => level = value; }
 
     private void Awake()
     {
@@ -20,7 +22,7 @@ public class PlayerManager : MonoBehaviour
 
     private void Start()
     {
-        HpManager.PlayerDeath += OnDeath;
+        Reset();
     }
 
     // Update is called once per frame
@@ -35,11 +37,25 @@ public class PlayerManager : MonoBehaviour
         yPosition = gameObject.transform.localPosition.y;
     }
 
+    public void Reset()
+    {
+        Exp = 0;
+        Level = 0;
+        HpManager.PlayerDeath += OnDeath;
+        GameManager.LevelUp += UpdateStats;
+    }
+
     private void OnDeath()
     {
         HpManager.PlayerDeath -= OnDeath;
+        GameManager.LevelUp -= UpdateStats;
         gameObject.SetActive(false);
     }
 
+    private void UpdateStats()
+    {
+        exp = GameManager.Instance.PlayerExp;
+        level = GameManager.Instance.PlayerLevel;
+    }
     
 }

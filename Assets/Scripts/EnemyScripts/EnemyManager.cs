@@ -10,6 +10,10 @@ public class EnemyManager : MonoBehaviour, Ipoolable
     [SerializeField] int expDropped;
 
     public int ExpDropped { get => expDropped; set => expDropped = value; }
+    private void Start()
+    {
+        Reset();
+    }
 
     public void Reset()
     {
@@ -20,10 +24,6 @@ public class EnemyManager : MonoBehaviour, Ipoolable
         HpManager.EnemyDeath += OnDeath;
     }
 
-    private void Start()
-    {
-        Reset();
-    }
 
     public void OnDeath(Vector2 pos, int expDropped)
     {

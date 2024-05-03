@@ -25,18 +25,6 @@ public class RNG : MonoBehaviour
         random = new System.Random();
     }
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public int IntRNG(int minValue, int maxValue) => random.Next(minValue, maxValue);
 
     public float FloatRNG(float minValue, float maxValue) => (float)random.NextDouble() * (maxValue - minValue) + minValue;
