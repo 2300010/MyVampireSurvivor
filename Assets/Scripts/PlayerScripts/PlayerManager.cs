@@ -40,4 +40,6 @@ public class PlayerManager : MonoBehaviour
         HpManager.PlayerDeath -= OnDeath;
         gameObject.SetActive(false);
     }
+
+    
 }
