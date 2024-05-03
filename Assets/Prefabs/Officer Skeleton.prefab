@@ -206,6 +206,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clip: {fileID: 8300000, guid: bebc5e446b7d2034a9809a0f67742851, type: 3}
+  expDropped: 15
 --- !u!114 &3092736534474027271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -231,4 +232,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1e2ab1ac2a6ab54aa10501c0347a8c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.5
+  baseSpeed: 1.5

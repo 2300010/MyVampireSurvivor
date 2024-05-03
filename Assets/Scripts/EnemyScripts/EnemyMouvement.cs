@@ -6,7 +6,11 @@ using UnityEngine;
 public class EnemyMouvement : MonoBehaviour
 {
     Vector2 target;
-    [SerializeField] float speed = 1.5f;
+    [SerializeField] float baseSpeed;
+    float speed;
+
+    public float BaseSpeed { get => baseSpeed; set => baseSpeed = value; }
+    public float Speed { get => speed; set => speed = value; }
 
     // Update is called once per frame
     void Update()

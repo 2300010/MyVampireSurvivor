@@ -10,7 +10,7 @@ public class EnemySpawner : MonoBehaviour
     void Start()
     {
         //Debug.Log(Screen.width);
-        //InvokeRepeating("SpawnEnemy", 2f, 2f);
+        InvokeRepeating("SpawnEnemy", 2f, 2f);
     }
 
     public void SpawnEnemy()

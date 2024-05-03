@@ -1,32 +1,35 @@
 using UnityEngine;
 
-public class EnemyManager : MonoBehaviour
+public class EnemyManager : MonoBehaviour, Ipoolable
 {
-    //public delegate void EnemyDeath(EnemyManager enemy);
-    //public event EnemyDeath OnEnemyDeath;
 
     HpManager hpManager;
+    EnemyMouvement enemyMouvement;
 
-    [SerializeField] private AudioClip clip;
+    [SerializeField] AudioClip clip;
+    [SerializeField] int expDropped;
+
+    public int ExpDropped { get => expDropped; set => expDropped = value; }
+
+    public void Reset()
+    {
+        hpManager = GetComponent<HpManager>();
+        hpManager.CurrentHp = hpManager.MaxHp;
+        enemyMouvement = GetComponent<EnemyMouvement>();
+        enemyMouvement.Speed = enemyMouvement.BaseSpeed;
+        HpManager.EnemyDeath += OnDeath;
+    }
 
     private void Start()
     {
-
-        hpManager = GetComponent<HpManager>();
+        Reset();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void OnDeath(Vector2 pos, int expDropped)
     {
-        if (hpManager.IsDead)
-        {
-            AudioManager.GetInstance().PlaySound(clip);
-            gameObject.SetActive(false);
-        }
+        AudioManager.GetInstance().PlaySound(clip);
+        HpManager.EnemyDeath -= OnDeath;
     }
 
-    //public void IsDead()
-    //{
-    //    OnEnemyDeath?.Invoke(this);
-    //}
+    
 }
