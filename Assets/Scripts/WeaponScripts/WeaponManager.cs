@@ -60,10 +60,22 @@ public class WeaponManager : MonoBehaviour, Ipoolable
         transform.position += transform.right * currentSpeed * Time.deltaTime;
     }
 
+    private void LevelUpStatUpdate()
+    {
+        //Weird??u
+        baseWeaponDamage *= 3 / 2;
+    }
+
     public void Reset()
     {
         currentLifetime = baseLifetime;
         currentSpeed = baseSpeed;
         currentWeaponDamage = baseWeaponDamage;
+        GameManager.LevelUp += LevelUpStatUpdate;
+    }
+
+    private void OnDestroy()
+    {
+        GameManager.LevelUp -= LevelUpStatUpdate;
     }
 }

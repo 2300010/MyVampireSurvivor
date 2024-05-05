@@ -33,4 +33,10 @@ public class UIManager : MonoBehaviour
     {
         expValueText.text = GameManager.Instance.PlayerExp.ToString();
     }
+
+    private void OnDestroy()
+    {
+        GameManager.LevelUp -= UpdateLevelValue;
+        GameManager.ExpGained -= UpdateExpValue;
+    }
 }

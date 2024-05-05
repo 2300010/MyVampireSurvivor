@@ -90,5 +90,9 @@ public class GameManager : MonoBehaviour
         expForLevel = expForLevel * 3 / 2;
     }
 
-
+    private void OnDestroy()
+    {
+        HpManager.EnemyDeath -= OnEnemyDeath;
+        ExpFlameManager.OnExpPickup -= PlayerReceiveExp;
+    }
 }
