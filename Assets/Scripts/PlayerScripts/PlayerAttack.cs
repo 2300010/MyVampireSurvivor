@@ -2,8 +2,6 @@ using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
-    [SerializeField] GameObject scythePrefab;
-    [SerializeField] float weaponSpawnRadius;
 
     // Update is called once per frame
     void Update()
@@ -19,12 +17,20 @@ public class PlayerAttack : MonoBehaviour
 
         for (int i = 0; i < instancesToSpawn; i++)
         {
-            Quaternion rotation = Quaternion.Euler(0f, 0f, RNG.Instance.FloatRNG(0, 360));
+            GameObject weaponToSpawn = ObjectPoolingSystem.Instance().GetPoolObject();
 
-            GameObject weaponToSpawn = ObjectPoolingSystem.GetInstance().GetPoolObject();
-            weaponToSpawn.transform.SetPositionAndRotation(transform.position, rotation);
-
-            weaponToSpawn.SetActive(true);  
+            if (weaponToSpawn != null)
+            {
+                Quaternion rotation = Quaternion.Euler(0f, 0f, RNG.Instance.FloatRNG(0, 360));
+                
+                weaponToSpawn.transform.SetPositionAndRotation(transform.position, rotation);
+                
+                weaponToSpawn.SetActive(true);
+            }
+            else
+            {
+                break;
+            }
         }
     }
 }

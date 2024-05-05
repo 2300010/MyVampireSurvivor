@@ -15,8 +15,8 @@ public class PoolInfo
 }
 
 public class ObjectPoolingSystem : MonoBehaviour
-{ 
-    [SerializeField] List<PoolInfo> objectPools;
+{
+    //[SerializeField] List<PoolInfo> objectPools;
     [SerializeField] GameObject objectToPool;
     [SerializeField] int poolSize;
     int poolIndex;
@@ -25,13 +25,21 @@ public class ObjectPoolingSystem : MonoBehaviour
 
     public static ObjectPoolingSystem instance;
 
-    public static ObjectPoolingSystem GetInstance() => instance;
+    public static ObjectPoolingSystem Instance() => instance;
 
     public GameObject ObjectToPool { set => objectToPool = value; }
 
     private void Awake()
     {
-        instance = this;
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 
     // Start is called before the first frame update
@@ -49,5 +57,10 @@ public class ObjectPoolingSystem : MonoBehaviour
     {
         poolIndex %= poolSize;
         return poolOfObjects[poolIndex++];
+    }
+
+    public void ReturnPoolObject(GameObject objectToReturn)
+    {
+        poolOfObjects.Add(objectToReturn);
     }
 }

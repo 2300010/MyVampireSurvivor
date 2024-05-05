@@ -333,7 +333,6 @@ GameObject:
   m_Component:
   - component: {fileID: 333224751}
   - component: {fileID: 333224752}
-  - component: {fileID: 333224753}
   m_Layer: 0
   m_Name: EnemySpawner
   m_TagString: Untagged
@@ -372,18 +371,6 @@ MonoBehaviour:
   - {fileID: 5304977079917933010, guid: 9b5d69ff227d9ea449e6a9d0fd2ed69a, type: 3}
   - {fileID: 8784107017162170728, guid: e3367344ecf05d14797bbf8c37ac6772, type: 3}
   - {fileID: 8309452524733630582, guid: 37bed0bfe9c9a45468124fdf638aa24f, type: 3}
---- !u!114 &333224753
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 333224750}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 494a3d9ef06c3a44eb31714b3bd66648, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &390578628
 GameObject:
   m_ObjectHideFlags: 0
@@ -1078,6 +1065,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1100605624}
   - component: {fileID: 1100605623}
+  - component: {fileID: 1100605625}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -1113,6 +1101,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1100605625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1100605622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 494a3d9ef06c3a44eb31714b3bd66648, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1413405108
 GameObject:
   m_ObjectHideFlags: 0
@@ -1439,11 +1439,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 91e700509fe01ba45b972503f5b0e509, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectPools:
-  - objectToPool: {fileID: 112894435131411826, guid: ecabf1834db0fa748bf676a7b837f3a2, type: 3}
-    poolSize: 100
-  - objectToPool: {fileID: 3736154254768939582, guid: c28fb13d6d6594242bb72a8bbd3a3972, type: 3}
-    poolSize: 100
   objectToPool: {fileID: 112894435131411826, guid: ecabf1834db0fa748bf676a7b837f3a2, type: 3}
   poolSize: 100
 --- !u!1660057539 &9223372036854775807

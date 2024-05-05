@@ -1,14 +1,28 @@
 using System;
 using UnityEngine;
 
+public class WeaponStatBlock
+{
+    public int damage;
+    //public float speed;
+    //public float lifetime;
+    //public float range;
+}
+
 public class GameManager : MonoBehaviour
 {
     private static GameManager instance;
 
     public static GameManager Instance => instance;
 
+    //Declare weapon stats variables
+    WeaponStatBlock scytheStatBlock;
+
+    //Declare exp variables
     [SerializeField] GameObject expPrefab;
     float dropRate = 0.5f;
+    
+    //Declare player exp stats variables
     int playerExp = 0;
     int totalPlayerExp;
     int playerLevel = 1;
@@ -21,6 +35,7 @@ public class GameManager : MonoBehaviour
     public float DropRate { get => dropRate; set => dropRate = value; }
     public int PlayerLevel { get => playerLevel; set => playerLevel = value; }
     public int ExpForLevel { get => expForLevel; set => expForLevel = value; }
+    public WeaponStatBlock ScytheStatBlock { get => scytheStatBlock; set => scytheStatBlock = value; }
 
     private void Awake()
     {
@@ -37,9 +52,12 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        scytheStatBlock = new WeaponStatBlock();
+        scytheStatBlock.damage = 2;
         HpManager.EnemyDeath += OnEnemyDeath;
         ExpFlameManager.OnExpPickup += PlayerReceiveExp;
     }
+
 
     private void OnEnemyDeath(Vector2 deathPosition, int expDropped)
     {
@@ -76,6 +94,7 @@ public class GameManager : MonoBehaviour
         if(playerExp >= expForLevel)
         {
             ExpManageOnLevelUp();
+            StatsManageOnLevelUp();
             LevelUp?.Invoke();
             //Debug.Log("Level = " + playerLevel);
         }
@@ -88,6 +107,11 @@ public class GameManager : MonoBehaviour
         playerLevel++;
         playerExp -= expForLevel;
         expForLevel = expForLevel * 3 / 2;
+    }
+
+    private void StatsManageOnLevelUp()
+    {
+        scytheStatBlock.damage += 2;
     }
 
     private void OnDestroy()
