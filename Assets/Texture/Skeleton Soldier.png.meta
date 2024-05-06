@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -134,7 +134,469 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Skeleton Soldier_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 592
+        width: 82
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 828e8521e293f0b41823e4b0401ef992
+      internalID: -1652318681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton Soldier_1
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 592
+        width: 82
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f6f0cefdf5053e41b924fd7a2d1479e
+      internalID: 647515619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton Soldier_2
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 592
+        width: 83
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cb52ece6e6c3334cab70c7975e7cc7b
+      internalID: 473485308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton Soldier_3
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 593
+        width: 82
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c67bbac312b9a4748ae8d207616d195c
+      internalID: 852761035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton Soldier_4
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 483
+        width: 82
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 961d5795e0a3a0c4a90901b81284e67c
+      internalID: -1986104352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton Soldier_5
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 483
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3972e0f101cf9c443883380243350c8b
+      internalID: -1623882132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton Soldier_6
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 483
+        width: 82
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 920b0bcf05661c44e8c5dfa93d02de50
+      internalID: 1789929872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton Soldier_7
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 483
+        width: 84
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa4f863617f38db4a8189b3fd30d633d
+      internalID: 141968093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton Soldier_8
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 372
+        width: 89
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72eb64b5225b3864aaac24318ff39b72
+      internalID: -1279230565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton Soldier_21
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 390
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f949de28a10612549ba6b938d6586d75
+      internalID: -1744986831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton Soldier_23
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 261
+        width: 74
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c73251a698847248bf5faea6e7bb34a
+      internalID: 1605244256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton Soldier_24
+      rect:
+        serializedVersion: 2
+        x: 93
+        y: 261
+        width: 99
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 651129abf1c565b49bd5d6a689ae51f2
+      internalID: 335967356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton Soldier_25
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 261
+        width: 83
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51bbbd1e22139db4cbbb386dfb110772
+      internalID: 1704575760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton Soldier_26
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 261
+        width: 74
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c39334fccb18d3044bc5dafe2275f328
+      internalID: 13881174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton Soldier_27
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 123
+        width: 99
+        height: 107
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ccdbc4c71a2e9c41a1cc8a55f199fb7
+      internalID: 1846007735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton Soldier_28
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 123
+        width: 80
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ee7ab3dcd24fbd47a4d16e1b7f49189
+      internalID: -99893347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton Soldier_29
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 3
+        width: 82
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2850df79a0b0694ca78b5cdb93241b5
+      internalID: -1359920057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton Soldier_30
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 3
+        width: 82
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 827ae9e327036ba40ac7989d9a1b7501
+      internalID: -1707087421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton Soldier_31
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 3
+        width: 82
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3f8c22e8040a8b47bf2c2a9b8ebf31c
+      internalID: -936050553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton Soldier_32
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 3
+        width: 82
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0656bb40b9521845b378bb6d7ea1eb6
+      internalID: -545400824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton Soldier_33
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 3
+        width: 69
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 446a6a263ff61b747bf4a1640a3d56cc
+      internalID: -2040510372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skeleton Soldier_34
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 3
+        width: 48
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d85b96b430bc750478c20d5e441ccf1d
+      internalID: -1743263451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -145,7 +607,42 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Skeleton Soldier_0: -1652318681
+      Skeleton Soldier_1: 647515619
+      Skeleton Soldier_10: -1171982643
+      Skeleton Soldier_11: 668839186
+      Skeleton Soldier_12: -798265444
+      Skeleton Soldier_13: 1675737443
+      Skeleton Soldier_14: 234474190
+      Skeleton Soldier_15: -847521273
+      Skeleton Soldier_16: 1101500702
+      Skeleton Soldier_17: 723480650
+      Skeleton Soldier_18: -1301124069
+      Skeleton Soldier_19: -1692887339
+      Skeleton Soldier_2: 473485308
+      Skeleton Soldier_20: 856473105
+      Skeleton Soldier_21: -1744986831
+      Skeleton Soldier_22: 1419921111
+      Skeleton Soldier_23: 1605244256
+      Skeleton Soldier_24: 335967356
+      Skeleton Soldier_25: 1704575760
+      Skeleton Soldier_26: 13881174
+      Skeleton Soldier_27: 1846007735
+      Skeleton Soldier_28: -99893347
+      Skeleton Soldier_29: -1359920057
+      Skeleton Soldier_3: 852761035
+      Skeleton Soldier_30: -1707087421
+      Skeleton Soldier_31: -936050553
+      Skeleton Soldier_32: -545400824
+      Skeleton Soldier_33: -2040510372
+      Skeleton Soldier_34: -1743263451
+      Skeleton Soldier_4: -1986104352
+      Skeleton Soldier_5: -1623882132
+      Skeleton Soldier_6: 1789929872
+      Skeleton Soldier_7: 141968093
+      Skeleton Soldier_8: -1279230565
+      Skeleton Soldier_9: 1534793242
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

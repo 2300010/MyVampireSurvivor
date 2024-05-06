@@ -95,9 +95,9 @@ GameObject:
   - component: {fileID: 3846801466292485913}
   - component: {fileID: 6090583584040166514}
   - component: {fileID: 6620368949764589625}
-  - component: {fileID: 4461275814346920481}
   - component: {fileID: 3092736534474027271}
   - component: {fileID: -3524114950319976001}
+  - component: {fileID: 4461275814346920481}
   m_Layer: 6
   m_Name: Officer Skeleton
   m_TagString: Enemy
@@ -193,20 +193,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.3253922, y: 2.9680052}
   m_EdgeRadius: 0
---- !u!114 &4461275814346920481
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8309452524733630582}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9cb070036b787e94caebb542c5898206, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: bebc5e446b7d2034a9809a0f67742851, type: 3}
-  expDropped: 15
 --- !u!114 &3092736534474027271
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -233,3 +219,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseSpeed: 0.8
+--- !u!114 &4461275814346920481
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8309452524733630582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cb070036b787e94caebb542c5898206, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: bebc5e446b7d2034a9809a0f67742851, type: 3}
+  expDropped: 15

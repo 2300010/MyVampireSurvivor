@@ -21,7 +21,7 @@ public class WeaponManager : MonoBehaviour, Ipoolable
     private void OnEnable()
     {
         Reset();
-        Debug.Log("Current damage = " + currentDamage);
+        //Debug.Log("Current damage = " + currentDamage);
     }
 
     private void Update()

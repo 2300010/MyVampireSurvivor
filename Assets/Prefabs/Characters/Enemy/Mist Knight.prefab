@@ -95,9 +95,9 @@ GameObject:
   - component: {fileID: 7504479441125182652}
   - component: {fileID: 9204608517416439236}
   - component: {fileID: 4501077991878450062}
-  - component: {fileID: 4280596463627984231}
   - component: {fileID: 8777877209330675868}
   - component: {fileID: -1537473762117703109}
+  - component: {fileID: 4280596463627984231}
   m_Layer: 6
   m_Name: Mist Knight
   m_TagString: Enemy
@@ -183,20 +183,6 @@ CapsuleCollider2D:
   m_Offset: {x: -0.08607477, y: 0.06260002}
   m_Size: {x: 1.798946, y: 2.8153927}
   m_Direction: 0
---- !u!114 &4280596463627984231
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8784107017162170728}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9cb070036b787e94caebb542c5898206, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  clip: {fileID: 8300000, guid: bebc5e446b7d2034a9809a0f67742851, type: 3}
-  expDropped: 5
 --- !u!114 &8777877209330675868
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -223,3 +209,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   baseSpeed: 1
+--- !u!114 &4280596463627984231
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8784107017162170728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9cb070036b787e94caebb542c5898206, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clip: {fileID: 8300000, guid: bebc5e446b7d2034a9809a0f67742851, type: 3}
+  expDropped: 5

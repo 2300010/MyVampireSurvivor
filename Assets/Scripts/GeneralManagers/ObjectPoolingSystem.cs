@@ -12,22 +12,17 @@ public class PoolInfo
 {
     public GameObject objectToPool;
     public int poolSize;
+    public List<GameObject> poolOfObjects = new();
 }
 
 public class ObjectPoolingSystem : MonoBehaviour
 {
     [SerializeField] List<PoolInfo> objectPools;
-    [SerializeField] GameObject objectToPool;
-    [SerializeField] int poolSize;
     int poolIndex;
-
-    List<GameObject> poolOfObjects = new();
 
     public static ObjectPoolingSystem instance;
 
     public static ObjectPoolingSystem Instance() => instance;
-
-    public GameObject ObjectToPool { set => objectToPool = value; }
 
     private void Awake()
     {
@@ -45,22 +40,40 @@ public class ObjectPoolingSystem : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        for (int i = 0; i < poolSize; i++)
+
+        foreach (var pool in objectPools)
         {
-            GameObject go = Instantiate(objectToPool, Vector3.zero, Quaternion.identity, transform);
-            go.SetActive(false);
-            poolOfObjects.Add(go);
+            for (int i = 0; i < pool.poolSize; i++)
+            {
+                GameObject go = Instantiate(pool.objectToPool, Vector3.zero, Quaternion.identity, transform);
+                go.SetActive(false);
+                pool.poolOfObjects.Add(go);
+            }
         }
     }
 
-    public GameObject GetPoolObject()
+    public GameObject GetPoolObject(string objectName)
     {
-        poolIndex %= poolSize;
-        return poolOfObjects[poolIndex++];
+        foreach (var pool in objectPools)
+        {
+            if (objectName == pool.objectToPool.name)
+            {
+
+                poolIndex %= pool.poolSize;
+                return pool.poolOfObjects[poolIndex++];
+            }
+        }
+        return null;
     }
 
     public void ReturnPoolObject(GameObject objectToReturn)
     {
-        poolOfObjects.Add(objectToReturn);
+        foreach (PoolInfo pool in objectPools)
+        {
+            if (objectToReturn.name == pool.objectToPool.name)
+            {
+                pool.poolOfObjects.Add(objectToReturn);
+            }
+        }
     }
 }
