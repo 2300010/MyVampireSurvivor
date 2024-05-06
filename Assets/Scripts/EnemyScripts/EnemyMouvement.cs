@@ -18,7 +18,7 @@ public class EnemyMouvement : MonoBehaviour
 
     private void SetTargetDestination()
     {
-        target = new Vector2(PlayerManager.Instance.XPosition, PlayerManager.Instance.YPosition);
+        target = PlayerMouvement.Instance.transform.position;
     }
 
     private void ChasePlayer()

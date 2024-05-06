@@ -136,8 +136,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 599f79816dc23de48a2b4500e76dd319, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scythePrefab: {fileID: 112894435131411826, guid: ecabf1834db0fa748bf676a7b837f3a2, type: 3}
-  weaponSpawnRadius: 1
 --- !u!114 &-8853066824894738420
 MonoBehaviour:
   m_ObjectHideFlags: 0

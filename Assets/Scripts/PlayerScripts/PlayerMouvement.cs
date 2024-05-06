@@ -2,12 +2,28 @@ using UnityEngine;
 
 public class PlayerMouvement : MonoBehaviour
 {
+    private static PlayerMouvement instance;
+    
+    public static PlayerMouvement Instance => instance;
 
     [SerializeField] private float speed;
     private Rigidbody2D body;
     private bool facingRight = true;
 
-    void Start()
+    void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
+    private void Start()
     {
         body = GetComponent<Rigidbody2D>();
     }
