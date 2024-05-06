@@ -1,57 +1,60 @@
+using JetBrains.Annotations;
+using System;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
+[Serializable]
+public class EnemyType
+{
+    public GameObject enemyPrefab;
+}
+
+[Serializable]
+public class WaveSystem
+{
+    public List<EnemyType> enemies;
+    public float spawnInterval;
+    public float timeBetweenWaves;
+}
+
 public class EnemySpawner : MonoBehaviour
 {
-    [SerializeField] GameObject[] enemyPrefab;
-    GameObject selectedEnemy;
+    public List<WaveSystem> waves;
+    private int waveIndex = 0;
+
 
     // Start is called before the first frame update
     void Start()
     {
-        //Debug.Log(Screen.width);
-        InvokeRepeating("SpawnEnemy", 2f, 2f);
+        StartCoroutine(WaveSystem());
     }
 
-    public void SpawnEnemy()
+    public void SpawnEnemy(GameObject enemyPrefab)
     {
-        int randomNbrOfEnemies = RNG.Instance.IntRNG(2, 5);
-        float spawnOffset = 6.5f;
+        float spawnOffset = 10f;
+        Vector2 spawnPos = Random.insideUnitCircle.normalized * spawnOffset;
 
-        //Debug.Log("Nbr of enemies: " + randomNbrOfEnemies);
-
-        for (int i = 0; i < randomNbrOfEnemies; i++)
-        {
-            Vector2 spawnPos = Random.insideUnitCircle.normalized * spawnOffset;
-
-            Instantiate(EnemySelection(), spawnPos, Quaternion.identity);
-        }
+        Instantiate(enemyPrefab, spawnPos, Quaternion.identity);
     }
 
-    private GameObject EnemySelection()
+    IEnumerator WaveSystem()
     {
-        
-        int nbrOfEnemies = enemyPrefab.Length;
-
-        int x = RNG.Instance.IntRNG(1, nbrOfEnemies + 1);
-
-        switch (x)
+        while (waveIndex < waves.Count)
         {
-            case 1:
-                selectedEnemy = enemyPrefab[0];
-                break;
-            case 2:
-                selectedEnemy = enemyPrefab[1];
-                break;
-            case 3:
-                selectedEnemy = enemyPrefab[2];
-                break;
-            default:
-                Debug.Log("Value not legal!");
-                break;
-
+            WaveSystem wave = waves[waveIndex];
+            foreach (EnemyType enemyType in wave.enemies)
+            {
+                SpawnEnemy(enemyType.enemyPrefab);
+                yield return new WaitForSeconds(wave.spawnInterval);
+            }
+            waveIndex++;
+            
+            if(waveIndex >= waves.Count)
+            {
+                yield return new WaitForSeconds(wave.timeBetweenWaves);
+            }
         }
-
-        return selectedEnemy;
     }
 }

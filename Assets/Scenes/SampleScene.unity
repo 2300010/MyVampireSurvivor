@@ -367,10 +367,62 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e3eb98d1c45df7046912463e6c684662, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyPrefab:
-  - {fileID: 5304977079917933010, guid: 9b5d69ff227d9ea449e6a9d0fd2ed69a, type: 3}
-  - {fileID: 8784107017162170728, guid: e3367344ecf05d14797bbf8c37ac6772, type: 3}
-  - {fileID: 8309452524733630582, guid: 37bed0bfe9c9a45468124fdf638aa24f, type: 3}
+  waves:
+  - enemies:
+    - enemyPrefab: {fileID: 5304977079917933010, guid: 9b5d69ff227d9ea449e6a9d0fd2ed69a, type: 3}
+    - enemyPrefab: {fileID: 5304977079917933010, guid: 9b5d69ff227d9ea449e6a9d0fd2ed69a, type: 3}
+    - enemyPrefab: {fileID: 5304977079917933010, guid: 9b5d69ff227d9ea449e6a9d0fd2ed69a, type: 3}
+    - enemyPrefab: {fileID: 5304977079917933010, guid: 9b5d69ff227d9ea449e6a9d0fd2ed69a, type: 3}
+    spawnInterval: 0.2
+    timeBetweenWaves: 4
+  - enemies:
+    - enemyPrefab: {fileID: 5304977079917933010, guid: 9b5d69ff227d9ea449e6a9d0fd2ed69a, type: 3}
+    - enemyPrefab: {fileID: 5304977079917933010, guid: 9b5d69ff227d9ea449e6a9d0fd2ed69a, type: 3}
+    - enemyPrefab: {fileID: 5304977079917933010, guid: 9b5d69ff227d9ea449e6a9d0fd2ed69a, type: 3}
+    - enemyPrefab: {fileID: 5304977079917933010, guid: 9b5d69ff227d9ea449e6a9d0fd2ed69a, type: 3}
+    - enemyPrefab: {fileID: 5304977079917933010, guid: 9b5d69ff227d9ea449e6a9d0fd2ed69a, type: 3}
+    - enemyPrefab: {fileID: 5304977079917933010, guid: 9b5d69ff227d9ea449e6a9d0fd2ed69a, type: 3}
+    - enemyPrefab: {fileID: 5304977079917933010, guid: 9b5d69ff227d9ea449e6a9d0fd2ed69a, type: 3}
+    - enemyPrefab: {fileID: 5304977079917933010, guid: 9b5d69ff227d9ea449e6a9d0fd2ed69a, type: 3}
+    spawnInterval: 1
+    timeBetweenWaves: 6
+  - enemies:
+    - enemyPrefab: {fileID: 5304977079917933010, guid: 9b5d69ff227d9ea449e6a9d0fd2ed69a, type: 3}
+    - enemyPrefab: {fileID: 5304977079917933010, guid: 9b5d69ff227d9ea449e6a9d0fd2ed69a, type: 3}
+    - enemyPrefab: {fileID: 5304977079917933010, guid: 9b5d69ff227d9ea449e6a9d0fd2ed69a, type: 3}
+    - enemyPrefab: {fileID: 5304977079917933010, guid: 9b5d69ff227d9ea449e6a9d0fd2ed69a, type: 3}
+    - enemyPrefab: {fileID: 8784107017162170728, guid: e3367344ecf05d14797bbf8c37ac6772, type: 3}
+    - enemyPrefab: {fileID: 8784107017162170728, guid: e3367344ecf05d14797bbf8c37ac6772, type: 3}
+    spawnInterval: 1
+    timeBetweenWaves: 2
+  - enemies:
+    - enemyPrefab: {fileID: 5304977079917933010, guid: 9b5d69ff227d9ea449e6a9d0fd2ed69a, type: 3}
+    - enemyPrefab: {fileID: 5304977079917933010, guid: 9b5d69ff227d9ea449e6a9d0fd2ed69a, type: 3}
+    - enemyPrefab: {fileID: 8784107017162170728, guid: e3367344ecf05d14797bbf8c37ac6772, type: 3}
+    - enemyPrefab: {fileID: 5304977079917933010, guid: 9b5d69ff227d9ea449e6a9d0fd2ed69a, type: 3}
+    - enemyPrefab: {fileID: 5304977079917933010, guid: 9b5d69ff227d9ea449e6a9d0fd2ed69a, type: 3}
+    - enemyPrefab: {fileID: 5304977079917933010, guid: 9b5d69ff227d9ea449e6a9d0fd2ed69a, type: 3}
+    - enemyPrefab: {fileID: 5304977079917933010, guid: 9b5d69ff227d9ea449e6a9d0fd2ed69a, type: 3}
+    - enemyPrefab: {fileID: 8784107017162170728, guid: e3367344ecf05d14797bbf8c37ac6772, type: 3}
+    spawnInterval: 1
+    timeBetweenWaves: 8
+  - enemies:
+    - enemyPrefab: {fileID: 8784107017162170728, guid: e3367344ecf05d14797bbf8c37ac6772, type: 3}
+    - enemyPrefab: {fileID: 8784107017162170728, guid: e3367344ecf05d14797bbf8c37ac6772, type: 3}
+    spawnInterval: 0.5
+    timeBetweenWaves: 1
+  - enemies:
+    - enemyPrefab: {fileID: 8784107017162170728, guid: e3367344ecf05d14797bbf8c37ac6772, type: 3}
+    - enemyPrefab: {fileID: 8784107017162170728, guid: e3367344ecf05d14797bbf8c37ac6772, type: 3}
+    - enemyPrefab: {fileID: 8309452524733630582, guid: 37bed0bfe9c9a45468124fdf638aa24f, type: 3}
+    spawnInterval: 0.5
+    timeBetweenWaves: 1
+  - enemies:
+    - enemyPrefab: {fileID: 8784107017162170728, guid: e3367344ecf05d14797bbf8c37ac6772, type: 3}
+    - enemyPrefab: {fileID: 8784107017162170728, guid: e3367344ecf05d14797bbf8c37ac6772, type: 3}
+    - enemyPrefab: {fileID: 8309452524733630582, guid: 37bed0bfe9c9a45468124fdf638aa24f, type: 3}
+    spawnInterval: 0.5
+    timeBetweenWaves: 10
 --- !u!1 &390578628
 GameObject:
   m_ObjectHideFlags: 0
