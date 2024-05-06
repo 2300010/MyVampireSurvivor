@@ -1,0 +1,1689 @@
+fileFormatVersion: 2
+guid: 7b86fb2e65bd114499a0d36aa81310b8
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 50
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: tvOS
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Jr Balrog_3
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 2319
+        width: 161
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a86bdddf303c9c40bf05aafcbd839cd
+      internalID: 1355248328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jr Balrog_4
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 2319
+        width: 162
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 392dbdbc617ef5a4a8798cdea0623a0b
+      internalID: -1984949583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jr Balrog_6
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 2109
+        width: 173
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0e7f748a998d3242a7b4eadab92e080
+      internalID: 51694273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jr Balrog_7
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 2109
+        width: 160
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86524c8dacb550e45b951ec769939d62
+      internalID: 1580943989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jr Balrog_8
+      rect:
+        serializedVersion: 2
+        x: 371
+        y: 2109
+        width: 177
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7325aa68640c8c14483822f58000b94f
+      internalID: 572457025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jr Balrog_9
+      rect:
+        serializedVersion: 2
+        x: 562
+        y: 2109
+        width: 169
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21dcef4a8f3e133488974cb6c60172c5
+      internalID: 558328470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jr Balrog_10
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 2109
+        width: 178
+        height: 172
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8dde0d702e9b8a41b0d3f43eeac2ae5
+      internalID: -398772595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jr Balrog_16
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 1876
+        width: 178
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebec63ff0d9036140b52dcdd5836ecd1
+      internalID: 1030328691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jr Balrog_17
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 1876
+        width: 162
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce83ed348eef98d4db41d8d406fccfa1
+      internalID: 816607109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jr Balrog_18
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 1876
+        width: 161
+        height: 158
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edfc1a3c2fe2a51428f41c12a22c01ff
+      internalID: 1169382980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jr Balrog_19
+      rect:
+        serializedVersion: 2
+        x: 558
+        y: 1876
+        width: 248
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c32eee16842f1aa448dca0136913927c
+      internalID: -274366810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jr Balrog_20
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 1876
+        width: 245
+        height: 195
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a3bea72ff8ec824e85e469e403d48a2
+      internalID: 1022713206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jr Balrog_21
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1668
+        width: 503
+        height: 181
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11a97666a89028245b3e276bab8dd5ef
+      internalID: -1961567748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jr Balrog_22
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 1668
+        width: 246
+        height: 194
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f860ce8987235f46868fada46935b75
+      internalID: 1474814435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jr Balrog_23
+      rect:
+        serializedVersion: 2
+        x: 809
+        y: 1668
+        width: 160
+        height: 157
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01154a0b87ead7748870bd6a0c295df1
+      internalID: 1529808576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jr Balrog_24
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1554
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d1837ab2b047df40806f83626f3f789
+      internalID: 626319011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jr Balrog_25
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 1554
+        width: 26
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 708b6cbf72e8d334eb3b14ffdc4b9974
+      internalID: -13559545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jr Balrog_26
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 1528
+        width: 106
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 467f89f2affd67f4eabf8d10f452485e
+      internalID: 1075741463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jr Balrog_27
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 1527
+        width: 105
+        height: 103
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64573e60008289a4dbfbc7825925f2e7
+      internalID: 465761050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jr Balrog_28
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 1523
+        width: 114
+        height: 111
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf9dc7fcc10a6024ab4a1c6ee7a8de32
+      internalID: 1405771303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jr Balrog_29
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 1522
+        width: 120
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e302c2d5f12ccb40a022810ecb26215
+      internalID: 1232584957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jr Balrog_30
+      rect:
+        serializedVersion: 2
+        x: 578
+        y: 1522
+        width: 128
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f289c082f4b10164db57364788cc86be
+      internalID: 865476869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jr Balrog_31
+      rect:
+        serializedVersion: 2
+        x: 709
+        y: 1522
+        width: 125
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67e7657d973e7954f87caef12a19231a
+      internalID: -637141402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jr Balrog_32
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 1365
+        width: 142
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cfa532e05943b44ca4a4440c4d0217f
+      internalID: 2033524840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jr Balrog_37
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 1365
+        width: 115
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3599a7e3b8a733b48b2fb8ebdd145907
+      internalID: -508997383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jr Balrog_54
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 1365
+        width: 142
+        height: 135
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acdfbc516bfeb5545b08eb7dbfbe14ec
+      internalID: -229797658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jr Balrog_62
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 1365
+        width: 62
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c87c74678f50e04ca2013b18c47ee88
+      internalID: -1970530082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jr Balrog_64
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 1365
+        width: 136
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7a74a44c36e104449ecb61f83b9c8b7
+      internalID: 1123155574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jr Balrog_65
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 1365
+        width: 61
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48b5b6068d70cef48b9aa614715eafa6
+      internalID: 1714312419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jr Balrog_67
+      rect:
+        serializedVersion: 2
+        x: 805
+        y: 1365
+        width: 48
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e1f879770c44d742b31cc5f436bc7f2
+      internalID: 1590133644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jr Balrog_78
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 1158
+        width: 202
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62ef66b2304ec0a43bd6f1172470c604
+      internalID: 1270089904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jr Balrog_79
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 1158
+        width: 194
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5cd9d78ea68d934c8878e43a3d0b60c
+      internalID: -1816177045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jr Balrog_80
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 1158
+        width: 193
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42c567077f2e3f54997e629bd38b2a00
+      internalID: -532573061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jr Balrog_81
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 1158
+        width: 193
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 185fa9a57ef90034e8bcd5f3b9afc6bf
+      internalID: 694904039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jr Balrog_82
+      rect:
+        serializedVersion: 2
+        x: 10
+        y: 1053
+        width: 48
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fadbc7e6633ceec43988351615083ae3
+      internalID: -1771104245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jr Balrog_83
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 1053
+        width: 48
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22aff8cb110fb824494cfe64a3d85ba1
+      internalID: 1759356357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jr Balrog_84
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 1053
+        width: 48
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 599f4fee563aa48479fd926b4855c0c8
+      internalID: 249836243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jr Balrog_85
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 1035
+        width: 73
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2ba0cf68ade6564ea850d1928d2e7e8
+      internalID: 989066656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jr Balrog_87
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 1043
+        width: 84
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1086322051741e94096369eeabe3b592
+      internalID: -1539811406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jr Balrog_88
+      rect:
+        serializedVersion: 2
+        x: 361
+        y: 1026
+        width: 87
+        height: 109
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f708e59a80975d4ebc8ab2e79d72ea0
+      internalID: 1843383763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jr Balrog_89
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 1023
+        width: 97
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1738fe49579da0439e265d093762bdc
+      internalID: -1991551111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jr Balrog_90
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 1020
+        width: 101
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cae677ac5770264589f06b2461e5e17
+      internalID: -1403228665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jr Balrog_95
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 987
+        width: 62
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec1ca8f71ac498f40a30e53daca014fb
+      internalID: -412091899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jr Balrog_96
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 987
+        width: 70
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc74f80479cd53649a752eca96cb84a9
+      internalID: -591039584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jr Balrog_97
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 986
+        width: 61
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b359ffab543ec7a4d99250919c059e99
+      internalID: 1609469418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jr Balrog_98
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 854
+        width: 101
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e423c5323caf04a4fa35ddd34fd45da3
+      internalID: -2049468430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jr Balrog_102
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 856
+        width: 104
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d344eda05f456c428ef825d8a1a2841
+      internalID: 1551620850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jr Balrog_107
+      rect:
+        serializedVersion: 2
+        x: 430
+        y: 858
+        width: 112
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47480899657a63b489077f1b25fd7953
+      internalID: 722659640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jr Balrog_121
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 850
+        width: 112
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 460251f6d075b9a4592b484c34cccca2
+      internalID: 1219788883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jr Balrog_128
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 663
+        width: 191
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7397e26227d24c04eb0ba1286bcf0a0d
+      internalID: 1288132137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jr Balrog_129
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 663
+        width: 177
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21f38db8fd2d5b941a5016aa562a20ec
+      internalID: 1253211189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jr Balrog_130
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 663
+        width: 194
+        height: 163
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71ea1e06fa38b3d4aaa400393addbe00
+      internalID: -1814535515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jr Balrog_131
+      rect:
+        serializedVersion: 2
+        x: 626
+        y: 663
+        width: 203
+        height: 161
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5c557d5034623a4c87295da30bede75
+      internalID: 1308606525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jr Balrog_132
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 512
+        width: 245
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a87723af72851cd4898d5c1411da2c18
+      internalID: 763084084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jr Balrog_133
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 512
+        width: 244
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c820b9303ff66134c943557dba7af930
+      internalID: 782328856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jr Balrog_134
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 513
+        width: 244
+        height: 113
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 943f8db6f743d1b42a85944ffe3be48f
+      internalID: 915992847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jr Balrog_135
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 514
+        width: 242
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd7adbe26f7f21449ae342190e071bbd
+      internalID: -742118200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jr Balrog_136
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 403
+        width: 78
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a46caeb36ad3e4048b03b1cf9376dc2c
+      internalID: -1544693371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jr Balrog_137
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 399
+        width: 78
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48b827e028ed1c9488ec2f4ea67f570c
+      internalID: -940371244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jr Balrog_138
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 400
+        width: 83
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0acd472d4fe2fe14793da2de47ff1da3
+      internalID: 933739203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jr Balrog_139
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 420
+        width: 77
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14376ea71b364bf40ab1e3ac438698df
+      internalID: -749839160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jr Balrog_141
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 200
+        width: 173
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb7d1c72e501f2a46ad97cc15b4d0424
+      internalID: -1887705965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jr Balrog_144
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 9
+        width: 153
+        height: 159
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aed55df7fb7892b4bb54ae136e838a33
+      internalID: -468398468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jr Balrog_145
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 7
+        width: 226
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 276ec889959cdec40a81c6317ed4c232
+      internalID: 1226696972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jr Balrog_146
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 4
+        width: 242
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 982a149295f6f9a42a1f883246de257f
+      internalID: -371009438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Jr Balrog_0: 1571150500
+      Jr Balrog_1: 1887272614
+      Jr Balrog_10: -398772595
+      Jr Balrog_100: -1120206442
+      Jr Balrog_101: -1670961028
+      Jr Balrog_102: 1551620850
+      Jr Balrog_103: -566099285
+      Jr Balrog_104: -986840565
+      Jr Balrog_105: 1275331956
+      Jr Balrog_106: -800448189
+      Jr Balrog_107: 722659640
+      Jr Balrog_108: -657984926
+      Jr Balrog_109: 479188103
+      Jr Balrog_11: 1018234099
+      Jr Balrog_110: -1280249911
+      Jr Balrog_111: -414504515
+      Jr Balrog_112: 1565918649
+      Jr Balrog_113: -647333353
+      Jr Balrog_114: 593533865
+      Jr Balrog_115: 1695326097
+      Jr Balrog_116: 1859991318
+      Jr Balrog_117: 115888349
+      Jr Balrog_118: 212770316
+      Jr Balrog_119: 324624997
+      Jr Balrog_12: -1346738645
+      Jr Balrog_120: 1765159605
+      Jr Balrog_121: 1219788883
+      Jr Balrog_122: 50582403
+      Jr Balrog_123: 1861725439
+      Jr Balrog_124: -1835469188
+      Jr Balrog_125: -734931818
+      Jr Balrog_126: 1346962637
+      Jr Balrog_127: -1741542419
+      Jr Balrog_128: 1288132137
+      Jr Balrog_129: 1253211189
+      Jr Balrog_13: -1671109292
+      Jr Balrog_130: -1814535515
+      Jr Balrog_131: 1308606525
+      Jr Balrog_132: 763084084
+      Jr Balrog_133: 782328856
+      Jr Balrog_134: 915992847
+      Jr Balrog_135: -742118200
+      Jr Balrog_136: -1544693371
+      Jr Balrog_137: -940371244
+      Jr Balrog_138: 933739203
+      Jr Balrog_139: -749839160
+      Jr Balrog_14: 204988004
+      Jr Balrog_140: 2040698224
+      Jr Balrog_141: -1887705965
+      Jr Balrog_142: -1589441981
+      Jr Balrog_143: -943608032
+      Jr Balrog_144: -468398468
+      Jr Balrog_145: 1226696972
+      Jr Balrog_146: -371009438
+      Jr Balrog_147: 231945973
+      Jr Balrog_148: 447286385
+      Jr Balrog_149: -36158245
+      Jr Balrog_15: 1297780802
+      Jr Balrog_150: 863111091
+      Jr Balrog_151: 327389676
+      Jr Balrog_152: -489763014
+      Jr Balrog_153: -314587995
+      Jr Balrog_154: -1569854376
+      Jr Balrog_155: 132156915
+      Jr Balrog_156: -1691696436
+      Jr Balrog_157: -208793101
+      Jr Balrog_158: -235689469
+      Jr Balrog_159: 1849835094
+      Jr Balrog_16: 1030328691
+      Jr Balrog_160: -2126137029
+      Jr Balrog_161: 1195084384
+      Jr Balrog_162: -1690764225
+      Jr Balrog_163: -800330990
+      Jr Balrog_164: 485975569
+      Jr Balrog_165: 2105303558
+      Jr Balrog_166: -1157176330
+      Jr Balrog_167: -1842771508
+      Jr Balrog_168: 815344609
+      Jr Balrog_169: -384934113
+      Jr Balrog_17: 816607109
+      Jr Balrog_170: -549589254
+      Jr Balrog_18: 1169382980
+      Jr Balrog_19: -274366810
+      Jr Balrog_2: -1719305534
+      Jr Balrog_20: 1022713206
+      Jr Balrog_21: -1961567748
+      Jr Balrog_22: 1474814435
+      Jr Balrog_23: 1529808576
+      Jr Balrog_24: 626319011
+      Jr Balrog_25: -13559545
+      Jr Balrog_26: 1075741463
+      Jr Balrog_27: 465761050
+      Jr Balrog_28: 1405771303
+      Jr Balrog_29: 1232584957
+      Jr Balrog_3: 1355248328
+      Jr Balrog_30: 865476869
+      Jr Balrog_31: -637141402
+      Jr Balrog_32: 2033524840
+      Jr Balrog_33: -952524158
+      Jr Balrog_34: -2056443154
+      Jr Balrog_35: -1722917302
+      Jr Balrog_36: -1337002522
+      Jr Balrog_37: -508997383
+      Jr Balrog_38: -284934
+      Jr Balrog_39: -1777762543
+      Jr Balrog_4: -1984949583
+      Jr Balrog_40: -1650207912
+      Jr Balrog_41: -1947883320
+      Jr Balrog_42: 1436811476
+      Jr Balrog_43: -644726683
+      Jr Balrog_44: -2142920159
+      Jr Balrog_45: 1526689495
+      Jr Balrog_46: 1356643572
+      Jr Balrog_47: -74799983
+      Jr Balrog_48: 1042807516
+      Jr Balrog_49: 174488727
+      Jr Balrog_5: 2040925500
+      Jr Balrog_50: -1584472067
+      Jr Balrog_51: -838304793
+      Jr Balrog_52: 180930327
+      Jr Balrog_53: -315815967
+      Jr Balrog_54: -229797658
+      Jr Balrog_55: 1701558137
+      Jr Balrog_56: 1865933987
+      Jr Balrog_57: 1806220022
+      Jr Balrog_58: 1972416266
+      Jr Balrog_59: -96116044
+      Jr Balrog_6: 51694273
+      Jr Balrog_60: 1490341315
+      Jr Balrog_61: 1142725980
+      Jr Balrog_62: -1970530082
+      Jr Balrog_63: 1556914267
+      Jr Balrog_64: 1123155574
+      Jr Balrog_65: 1714312419
+      Jr Balrog_66: -64376325
+      Jr Balrog_67: 1590133644
+      Jr Balrog_68: -378645302
+      Jr Balrog_69: 196842580
+      Jr Balrog_7: 1580943989
+      Jr Balrog_70: -317346651
+      Jr Balrog_71: 98595413
+      Jr Balrog_72: -1798321734
+      Jr Balrog_73: -1123930932
+      Jr Balrog_74: 934421280
+      Jr Balrog_75: -985515186
+      Jr Balrog_76: -58934173
+      Jr Balrog_77: -158283234
+      Jr Balrog_78: 1270089904
+      Jr Balrog_79: -1816177045
+      Jr Balrog_8: 572457025
+      Jr Balrog_80: -532573061
+      Jr Balrog_81: 694904039
+      Jr Balrog_82: -1771104245
+      Jr Balrog_83: 1759356357
+      Jr Balrog_84: 249836243
+      Jr Balrog_85: 989066656
+      Jr Balrog_86: 1010170490
+      Jr Balrog_87: -1539811406
+      Jr Balrog_88: 1843383763
+      Jr Balrog_89: -1991551111
+      Jr Balrog_9: 558328470
+      Jr Balrog_90: -1403228665
+      Jr Balrog_91: 1082439459
+      Jr Balrog_92: -2124185293
+      Jr Balrog_93: -1492668060
+      Jr Balrog_94: -827412568
+      Jr Balrog_95: -412091899
+      Jr Balrog_96: -591039584
+      Jr Balrog_97: 1609469418
+      Jr Balrog_98: -2049468430
+      Jr Balrog_99: -996666612
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

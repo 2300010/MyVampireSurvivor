@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -134,7 +134,952 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Dark Cornian_0
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 1406
+        width: 174
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8102a52bd8fe59d4b9180d16c0e3dff0
+      internalID: 355434030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark Cornian_1
+      rect:
+        serializedVersion: 2
+        x: 190
+        y: 1406
+        width: 165
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6237a644d8c4a984a8fca04a9c24d7cd
+      internalID: -1003237408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark Cornian_2
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 1406
+        width: 164
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20759c8e3f70574458cb162bc9325a3c
+      internalID: 1848934156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark Cornian_3
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 1406
+        width: 166
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00c19fe3397e6444f9397c31d1c58001
+      internalID: 1716703829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark Cornian_4
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 1406
+        width: 174
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33f9aea72dccdfc4fbabb12662616e4d
+      internalID: 1821306624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark Cornian_5
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 1406
+        width: 174
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 384733b973c88d94899e315da6cb6385
+      internalID: -1997139518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark Cornian_6
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 1243
+        width: 174
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d27a98e6a97b8f49b7ded63c29aac15
+      internalID: 801275213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark Cornian_7
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 1243
+        width: 171
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbfe07986091dcd4199645b2df6bdeaf
+      internalID: 1795369831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark Cornian_8
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 1243
+        width: 174
+        height: 137
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63ebdcd27d9b860438ef34c277be79f8
+      internalID: 737352233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark Cornian_9
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 1243
+        width: 171
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01c54399a0c0dac459ddda76e926fe4e
+      internalID: -766398779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark Cornian_10
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 1063
+        width: 188
+        height: 156
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abcc15fd748945247851228004baf6a8
+      internalID: 1279613566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark Cornian_24
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 887
+        width: 174
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97be4f70e89cbdb4295e80ee0e710161
+      internalID: -1325593223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark Cornian_25
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 887
+        width: 258
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f3948b2447f6dd409db4a3cb1c45a05
+      internalID: 1789903264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark Cornian_26
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 887
+        width: 260
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ccb8edac0193764583c88baa661d3e9
+      internalID: -2123922602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark Cornian_27
+      rect:
+        serializedVersion: 2
+        x: 775
+        y: 887
+        width: 262
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 277911af23524a44db7a9cd9ebc1c590
+      internalID: -736716065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark Cornian_28
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 887
+        width: 262
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aef11173235a7dd4f942a5a107c9c91b
+      internalID: 1038942515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark Cornian_29
+      rect:
+        serializedVersion: 2
+        x: 1346
+        y: 887
+        width: 262
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b821a5abcfef5314582bcd7fe5761146
+      internalID: -648620044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark Cornian_30
+      rect:
+        serializedVersion: 2
+        x: 1626
+        y: 887
+        width: 258
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 981a9f0aff41e58468e36cd81af9d9c3
+      internalID: -1954099691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark Cornian_31
+      rect:
+        serializedVersion: 2
+        x: 1234
+        y: 826
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85b312163d671a64280eff8ea4b7c6b8
+      internalID: 678494467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark Cornian_32
+      rect:
+        serializedVersion: 2
+        x: 1276
+        y: 671
+        width: 240
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea59042ea573e3d44afd01691888078b
+      internalID: -2055662887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark Cornian_33
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 653
+        width: 174
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1debe35e7568ed64dbeb54fe1dfce4e5
+      internalID: -1051387102
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark Cornian_34
+      rect:
+        serializedVersion: 2
+        x: 203
+        y: 653
+        width: 142
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77bcb5ee65ccd4946b23e96e6cfea96b
+      internalID: -1073042043
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark Cornian_35
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 653
+        width: 256
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 848bfa6845220954b8984a3933d66244
+      internalID: -2051954392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark Cornian_36
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 653
+        width: 264
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1a1d5a30e5046e4eb5a6b33200a4179
+      internalID: -1307836201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark Cornian_37
+      rect:
+        serializedVersion: 2
+        x: 937
+        y: 653
+        width: 275
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f0ef0b4f0f9cf843aaeb9ad5796959f
+      internalID: -40731808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark Cornian_38
+      rect:
+        serializedVersion: 2
+        x: 1238
+        y: 783
+        width: 21
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed767d8e77bfcbb4e8e2afa96e8d2fc9
+      internalID: -2073324623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark Cornian_39
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 729
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9396d5d4580e94b49a25f78d3d3ae8f8
+      internalID: -460786074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark Cornian_40
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 653
+        width: 34
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1263f66ebeb657749833320fda3bce5b
+      internalID: 2022980854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark Cornian_41
+      rect:
+        serializedVersion: 2
+        x: 1357
+        y: 655
+        width: 38
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8dd2c5f5f0ace04b91a8cdb149f0366
+      internalID: -1912153260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark Cornian_42
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 520
+        width: 99
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b7f7feebc937344189d14f11aa2792f
+      internalID: -1979688558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark Cornian_43
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 520
+        width: 93
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c466710b94534b84eb7e36932d0869fb
+      internalID: 1884326321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark Cornian_44
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 521
+        width: 6
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7125d9e6e1bb3854ba488569aa0ac7ca
+      internalID: 851555064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark Cornian_45
+      rect:
+        serializedVersion: 2
+        x: 239
+        y: 522
+        width: 84
+        height: 91
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c3b64c07941bc44a9aab0a01d705452
+      internalID: 547783027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark Cornian_46
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 333
+        width: 170
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38e774a5ba92dea428194a44beb4fe7f
+      internalID: -1725677843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark Cornian_47
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 333
+        width: 317
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fab9e576e3748bf4a93790b7c77e6211
+      internalID: -1985036869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark Cornian_48
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 333
+        width: 308
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4c2792b9ad34ed47a055b1fac519dfb
+      internalID: -1940173548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark Cornian_49
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 333
+        width: 350
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 604178fd5e2149a4e8bf07f0b0afe46b
+      internalID: -1996697946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark Cornian_50
+      rect:
+        serializedVersion: 2
+        x: 1231
+        y: 333
+        width: 329
+        height: 125
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02e0c69c3f678bb4fa79f410858ed3c6
+      internalID: 1470336864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark Cornian_51
+      rect:
+        serializedVersion: 2
+        x: 1585
+        y: 333
+        width: 210
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4de943aa41b89984498a3ce6cd635553
+      internalID: -1079852056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark Cornian_52
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 200
+        width: 123
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 000d01d14c0fe1346992b5f11111192d
+      internalID: 2105644267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark Cornian_53
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 13
+        width: 188
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8be73cfb764af904498ac2822d5482be
+      internalID: 1891132841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark Cornian_54
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 13
+        width: 174
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a322a1966f343c446bf878b48b111a76
+      internalID: 500703010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark Cornian_55
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 13
+        width: 175
+        height: 147
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 288c87ccafa89cd42a9debae0e3e1046
+      internalID: 1361808314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark Cornian_56
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 13
+        width: 177
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7d17a78cec95d7419b44a9782608f59
+      internalID: 1854621894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dark Cornian_57
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 13
+        width: 181
+        height: 143
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a640dc86e33dd284f9bb36d007d53dbb
+      internalID: -1326423961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -145,7 +1090,65 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Dark Cornian_0: 355434030
+      Dark Cornian_1: -1003237408
+      Dark Cornian_10: 1279613566
+      Dark Cornian_11: -661359087
+      Dark Cornian_12: -2029023797
+      Dark Cornian_13: 1004603124
+      Dark Cornian_14: -956839373
+      Dark Cornian_15: -935971534
+      Dark Cornian_16: 2117626592
+      Dark Cornian_17: -1895351061
+      Dark Cornian_18: 1377773315
+      Dark Cornian_19: 1326435831
+      Dark Cornian_2: 1848934156
+      Dark Cornian_20: -1917030090
+      Dark Cornian_21: 1327045582
+      Dark Cornian_22: 1159547754
+      Dark Cornian_23: -1521114769
+      Dark Cornian_24: -1325593223
+      Dark Cornian_25: 1789903264
+      Dark Cornian_26: -2123922602
+      Dark Cornian_27: -736716065
+      Dark Cornian_28: 1038942515
+      Dark Cornian_29: -648620044
+      Dark Cornian_3: 1716703829
+      Dark Cornian_30: -1954099691
+      Dark Cornian_31: 678494467
+      Dark Cornian_32: -2055662887
+      Dark Cornian_33: -1051387102
+      Dark Cornian_34: -1073042043
+      Dark Cornian_35: -2051954392
+      Dark Cornian_36: -1307836201
+      Dark Cornian_37: -40731808
+      Dark Cornian_38: -2073324623
+      Dark Cornian_39: -460786074
+      Dark Cornian_4: 1821306624
+      Dark Cornian_40: 2022980854
+      Dark Cornian_41: -1912153260
+      Dark Cornian_42: -1979688558
+      Dark Cornian_43: 1884326321
+      Dark Cornian_44: 851555064
+      Dark Cornian_45: 547783027
+      Dark Cornian_46: -1725677843
+      Dark Cornian_47: -1985036869
+      Dark Cornian_48: -1940173548
+      Dark Cornian_49: -1996697946
+      Dark Cornian_5: -1997139518
+      Dark Cornian_50: 1470336864
+      Dark Cornian_51: -1079852056
+      Dark Cornian_52: 2105644267
+      Dark Cornian_53: 1891132841
+      Dark Cornian_54: 500703010
+      Dark Cornian_55: 1361808314
+      Dark Cornian_56: 1854621894
+      Dark Cornian_57: -1326423961
+      Dark Cornian_6: 801275213
+      Dark Cornian_7: 1795369831
+      Dark Cornian_8: 737352233
+      Dark Cornian_9: -766398779
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

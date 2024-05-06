@@ -16,7 +16,7 @@ public class PoolInfo
 
 public class ObjectPoolingSystem : MonoBehaviour
 {
-    //[SerializeField] List<PoolInfo> objectPools;
+    [SerializeField] List<PoolInfo> objectPools;
     [SerializeField] GameObject objectToPool;
     [SerializeField] int poolSize;
     int poolIndex;
