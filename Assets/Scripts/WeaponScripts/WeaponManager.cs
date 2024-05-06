@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class WeaponManager : MonoBehaviour, Ipoolable
 {
+    #region Variables
     //Declared variables for stats
     [SerializeField] float baseLifetime;
     [SerializeField] int baseDamage;
@@ -11,13 +12,11 @@ public class WeaponManager : MonoBehaviour, Ipoolable
     int currentDamage;
     float currentSpeed;
     Vector3 direction;
+    #endregion
 
     public Vector3 Direction { get => direction; set => direction = value; }
 
-    private void Start()
-    {
-        SetBaseStats();
-    }
+    #region Unity functions
 
     private void OnEnable()
     {
@@ -46,6 +45,21 @@ public class WeaponManager : MonoBehaviour, Ipoolable
         }
     }
 
+    public void Reset()
+    {
+        currentLifetime = baseLifetime;
+        currentSpeed = baseSpeed;
+        currentDamage = GameManager.Instance.ScytheStatBlock.damage;
+        //GameManager.LevelUp += LevelUpStatUpdate;
+    }
+
+    private void OnDestroy()
+    {
+        //GameManager.LevelUp -= LevelUpStatUpdate;
+    }
+    #endregion
+
+    #region Custom functions
     private void DealDamage(GameObject opponent, int damage)
     {
         HpManager opponentHpManager = opponent.GetComponent<HpManager>();
@@ -68,29 +82,14 @@ public class WeaponManager : MonoBehaviour, Ipoolable
         transform.position += transform.right * currentSpeed * Time.deltaTime;
     }
 
-    private void LevelUpStatUpdate()
-    {
-        currentDamage = GameManager.Instance.ScytheStatBlock.damage;
-        Debug.Log("Current weapon damage = " + currentDamage);
-    }
-    
-    private void SetBaseStats()
-    {
-        //baseLifetime = GameManager.Instance.ScytheStatBlock.lifetime;
-        //baseSpeed = GameManager.Instance.ScytheStatBlock.speed;
-        //baseDamage = GameManager.Instance.ScytheStatBlock.damage;
-    }
+    //To remove??
 
-    public void Reset()
-    {
-        currentLifetime = baseLifetime;
-        currentSpeed = baseSpeed;
-        currentDamage = GameManager.Instance.ScytheStatBlock.damage;
-        //GameManager.LevelUp += LevelUpStatUpdate;
-    }
+    //private void SetBaseStats()
+    //{
+    //    baseLifetime = GameManager.Instance.ScytheStatBlock.lifetime;
+    //    baseSpeed = GameManager.Instance.ScytheStatBlock.speed;
+    //    baseDamage = GameManager.Instance.ScytheStatBlock.damage;
+    //}
+    #endregion
 
-    private void OnDestroy()
-    {
-        //GameManager.LevelUp -= LevelUpStatUpdate;
-    }
 }

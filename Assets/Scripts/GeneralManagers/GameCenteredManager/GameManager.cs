@@ -4,8 +4,8 @@ using UnityEngine;
 public class WeaponStatBlock
 {
     public int damage;
-    //public float speed;
-    //public float lifetime;
+    public float speed;
+    public float lifetime;
     //public float range;
 }
 
@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
 
     public static GameManager Instance => instance;
 
+    #region Variables
     //Declare weapon stats variables
     WeaponStatBlock scytheStatBlock;
 
@@ -26,17 +27,24 @@ public class GameManager : MonoBehaviour
     int playerExp = 0;
     int totalPlayerExp;
     int playerLevel = 1;
-    int expForLevel = 100;
+    int expForLevel = 20;
+    #endregion
 
+    #region Actions and Events
     public static Action LevelUp;
     public static Action ExpGained;
+    #endregion
 
-    public int PlayerExp { get => playerExp; set => playerExp = value; }
-    public float DropRate { get => dropRate; set => dropRate = value; }
-    public int PlayerLevel { get => playerLevel; set => playerLevel = value; }
-    public int ExpForLevel { get => expForLevel; set => expForLevel = value; }
+    #region Getters and Setters
     public WeaponStatBlock ScytheStatBlock { get => scytheStatBlock; set => scytheStatBlock = value; }
+    public float DropRate { get => dropRate; set => dropRate = value; }
+    public int PlayerExp { get => playerExp; set => playerExp = value; }
+    public int PlayerLevel { get => playerLevel; set => playerLevel = value; }
+    public int TotalPlayerExp { get => totalPlayerExp; set => totalPlayerExp = value; }
+    public int ExpForLevel { get => expForLevel; set => expForLevel = value; }
+    #endregion
 
+    #region Unity functions
     private void Awake()
     {
         if (instance == null)
@@ -58,7 +66,24 @@ public class GameManager : MonoBehaviour
         ExpFlameManager.OnExpPickup += PlayerReceiveExp;
     }
 
+    private void OnDestroy()
+    {
+        HpManager.EnemyDeath -= OnEnemyDeath;
+        ExpFlameManager.OnExpPickup -= PlayerReceiveExp;
+    }
+    #endregion
 
+    //private void Update()
+    //{
+    //    if (Input.GetKeyDown(KeyCode.L))
+    //    {
+    //        playerLevel++;
+    //        scytheStatBlock.damage += 2;
+    //        LevelUp?.Invoke();
+    //    }
+    //}
+
+    #region Custom functions
     private void OnEnemyDeath(Vector2 deathPosition, int expDropped)
     {
         if (RNG.Instance.FloatRNG(0, 1) < DropRate)
@@ -85,7 +110,7 @@ public class GameManager : MonoBehaviour
     private void PlayerReceiveExp(int expReceived)
     {
         playerExp += expReceived;
-        totalPlayerExp += expReceived;
+        TotalPlayerExp += expReceived;
 
 
         //Debug.LogWarning("Exp received = " + expReceived + " Player exp = " + playerExp);
@@ -113,10 +138,5 @@ public class GameManager : MonoBehaviour
     {
         scytheStatBlock.damage += 2;
     }
-
-    private void OnDestroy()
-    {
-        HpManager.EnemyDeath -= OnEnemyDeath;
-        ExpFlameManager.OnExpPickup -= PlayerReceiveExp;
-    }
+    #endregion
 }
