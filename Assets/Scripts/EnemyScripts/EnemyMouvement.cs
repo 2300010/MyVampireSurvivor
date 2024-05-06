@@ -1,13 +1,10 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class EnemyMouvement : MonoBehaviour
 {
     Vector2 target;
     [SerializeField] float baseSpeed;
-    float speed;
+    private float speed;
 
     public float BaseSpeed { get => baseSpeed; set => baseSpeed = value; }
     public float Speed { get => speed; set => speed = value; }
