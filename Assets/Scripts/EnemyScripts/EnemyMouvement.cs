@@ -5,12 +5,13 @@ public class EnemyMouvement : MonoBehaviour
     Vector2 target;
     [SerializeField] float baseSpeed;
     private float speed;
+    private bool facingRight = true;
 
     public float BaseSpeed { get => baseSpeed; set => baseSpeed = value; }
     public float Speed { get => speed; set => speed = value; }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         SetTargetDestination();
         ChasePlayer();
@@ -28,4 +29,15 @@ public class EnemyMouvement : MonoBehaviour
             transform.position = Vector2.MoveTowards(transform.position, target, speed * Time.deltaTime);
         }
     }
+
+    private void FlipCharacter()
+    {
+        facingRight = !facingRight;
+
+        Vector3 scale = transform.localScale;
+
+        scale.x *= -1;
+        transform.localScale = scale;
+    }
+
 }

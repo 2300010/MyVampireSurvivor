@@ -10,6 +10,8 @@ public class PlayerManager : MonoBehaviour
     public int Exp { get => exp; set => exp = value; }
     public int Level { get => level; set => level = value; }
 
+    HpManager playerHpManager;
+
     private void Awake()
     {
         if (instance == null)
@@ -25,12 +27,14 @@ public class PlayerManager : MonoBehaviour
 
     private void Start()
     {
+        playerHpManager = GetComponent<HpManager>();
         Reset();
     }
     public void Reset()
     {
         Exp = 0;
         Level = 0;
+        playerHpManager.CurrentHp = playerHpManager.MaxHp;
         HpManager.PlayerDeath += OnDeath;
         GameManager.LevelUp += UpdateStats;
     }

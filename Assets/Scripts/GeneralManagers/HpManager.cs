@@ -12,40 +12,38 @@ public class HpManager : MonoBehaviour
     [SerializeField] int maxHp;
     private int currentHp;
 
-    public int CurrentHp { get => currentHp; set => currentHp = value; }
-    public int MaxHp { get => maxHp; set => maxHp = value; }
+    #region Unity Methods
+    public int CurrentHp
+    {
+        get => currentHp;
+        set
+        {
+            if (value <= 0)
+            {
+                value = 0;
 
+                if (gameObject.CompareTag("Enemy"))
+                {
+                    EnemyManager enemyManager = gameObject.GetComponent<EnemyManager>();
+                    EnemyDeath?.Invoke(transform.position, enemyManager.ExpDropped);
+                }
+                else if(gameObject.CompareTag("Player"))
+                {
+                    PlayerDeath?.Invoke();
+                }
+            }
+            currentHp = value;
+        }
+    }
+    public int MaxHp { get => maxHp; set => maxHp = value; }
+    #endregion
+
+    #region Custom Methods
     public void TakeDamage(int damage)
     {
-
         CurrentHp -= damage;
-
-        if (CurrentHp <= 0)
-        {
-            if (gameObject.CompareTag("Enemy"))
-            {
-                EnemyManager enemyManager = gameObject.GetComponent<EnemyManager>();
-                IsDead(transform.position, enemyManager.ExpDropped);
-            }
-        }
 
         //Debug.Log("Character " + gameObject.name + "'s current hp = " + currentHp);
     }
-
-    private void IsDead(Vector2 deathPosition, int expGiven)
-    {
-        CurrentHp = 0;
-        if (gameObject.CompareTag("Enemy"))
-        {
-            EnemyDeath?.Invoke(deathPosition, expGiven);
-        }
-        else
-        {
-            PlayerDeath?.Invoke();
-        }
-
-        gameObject.SetActive(false);
-    }
-
-
+    #endregion
 }

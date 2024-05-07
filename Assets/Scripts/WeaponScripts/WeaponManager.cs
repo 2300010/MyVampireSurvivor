@@ -16,7 +16,7 @@ public class WeaponManager : MonoBehaviour, Ipoolable
 
     public Vector3 Direction { get => direction; set => direction = value; }
 
-    #region Unity functions
+    #region Unity Methods
 
     private void OnEnable()
     {
@@ -59,7 +59,7 @@ public class WeaponManager : MonoBehaviour, Ipoolable
     }
     #endregion
 
-    #region Custom functions
+    #region Custom Methods
     private void DealDamage(GameObject opponent, int damage)
     {
         HpManager opponentHpManager = opponent.GetComponent<HpManager>();

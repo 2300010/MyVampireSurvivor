@@ -1,11 +1,11 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-public class UIManager : MonoBehaviour
+public class GameplayUIManager : MonoBehaviour
 {
-    private static UIManager instance;
+    private static GameplayUIManager instance;
 
-    public static UIManager Instance => instance;
+    public static GameplayUIManager Instance => instance;
 
     [SerializeField] Text levelValueText;
     [SerializeField] Text expValueText;

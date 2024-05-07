@@ -57,4 +57,5 @@ public class PlayerMouvement : MonoBehaviour
         scale.x *= -1;
         transform.localScale = scale;
     }
+
 }

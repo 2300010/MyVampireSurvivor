@@ -30,17 +30,20 @@ public class EnemyManager : MonoBehaviour, Ipoolable
     {
         AudioManager.GetInstance().PlaySound(clip);
         HpManager.EnemyDeath -= OnDeath;
+        gameObject.SetActive(false);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         Collider2D collider = collision.collider;
 
+        //Debug.Log("Collision with :" + collider.gameObject.name);
+
         if (collider.CompareTag("Player"))
         {
-            DealDamage(collider.gameObject, damage);
+            DealDamage(PlayerManager.Instance.gameObject, damage);
             Debug.Log("Damage dealt = " + damage);
-            Debug.Log("Player Hp = " + collider.gameObject.GetComponent<HpManager>().CurrentHp);
+            Debug.Log("Player Hp = " + PlayerManager.Instance.GetComponent<HpManager>().CurrentHp);
         }
     }
 
