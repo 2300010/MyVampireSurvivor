@@ -38,8 +38,8 @@ public class WeaponManager : MonoBehaviour, Ipoolable
 
         if (!collider.CompareTag("Player"))
         {
-            DealDamage(collider.GameObject(), currentDamage);
-            //Debug.Log("Recieved damage = " + currentDamage);
+            DealDamage(collider.gameObject, currentDamage);
+            Debug.Log("Recieved damage = " + currentDamage);
             gameObject.SetActive(false);
             ObjectPoolingSystem.Instance().ReturnPoolObject(gameObject);
         }

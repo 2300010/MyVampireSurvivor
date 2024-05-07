@@ -29,7 +29,6 @@ public class EnemyManager : MonoBehaviour, Ipoolable
     public void OnDeath(Vector2 pos, int expDropped)
     {
         AudioManager.GetInstance().PlaySound(clip);
-        HpManager.EnemyDeath -= OnDeath;
         gameObject.SetActive(false);
     }
 

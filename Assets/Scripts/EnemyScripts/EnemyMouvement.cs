@@ -5,7 +5,7 @@ public class EnemyMouvement : MonoBehaviour
     Vector2 target;
     [SerializeField] float baseSpeed;
     private float speed;
-    private bool facingRight = true;
+    private bool facingRight = false;
 
     public float BaseSpeed { get => baseSpeed; set => baseSpeed = value; }
     public float Speed { get => speed; set => speed = value; }
@@ -26,6 +26,13 @@ public class EnemyMouvement : MonoBehaviour
     {
         if (target != null)
         {
+            Vector2 movementDirection = (target - (Vector2)transform.position).normalized;
+
+            if ((movementDirection.x < 0 && facingRight) || (movementDirection.x > 0 && !facingRight))
+            {
+                FlipCharacter();
+            }
+
             transform.position = Vector2.MoveTowards(transform.position, target, speed * Time.deltaTime);
         }
     }
