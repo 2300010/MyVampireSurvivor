@@ -17,7 +17,7 @@ public class PlayerAttack : MonoBehaviour
 
         for (int i = 0; i < instancesToSpawn; i++)
         {
-            GameObject weaponToSpawn = ObjectPoolingSystem.Instance().GetPoolObject();
+            GameObject weaponToSpawn = ObjectPoolingSystem.Instance().GetPoolObject("ScythePrefab");
 
             if (weaponToSpawn != null)
             {

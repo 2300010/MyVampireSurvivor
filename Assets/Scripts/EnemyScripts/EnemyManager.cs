@@ -8,6 +8,7 @@ public class EnemyManager : MonoBehaviour, Ipoolable
 
     [SerializeField] AudioClip clip;
     [SerializeField] int expDropped;
+    [SerializeField] int damage;
 
     public int ExpDropped { get => expDropped; set => expDropped = value; }
     private void Start()
@@ -31,5 +32,21 @@ public class EnemyManager : MonoBehaviour, Ipoolable
         HpManager.EnemyDeath -= OnDeath;
     }
 
-    
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Collider2D collider = collision.collider;
+
+        if (collider.CompareTag("Player"))
+        {
+            DealDamage(collider.gameObject, damage);
+            Debug.Log("Damage dealt = " + damage);
+            Debug.Log("Player Hp = " + collider.gameObject.GetComponent<HpManager>().CurrentHp);
+        }
+    }
+
+    private void DealDamage(GameObject opponent, int damage)
+    {
+        HpManager opponentHpManager = opponent.GetComponent<HpManager>();
+        opponentHpManager.TakeDamage(damage);
+    }
 }

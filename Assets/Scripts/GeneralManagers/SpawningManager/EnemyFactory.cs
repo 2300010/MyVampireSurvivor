@@ -24,16 +24,27 @@ public class EnemyFactory : MonoBehaviour
 
     public GameObject CreateWeakEnemy(Vector2 position, Quaternion rotation)
     {
+        GameObject weakEnemy = ObjectPoolingSystem.Instance().GetPoolObject("Skeleton Soldier");
+        weakEnemy.transform.position = position;
+        weakEnemy.transform.rotation = rotation;
         
-        return Instantiate(weakEnemyPrefab, position, rotation);
+        return weakEnemy;
     }
     public GameObject CreateAverageEnemy(Vector2 position, Quaternion rotation)
     {
-        return Instantiate(weakEnemyPrefab, position, rotation);
+        GameObject averageEnemy = ObjectPoolingSystem.Instance().GetPoolObject("Officer Skeleton");
+        averageEnemy.transform.position = position;
+        averageEnemy.transform.rotation = rotation;
+
+        return averageEnemy;
     }
     public GameObject CreateStrongEnemy(Vector2 position, Quaternion rotation)
     {
-        return Instantiate(weakEnemyPrefab, position, rotation);
+        GameObject strongEnemy = ObjectPoolingSystem.Instance().GetPoolObject("Mist Knight");
+        strongEnemy.transform.position = position;
+        strongEnemy.transform.rotation = rotation;
+
+        return strongEnemy;
     }
 
 }
