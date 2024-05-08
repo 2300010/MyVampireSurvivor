@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class EnemyMouvement : MonoBehaviour
 {
+    EnemyAISensor enemyAISensor;
+
     Vector2 target;
     [SerializeField] float baseSpeed;
     private float speed;
@@ -10,30 +12,16 @@ public class EnemyMouvement : MonoBehaviour
     public float BaseSpeed { get => baseSpeed; set => baseSpeed = value; }
     public float Speed { get => speed; set => speed = value; }
 
-    private void Start()
-    {
-        for(int i = 0; i < transform.childCount; i++)
-        {
-            Transform child = transform.GetChild(i);
-            EnemyAISensor tempSensor = child.GetComponent<EnemyAISensor>();
-            if (tempSensor.RangeCollider)
-            {
-                tempSensor.OnTriggerEnterAction += StopMoving;
-                tempSensor.OnTriggerExitAction += ChasePlayer;
-            }
-        }
-    }
-
-    // Update is called once per frame
-    void FixedUpdate()
+    private void OnEnable()
     {
         SetTargetDestination();
-        ChasePlayer();
+        enemyAISensor = GetComponent<EnemyAISensor>();
+        enemyAISensor.OutOfRangeToAttackAction += ChasePlayer;
     }
 
     private void SetTargetDestination()
     {
-        target = PlayerMouvement.Instance().transform.position;
+        target = PlayerMouvement.Instance.transform.position;
     }
 
     private void ChasePlayer()
@@ -60,11 +48,6 @@ public class EnemyMouvement : MonoBehaviour
 
         scale.x *= -1;
         transform.localScale = scale;
-    }
-
-    private void StopMoving()
-    {
-        Speed = 0;
     }
 
 }

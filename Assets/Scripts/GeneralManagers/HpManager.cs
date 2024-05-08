@@ -43,7 +43,7 @@ public class HpManager : MonoBehaviour
     {
         CurrentHp -= damage;
 
-        //Debug.Log("Character " + gameObject.name + "'s current hp = " + currentHp);
+        Debug.Log("Character " + gameObject.name + "'s current hp = " + currentHp);
     }
     #endregion
 }

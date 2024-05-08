@@ -1,3 +1,4 @@
+using System.Threading;
 using UnityEngine;
 
 public class EnemyManager : MonoBehaviour, Ipoolable
@@ -5,13 +6,16 @@ public class EnemyManager : MonoBehaviour, Ipoolable
 
     HpManager hpManager;
     EnemyMouvement enemyMouvement;
+    EnemyAISensor enemyAISensor;
 
+    [SerializeField] GameObject projectile;
     [SerializeField] AudioClip clip;
     [SerializeField] int expDropped;
     [SerializeField] int damage;
+    [SerializeField] int attackCooldown;
 
     public int ExpDropped { get => expDropped; set => expDropped = value; }
-    private void Start()
+    private void OnEnable()
     {
         Reset();
     }
@@ -22,17 +26,9 @@ public class EnemyManager : MonoBehaviour, Ipoolable
         hpManager.CurrentHp = hpManager.MaxHp;
         enemyMouvement = GetComponent<EnemyMouvement>();
         enemyMouvement.Speed = enemyMouvement.BaseSpeed;
+        enemyAISensor = GetComponent<EnemyAISensor>();
         HpManager.EnemyDeath += OnDeath;
-        
-        for(int i = 0; i < transform.childCount; i++)
-        {
-            Transform child = transform.GetChild(i);
-            EnemyAISensor tempSensor = child.GetComponent<EnemyAISensor>();
-            if (!tempSensor.RangeCollider)
-            {
-                tempSensor.OnTriggerEnterAction += DealDamage;
-            }
-        }
+        enemyAISensor.InRangeToAttackAction += AttackCooldown;
     }
 
 
@@ -49,5 +45,28 @@ public class EnemyManager : MonoBehaviour, Ipoolable
         opponentHpManager.TakeDamage(damage);
         Debug.Log("Damage dealt = " + damage);
         Debug.Log("Player Hp = " + PlayerManager.Instance.GetComponent<HpManager>().CurrentHp);
+    }
+
+    private void AttackCooldown()
+    {
+        float timer = attackCooldown;
+        while (true)
+        {
+            if (timer < attackCooldown)
+            {
+                timer++;
+            }
+            else
+            {
+                Attack();
+                timer = 0;
+            }
+        }
+    }
+
+    public void Attack()
+    {
+        enemyMouvement.Speed = 0;
+        Instantiate(projectile, transform.position, Quaternion.identity);
     }
 }

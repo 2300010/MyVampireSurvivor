@@ -73,7 +73,7 @@ public class GameManager : MonoBehaviour
     }
     #endregion
 
-    //private void Update()
+    //private void OnStateUpdate()
     //{
     //    if (Input.GetKeyDown(KeyCode.L))
     //    {

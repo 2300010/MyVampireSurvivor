@@ -98,6 +98,7 @@ GameObject:
   - component: {fileID: -3984050511764974756}
   - component: {fileID: -7752020287925375166}
   - component: {fileID: -4266221856915494403}
+  - component: {fileID: 1104570089639080590}
   m_Layer: 0
   m_Name: EnemyPrefab
   m_TagString: Enemy
@@ -234,3 +235,16 @@ MonoBehaviour:
   clip: {fileID: 8300000, guid: bebc5e446b7d2034a9809a0f67742851, type: 3}
   expDropped: 2
   damage: 2
+--- !u!114 &1104570089639080590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8500422194563544544}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 319a4c7b9dbce3148b64616cb4afc0c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rangeRequiredToAttack: 5

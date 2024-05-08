@@ -55,7 +55,6 @@ public class ObjectPoolingSystem : MonoBehaviour
         }
     }
 
-    [Obsolete]
     public GameObject GetPoolObject(string objectName)
     {
         GameObject objectToReturn = null;

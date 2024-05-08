@@ -3,45 +3,33 @@ using UnityEngine;
 
 public class EnemyAISensor : MonoBehaviour
 {
-    [SerializeField] float rangeToAttack;
-    const string TARGET_TAG = "Player";
-    bool rangeCollider;
+    [SerializeField] float rangeRequiredToAttack;
+    bool inRangeToAttack;
 
-    public float RangeToAttack { get => rangeToAttack; set => rangeToAttack = value; }
-    public bool RangeCollider { get => rangeCollider; set => rangeCollider = value; }
+    public float RangeToAttack { get => rangeRequiredToAttack; set => rangeRequiredToAttack = value; }
+    public bool InRangeToAttack { get => inRangeToAttack; set => inRangeToAttack = value; }
 
-    public Action OnTriggerEnterAction;
-    public Action OnTriggerExitAction;
+    public Action InRangeToAttackAction;
+    public Action OutOfRangeToAttackAction;
 
-
-    private void Start()
+    private void Update()
     {
-        if (gameObject.CompareTag("RangeCollider"))
+        IsInRange();
+    }
+
+    private void IsInRange()
+    {
+        Vector2 playerPosition = new(PlayerManager.Instance.transform.position.x,
+            PlayerManager.Instance.transform.position.y);
+        Vector2 thisPosition = new(transform.position.x, transform.position.y);
+
+        if(Vector2.Distance(playerPosition, thisPosition) <= rangeRequiredToAttack)
         {
-            RangeCollider = true;
-            gameObject.GetComponentInChildren<CircleCollider2D>().radius = rangeToAttack;
+            InRangeToAttackAction?.Invoke();
         }
         else
         {
-            RangeCollider = false;
-        }
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-
-        if (collision.CompareTag(TARGET_TAG))
-        {
-            GameObject player = collision.gameObject;
-            OnTriggerEnterAction?.Invoke();
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        if (collision.CompareTag(TARGET_TAG))
-        {
-            OnTriggerExitAction?.Invoke();
+            OutOfRangeToAttackAction?.Invoke();
         }
     }
 }

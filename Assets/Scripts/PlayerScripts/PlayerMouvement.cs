@@ -4,7 +4,7 @@ public class PlayerMouvement : MonoBehaviour
 {
     private static PlayerMouvement instance;
     
-    public static PlayerMouvement Instance() => instance;
+    public static PlayerMouvement Instance => instance;
 
     [SerializeField] private float speed;
     private Rigidbody2D body;
@@ -28,7 +28,7 @@ public class PlayerMouvement : MonoBehaviour
         body = GetComponent<Rigidbody2D>();
     }
 
-    // Update is called once per frame
+    // OnStateUpdate is called once per frame
     void FixedUpdate()
     {
         float horizontalInput = Input.GetAxisRaw("Horizontal");
