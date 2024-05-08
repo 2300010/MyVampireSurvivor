@@ -23,6 +23,16 @@ public class EnemyManager : MonoBehaviour, Ipoolable
         enemyMouvement = GetComponent<EnemyMouvement>();
         enemyMouvement.Speed = enemyMouvement.BaseSpeed;
         HpManager.EnemyDeath += OnDeath;
+        
+        for(int i = 0; i < transform.childCount; i++)
+        {
+            Transform child = transform.GetChild(i);
+            EnemyAISensor tempSensor = child.GetComponent<EnemyAISensor>();
+            if (!tempSensor.RangeCollider)
+            {
+                tempSensor.OnTriggerEnterAction += DealDamage;
+            }
+        }
     }
 
 
@@ -32,23 +42,12 @@ public class EnemyManager : MonoBehaviour, Ipoolable
         gameObject.SetActive(false);
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    public void DealDamage()
     {
-        Collider2D collider = collision.collider;
-
-        //Debug.Log("Collision with :" + collider.gameObject.name);
-
-        if (collider.CompareTag("Player"))
-        {
-            DealDamage(PlayerManager.Instance.gameObject, damage);
-            Debug.Log("Damage dealt = " + damage);
-            Debug.Log("Player Hp = " + PlayerManager.Instance.GetComponent<HpManager>().CurrentHp);
-        }
-    }
-
-    private void DealDamage(GameObject opponent, int damage)
-    {
+        GameObject opponent = PlayerManager.Instance.gameObject;
         HpManager opponentHpManager = opponent.GetComponent<HpManager>();
         opponentHpManager.TakeDamage(damage);
+        Debug.Log("Damage dealt = " + damage);
+        Debug.Log("Player Hp = " + PlayerManager.Instance.GetComponent<HpManager>().CurrentHp);
     }
 }

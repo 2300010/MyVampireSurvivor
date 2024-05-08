@@ -10,6 +10,20 @@ public class EnemyMouvement : MonoBehaviour
     public float BaseSpeed { get => baseSpeed; set => baseSpeed = value; }
     public float Speed { get => speed; set => speed = value; }
 
+    private void Start()
+    {
+        for(int i = 0; i < transform.childCount; i++)
+        {
+            Transform child = transform.GetChild(i);
+            EnemyAISensor tempSensor = child.GetComponent<EnemyAISensor>();
+            if (tempSensor.RangeCollider)
+            {
+                tempSensor.OnTriggerEnterAction += StopMoving;
+                tempSensor.OnTriggerExitAction += ChasePlayer;
+            }
+        }
+    }
+
     // Update is called once per frame
     void FixedUpdate()
     {
@@ -19,13 +33,14 @@ public class EnemyMouvement : MonoBehaviour
 
     private void SetTargetDestination()
     {
-        target = PlayerMouvement.Instance.transform.position;
+        target = PlayerMouvement.Instance().transform.position;
     }
 
     private void ChasePlayer()
     {
         if (target != null)
         {
+            Speed = BaseSpeed;
             Vector2 movementDirection = (target - (Vector2)transform.position).normalized;
 
             if ((movementDirection.x < 0 && facingRight) || (movementDirection.x > 0 && !facingRight))
@@ -45,6 +60,11 @@ public class EnemyMouvement : MonoBehaviour
 
         scale.x *= -1;
         transform.localScale = scale;
+    }
+
+    private void StopMoving()
+    {
+        Speed = 0;
     }
 
 }
