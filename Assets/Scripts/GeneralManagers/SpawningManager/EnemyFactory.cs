@@ -3,13 +3,13 @@ using UnityEngine;
 public class EnemyFactory : MonoBehaviour
 {
     private static EnemyFactory instance;
-    public static EnemyFactory Instance => instance;
+    public static EnemyFactory Instance() => instance;
 
     [SerializeField] GameObject weakEnemyPrefab;
     [SerializeField] GameObject averageEnemyPrefab;
     [SerializeField] GameObject strongEnemyPrefab;
 
-    private void Start()
+    private void Awake()
     {
         if (instance == null)
         {
@@ -22,27 +22,31 @@ public class EnemyFactory : MonoBehaviour
         }
     }
 
+    [System.Obsolete]
     public GameObject CreateWeakEnemy(Vector2 position, Quaternion rotation)
     {
-        GameObject weakEnemy = ObjectPoolingSystem.Instance().GetPoolObject("Skeleton Soldier");
-        weakEnemy.transform.position = position;
-        weakEnemy.transform.rotation = rotation;
+        //Debug.Log("Weak enemy created");
+        GameObject weakEnemy = ObjectPoolingSystem.Instance().GetPoolObject("SkeletonSoldierPrefab");
+        weakEnemy.transform.SetPositionAndRotation(position, rotation);
         
         return weakEnemy;
     }
+
+    [System.Obsolete]
     public GameObject CreateAverageEnemy(Vector2 position, Quaternion rotation)
     {
-        GameObject averageEnemy = ObjectPoolingSystem.Instance().GetPoolObject("Officer Skeleton");
-        averageEnemy.transform.position = position;
-        averageEnemy.transform.rotation = rotation;
+        GameObject averageEnemy = ObjectPoolingSystem.Instance().GetPoolObject("OfficerSkeletonPrefab");
+        averageEnemy.transform.SetPositionAndRotation(position, rotation);
 
         return averageEnemy;
     }
+
+    [System.Obsolete]
     public GameObject CreateStrongEnemy(Vector2 position, Quaternion rotation)
     {
-        GameObject strongEnemy = ObjectPoolingSystem.Instance().GetPoolObject("Mist Knight");
-        strongEnemy.transform.position = position;
-        strongEnemy.transform.rotation = rotation;
+        GameObject strongEnemy = ObjectPoolingSystem.Instance().GetPoolObject("MistKnightPrefab");
+        Debug.Log("Enemy is : " + strongEnemy);
+        strongEnemy.transform.SetPositionAndRotation(position, rotation);
 
         return strongEnemy;
     }

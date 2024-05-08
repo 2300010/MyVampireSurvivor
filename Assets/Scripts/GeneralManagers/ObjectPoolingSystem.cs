@@ -12,13 +12,14 @@ public class PoolInfo
 {
     public GameObject objectToPool;
     public int poolSize;
-    public List<GameObject> poolOfObjects = new();
+    public List<GameObject> poolOfObjects;
 }
 
 public class ObjectPoolingSystem : MonoBehaviour
 {
     [SerializeField] List<PoolInfo> objectPools;
-    int poolIndex;
+    readonly Dictionary<string, PoolInfo> poolDictionary = new Dictionary<string, PoolInfo>();
+    int poolIndex = 0;
 
     public static ObjectPoolingSystem instance;
 
@@ -41,39 +42,53 @@ public class ObjectPoolingSystem : MonoBehaviour
     void Start()
     {
 
-        foreach (var pool in objectPools)
+        foreach (PoolInfo pool in objectPools)
         {
+            poolDictionary[pool.objectToPool.name] = pool;
             for (int i = 0; i < pool.poolSize; i++)
             {
                 GameObject go = Instantiate(pool.objectToPool, Vector3.zero, Quaternion.identity, transform);
                 go.SetActive(false);
                 pool.poolOfObjects.Add(go);
+                //Debug.Log("Game object " + go.name + " added to pool");
             }
         }
     }
 
+    [Obsolete]
     public GameObject GetPoolObject(string objectName)
     {
-        foreach (var pool in objectPools)
+        GameObject objectToReturn = null;
+        bool inactiveObjectFound = false;
+        if (poolDictionary.ContainsKey(objectName))
         {
-            if (objectName == pool.objectToPool.name)
-            {
+            poolIndex = 0;
 
-                poolIndex %= pool.poolSize;
-                return pool.poolOfObjects[poolIndex++];
+            while (inactiveObjectFound)
+            {
+                if (!poolDictionary[objectName].poolOfObjects[poolIndex].active)
+                {
+                    objectToReturn = poolDictionary[objectName].poolOfObjects[poolIndex];
+                }
+                else
+                {
+                    poolIndex++;
+                }
             }
+
         }
-        return null;
+        return objectToReturn;
     }
 
     public void ReturnPoolObject(GameObject objectToReturn)
     {
-        foreach (PoolInfo pool in objectPools)
+        if (poolDictionary.TryGetValue(objectToReturn.name, out PoolInfo pool))
         {
-            if (objectToReturn.name == pool.objectToPool.name)
-            {
-                pool.poolOfObjects.Add(objectToReturn);
-            }
+            pool.poolOfObjects.Add(objectToReturn);
+        }
+        else
+        {
+            Debug.LogWarning("Pool for object " + objectToReturn.name + " not found.");
         }
     }
 }

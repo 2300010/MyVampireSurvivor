@@ -30,34 +30,38 @@ public class EnemySpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //StartCoroutine(WaveSystem());
-        //SpawnEnemy(waves[0].enemies[0].enemyPrefab);
+        StartCoroutine(WaveSystem());
     }
 
+    [Obsolete]
     public void SpawnEnemy(GameObject enemyPrefab)
     {
         float spawnOffset = 10f;
         Vector2 spawnPos = Random.insideUnitCircle.normalized * spawnOffset;
         if (enemyPrefab != null)
         {
-            if(enemyPrefab.name == WEAK_ENEMY)
+            if (enemyPrefab.name == WEAK_ENEMY)
             {
-                enemyPrefab = EnemyFactory.Instance.CreateWeakEnemy(spawnPos, Quaternion.identity);
+                Debug.Log("Enemy is weak");
+                enemyPrefab = EnemyFactory.Instance().CreateWeakEnemy(spawnPos, Quaternion.identity);
                 enemyPrefab.SetActive(true);
             }
-            else if(enemyPrefab.name == AVERAGE_ENEMY)
+            else if (enemyPrefab.name == AVERAGE_ENEMY)
             {
-                enemyPrefab = EnemyFactory.Instance.CreateAverageEnemy(spawnPos, Quaternion.identity);
+                Debug.Log("Enemy is average");
+                enemyPrefab = EnemyFactory.Instance().CreateAverageEnemy(spawnPos, Quaternion.identity);
                 enemyPrefab.SetActive(true);
             }
-            else if(enemyPrefab.name == STRONG_ENEMY)
+            else if (enemyPrefab.name == STRONG_ENEMY)
             {
-                enemyPrefab = EnemyFactory.Instance.CreateStrongEnemy(spawnPos, Quaternion.identity);
+                Debug.Log("Enemy is strong");
+                enemyPrefab = EnemyFactory.Instance().CreateStrongEnemy(spawnPos, Quaternion.identity);
                 enemyPrefab.SetActive(true);
             }
         }
     }
 
+    [Obsolete]
     IEnumerator WaveSystem()
     {
         while (waveIndex < waves.Count)
@@ -65,13 +69,12 @@ public class EnemySpawner : MonoBehaviour
             WaveSystem wave = waves[waveIndex];
             foreach (EnemyType enemyType in wave.enemies)
             {
-                //Debug.Log(enemyType.enemyPrefab.name);
                 SpawnEnemy(enemyType.enemyPrefab);
                 yield return new WaitForSeconds(wave.spawnInterval);
             }
             waveIndex++;
-            
-            if(waveIndex >= waves.Count)
+
+            if (waveIndex >= waves.Count)
             {
                 yield return new WaitForSeconds(wave.timeBetweenWaves);
             }
