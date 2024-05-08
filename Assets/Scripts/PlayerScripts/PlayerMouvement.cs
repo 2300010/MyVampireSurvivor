@@ -4,7 +4,7 @@ public class PlayerMouvement : MonoBehaviour
 {
     private static PlayerMouvement instance;
     
-    public static PlayerMouvement Instance => instance;
+    public static PlayerMouvement Instance() => instance;
 
     [SerializeField] private float speed;
     private Rigidbody2D body;

@@ -8,13 +8,33 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -7532947923214503894, guid: 80537fb0316d58d4e80d58003050a1f2, type: 3}
+      propertyPath: m_Radius
+      value: 0.6243384
+      objectReference: {fileID: 0}
+    - target: {fileID: -7532947923214503894, guid: 80537fb0316d58d4e80d58003050a1f2, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.121693015
+      objectReference: {fileID: 0}
+    - target: {fileID: -7532947923214503894, guid: 80537fb0316d58d4e80d58003050a1f2, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.050264597
+      objectReference: {fileID: 0}
     - target: {fileID: 330129163080662677, guid: 80537fb0316d58d4e80d58003050a1f2, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -769382687, guid: 92d442824c32a734387f5892d681896b, type: 3}
+    - target: {fileID: 2988624952758333275, guid: 80537fb0316d58d4e80d58003050a1f2, type: 3}
+      propertyPath: m_Mass
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 4813427118574313144, guid: 80537fb0316d58d4e80d58003050a1f2, type: 3}
       propertyPath: m_Name
       value: NightghostPrefab
+      objectReference: {fileID: 0}
+    - target: {fileID: 5146772159616112616, guid: 80537fb0316d58d4e80d58003050a1f2, type: 3}
+      propertyPath: speed
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7104460055166075972, guid: 80537fb0316d58d4e80d58003050a1f2, type: 3}
       propertyPath: m_LocalScale.x
@@ -71,65 +91,5 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4813427118574313144, guid: 80537fb0316d58d4e80d58003050a1f2, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: -4330126158175395487}
-    - targetCorrespondingSourceObject: {fileID: 4813427118574313144, guid: 80537fb0316d58d4e80d58003050a1f2, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 8210214404793180975}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 80537fb0316d58d4e80d58003050a1f2, type: 3}
---- !u!1 &5706483013204535338 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4813427118574313144, guid: 80537fb0316d58d4e80d58003050a1f2, type: 3}
-  m_PrefabInstance: {fileID: 1008026104650397330}
-  m_PrefabAsset: {fileID: 0}
---- !u!58 &-4330126158175395487
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5706483013204535338}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.13597637, y: -0.07050604}
-  serializedVersion: 2
-  m_Radius: 0.59568614
---- !u!114 &8210214404793180975
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5706483013204535338}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b9c94eccf9b96f3418ce18e6395b468d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 2
-  damage: 2

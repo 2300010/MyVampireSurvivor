@@ -3,7 +3,7 @@ using UnityEngine;
 public class PlayerManager : MonoBehaviour
 {
     private static PlayerManager instance;
-    public static PlayerManager Instance => instance;
+    public static PlayerManager Instance() => instance;
 
     int exp;
     int level;

@@ -14,14 +14,18 @@ public class EnemyMouvement : MonoBehaviour
 
     private void OnEnable()
     {
-        SetTargetDestination();
         enemyAISensor = GetComponent<EnemyAISensor>();
         enemyAISensor.OutOfRangeToAttackAction += ChasePlayer;
     }
 
+    private void Start()
+    {
+        SetTargetDestination();
+    }
+
     private void SetTargetDestination()
     {
-        target = PlayerMouvement.Instance.transform.position;
+        target = PlayerMouvement.Instance().transform.position;
     }
 
     private void ChasePlayer()

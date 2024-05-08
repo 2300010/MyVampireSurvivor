@@ -4,12 +4,19 @@ public class ProjectileBehaviour : MonoBehaviour
 {
     [SerializeField] float speed;
     [SerializeField] int damage;
+    //[SerializeField] float lifetime;
     Vector2 target;
+    Rigidbody2D rigidbody2D;
 
     private void OnEnable()
     {
-        target = PlayerMouvement.Instance.transform.position;
-        transform.position = Vector2.MoveTowards(transform.position, target, speed * Time.deltaTime);
+        rigidbody2D = GetComponent<Rigidbody2D>();
+    }
+
+    private void Start()
+    {
+        rigidbody2D.AddForce(SetTargetDirection() * speed);
+        
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -23,5 +30,12 @@ public class ProjectileBehaviour : MonoBehaviour
             Debug.Log("Damage dealt = " + damage);
             Destroy(gameObject);
         }
+    }
+
+    private Vector2 SetTargetDirection()
+    {
+        target = PlayerMouvement.Instance().transform.position;
+        Vector2 direction = (target - (Vector2)transform.position).normalized;
+        return direction;
     }
 }
