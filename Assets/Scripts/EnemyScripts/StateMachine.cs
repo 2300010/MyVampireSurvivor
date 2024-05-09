@@ -43,7 +43,7 @@ public class AttackingState : State
     public override void OnStateEnter()
     {
         timer = 1f;
-        machine.EnemyManager.Attack();
+        //machine.EnemyManager.SpawnProjectile();
     }
 
     public override void OnStateUpdate()

@@ -26,7 +26,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -4266221856915494403, guid: 07cee1cb829667e45b737d9cc359ab05, type: 3}
       propertyPath: attackCooldownTime
-      value: 20
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -3984050511764974756, guid: 07cee1cb829667e45b737d9cc359ab05, type: 3}
       propertyPath: maxHp
@@ -87,6 +87,14 @@ PrefabInstance:
     - target: {fileID: 5024988316782194464, guid: 07cee1cb829667e45b737d9cc359ab05, type: 3}
       propertyPath: m_Offset.y
       value: 0.061906695
+      objectReference: {fileID: 0}
+    - target: {fileID: 5024988316782194464, guid: 07cee1cb829667e45b737d9cc359ab05, type: 3}
+      propertyPath: m_ForceSendLayers.m_Bits
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5024988316782194464, guid: 07cee1cb829667e45b737d9cc359ab05, type: 3}
+      propertyPath: m_ForceReceiveLayers.m_Bits
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5804824923487151243, guid: 07cee1cb829667e45b737d9cc359ab05, type: 3}
       propertyPath: m_Sprite

@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Threading;
 using UnityEngine;
 
 public class EnemyManager : MonoBehaviour, Ipoolable
@@ -13,12 +11,10 @@ public class EnemyManager : MonoBehaviour, Ipoolable
     [SerializeField] AudioClip clip;
     [SerializeField] int expDropped;
     [SerializeField] int damage;
-    [SerializeField] int attackCooldownTime;
+    [SerializeField] float attackCooldownTime;
+    float timer = 0;
 
     public int ExpDropped { get => expDropped; set => expDropped = value; }
-    private void OnEnable()
-    {
-    }
 
     private void Start()
     {
@@ -33,9 +29,8 @@ public class EnemyManager : MonoBehaviour, Ipoolable
         enemyMouvement.Speed = enemyMouvement.BaseSpeed;
         enemyAISensor = GetComponent<EnemyAISensor>();
         HpManager.EnemyDeath += OnDeath;
-        enemyAISensor.InRangeToAttackAction += StartAttacking;
+        enemyAISensor.InRangeToAttackAction += Attack;
     }
-
 
     public void OnDeath(Vector2 pos, int expDropped)
     {
@@ -52,32 +47,25 @@ public class EnemyManager : MonoBehaviour, Ipoolable
         Debug.Log("Player Hp = " + PlayerManager.Instance().GetComponent<HpManager>().CurrentHp);
     }
 
-    private void StartAttacking()
-    {
-        StartCoroutine(AttackCooldown());
-    }
-
-    private IEnumerator AttackCooldown()
+    public void Attack()
     {
         enemyMouvement.Speed = 0;
+        //Debug.Log("Timer = " + timer);
 
-        while (true)
+        if (timer >= attackCooldownTime)
         {
-            if (enemyMouvement.Speed <= 0)
-            {
-                Attack();
-            }
-            else
-            {
-                StopCoroutine(AttackCooldown());
-                break;
-            }
-            yield return new WaitForSeconds(attackCooldownTime);
+            //Debug.Log("Enemy spawning");
+            SpawnProjectile();
+            timer = 0;
+        }
+        else
+        {
+            timer += Time.deltaTime;
         }
 
     }
 
-    public void Attack()
+    private void SpawnProjectile()
     {
         Instantiate(projectile, transform.position, Quaternion.identity);
     }

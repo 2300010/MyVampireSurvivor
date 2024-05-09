@@ -6,16 +6,16 @@ public class ProjectileBehaviour : MonoBehaviour
     [SerializeField] int damage;
     //[SerializeField] float lifetime;
     Vector2 target;
-    Rigidbody2D rigidbody2D;
+    Rigidbody2D rb;
 
     private void OnEnable()
     {
-        rigidbody2D = GetComponent<Rigidbody2D>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     private void Start()
     {
-        rigidbody2D.AddForce(SetTargetDirection() * speed);
+        rb.AddForce(SetTargetDirection() * speed);
         
     }
 

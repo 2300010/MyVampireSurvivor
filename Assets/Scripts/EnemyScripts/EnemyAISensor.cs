@@ -4,10 +4,8 @@ using UnityEngine;
 public class EnemyAISensor : MonoBehaviour
 {
     [SerializeField] float rangeRequiredToAttack;
-    bool inRangeToAttack;
 
     public float RangeToAttack { get => rangeRequiredToAttack; set => rangeRequiredToAttack = value; }
-    public bool InRangeToAttack { get => inRangeToAttack; set => inRangeToAttack = value; }
 
     public Action InRangeToAttackAction;
     public Action OutOfRangeToAttackAction;
@@ -23,7 +21,7 @@ public class EnemyAISensor : MonoBehaviour
             PlayerManager.Instance().transform.position.y);
         Vector2 thisPosition = new(transform.position.x, transform.position.y);
 
-        if(Vector2.Distance(playerPosition, thisPosition) <= rangeRequiredToAttack)
+        if (Vector2.Distance(playerPosition, thisPosition) <= rangeRequiredToAttack)
         {
             InRangeToAttackAction?.Invoke();
         }
