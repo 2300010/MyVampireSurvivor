@@ -48,6 +48,7 @@ public class WeaponManager : MonoBehaviour, Ipoolable
 
     public void Reset()
     {
+        transform.localScale = PlayerMouvement.Instance().transform.localScale;
         currentLifetime = baseLifetime;
         currentSpeed = baseSpeed;
         currentDamage = GameManager.Instance.ScytheStatBlock.damage;
@@ -73,14 +74,14 @@ public class WeaponManager : MonoBehaviour, Ipoolable
         if (currentLifetime <= 0)
         {
             gameObject.SetActive(false);
-            currentLifetime = baseLifetime;
-            ObjectPoolingSystem.Instance().ReturnPoolObject(gameObject);
+            //currentLifetime = baseLifetime;
+            //ObjectPoolingSystem.Instance().ReturnPoolObject(gameObject);
         }
     }
 
     private void Movement()
     {
-        transform.position += transform.right * currentSpeed * Time.deltaTime;
+        transform.position += transform.localScale * currentSpeed * Time.deltaTime;
     }
 
     //To remove??

@@ -135,9 +135,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a5094cb3436f2e49803adb0e128ca15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weapon: {fileID: 112894435131411826, guid: ecabf1834db0fa748bf676a7b837f3a2, type: 3}
   playerHpManager: {fileID: -4924310159923508703}
-  spawnPoint: {fileID: 3035866360660974441}
 --- !u!114 &-4924310159923508703
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -244,6 +242,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2283904273022824880}
+  - component: {fileID: 645331932500511709}
   m_Layer: 0
   m_Name: FrontSpawnPoint
   m_TagString: Untagged
@@ -266,3 +265,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 8419895421034917423}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &645331932500511709
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3035866360660974441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c301187d0577f941a9a2701be2d9f87, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weapon: {fileID: 112894435131411826, guid: ecabf1834db0fa748bf676a7b837f3a2, type: 3}
+  attackSpeed: 3
+  spawnRate: 0.2
+  nbrOfInstances: 3

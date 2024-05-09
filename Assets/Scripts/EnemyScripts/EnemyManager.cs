@@ -4,15 +4,10 @@ public class EnemyManager : MonoBehaviour, Ipoolable
 {
 
     [SerializeField] HpManager hpManager;
-    [SerializeField] EnemyMouvement enemyMouvement;
-    [SerializeField] EnemyAISensor enemyAISensor;
 
-    [SerializeField] GameObject projectile;
     [SerializeField] AudioClip clip;
     [SerializeField] int expDropped;
     [SerializeField] int damage;
-    [SerializeField] float attackCooldownTime;
-    float timer = 0;
 
     public int ExpDropped { get => expDropped; set => expDropped = value; }
 
@@ -24,7 +19,6 @@ public class EnemyManager : MonoBehaviour, Ipoolable
     public void Reset()
     {
         HpManager.EnemyDeath += OnDeath;
-        enemyAISensor.InRangeToAttackAction += Attack;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -54,26 +48,4 @@ public class EnemyManager : MonoBehaviour, Ipoolable
         //Debug.Log("Player Hp = " + PlayerManager.Instance().GetComponent<HpManager>().CurrentHp);
     }
 
-    public void Attack()
-    {
-        enemyMouvement.Speed = 0;
-        //Debug.Log("Timer = " + timer);
-
-        if (timer >= attackCooldownTime)
-        {
-            //Debug.Log("Enemy spawning");
-            SpawnProjectile();
-            timer = 0;
-        }
-        else
-        {
-            timer += Time.deltaTime;
-        }
-
-    }
-
-    private void SpawnProjectile()
-    {
-        Instantiate(projectile, transform.position, Quaternion.identity);
-    }
 }
