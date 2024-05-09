@@ -22,30 +22,30 @@ public class EnemyFactory : MonoBehaviour
         }
     }
 
-    [System.Obsolete]
     public GameObject CreateWeakEnemy(Vector2 position, Quaternion rotation)
     {
         //Debug.Log("Weak enemy created");
-        GameObject weakEnemy = ObjectPoolingSystem.Instance().GetPoolObject("SkeletonSoldierPrefab");
+        //GameObject weakEnemy = ObjectPoolingSystem.Instance().GetPoolObject("SkeletonSoldierPrefab");
+        GameObject weakEnemy = Instantiate(weakEnemyPrefab, position, rotation);
         weakEnemy.transform.SetPositionAndRotation(position, rotation);
         
         return weakEnemy;
     }
 
-    [System.Obsolete]
     public GameObject CreateAverageEnemy(Vector2 position, Quaternion rotation)
     {
-        GameObject averageEnemy = ObjectPoolingSystem.Instance().GetPoolObject("OfficerSkeletonPrefab");
+        //GameObject averageEnemy = ObjectPoolingSystem.Instance().GetPoolObject("OfficerSkeletonPrefab");
+        GameObject averageEnemy = Instantiate(averageEnemyPrefab, position, rotation);
         averageEnemy.transform.SetPositionAndRotation(position, rotation);
 
         return averageEnemy;
     }
 
-    [System.Obsolete]
     public GameObject CreateStrongEnemy(Vector2 position, Quaternion rotation)
     {
-        GameObject strongEnemy = ObjectPoolingSystem.Instance().GetPoolObject("MistKnightPrefab");
-        Debug.Log("Enemy is : " + strongEnemy);
+        //GameObject strongEnemy = ObjectPoolingSystem.Instance().GetPoolObject("MistKnightPrefab");
+        GameObject strongEnemy = Instantiate(strongEnemyPrefab, position, rotation);
+        //Debug.Log("Enemy is : " + strongEnemy);
         strongEnemy.transform.SetPositionAndRotation(position, rotation);
 
         return strongEnemy;

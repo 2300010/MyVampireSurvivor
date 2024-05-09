@@ -1,10 +1,10 @@
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class WeaponManager : MonoBehaviour, Ipoolable
 {
     #region Variables
     //Declared variables for stats
+    [SerializeField] int numberOfInstances;
     [SerializeField] float baseLifetime;
     [SerializeField] int baseDamage;
     [SerializeField] float baseSpeed;
@@ -15,6 +15,7 @@ public class WeaponManager : MonoBehaviour, Ipoolable
     #endregion
 
     public Vector3 Direction { get => direction; set => direction = value; }
+    public int NumberOfInstances { get => numberOfInstances; set => numberOfInstances = value; }
 
     #region Unity Methods
 

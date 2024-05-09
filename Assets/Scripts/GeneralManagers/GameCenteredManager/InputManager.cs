@@ -5,7 +5,7 @@ public class InputManager : MonoBehaviour
 {
     public static InputManager instance;
 
-    public static InputManager Instance => instance;
+    public static InputManager Instance() => instance;
 
     //Actions for the keys pressed
     public static Action SpaceBarPressed;
@@ -21,5 +21,15 @@ public class InputManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    private void Update()
+    {
+        OnKeyPressed();
+    }
+
+    private void OnKeyPressed()
+    {
+        if (Input.GetKeyDown(KeyCode.Space)) { SpaceBarPressed?.Invoke(); }
     }
 }

@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -7752020287925375166, guid: 07cee1cb829667e45b737d9cc359ab05, type: 3}
       propertyPath: baseSpeed
-      value: 0.6
+      value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: -4266221856915494403, guid: 07cee1cb829667e45b737d9cc359ab05, type: 3}
       propertyPath: damage
@@ -71,6 +71,10 @@ PrefabInstance:
     - target: {fileID: 265756699005110493, guid: 07cee1cb829667e45b737d9cc359ab05, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1104570089639080590, guid: 07cee1cb829667e45b737d9cc359ab05, type: 3}
+      propertyPath: rangeRequiredToAttack
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5024988316782194464, guid: 07cee1cb829667e45b737d9cc359ab05, type: 3}
       propertyPath: m_Size.x

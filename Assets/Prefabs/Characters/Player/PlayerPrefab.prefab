@@ -12,7 +12,6 @@ GameObject:
   - component: {fileID: 1130070911744699694}
   - component: {fileID: 3834510470141055029}
   - component: {fileID: -5735677140127155498}
-  - component: {fileID: -2310528140447899336}
   - component: {fileID: -8853066824894738420}
   - component: {fileID: -4924310159923508703}
   m_Layer: 0
@@ -124,18 +123,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 180
---- !u!114 &-2310528140447899336
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 298844276117129421}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 599f79816dc23de48a2b4500e76dd319, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &-8853066824894738420
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -148,6 +135,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a5094cb3436f2e49803adb0e128ca15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weapon: {fileID: 112894435131411826, guid: ecabf1834db0fa748bf676a7b837f3a2, type: 3}
+  playerHpManager: {fileID: -4924310159923508703}
+  spawnPoint: {fileID: 3035866360660974441}
 --- !u!114 &-4924310159923508703
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -91,6 +91,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6a209c769b47834fbc77ad9e03f0ba3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  numberOfInstances: 3
   baseLifetime: 2
   baseDamage: 2
   baseSpeed: 2.5

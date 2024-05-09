@@ -33,7 +33,6 @@ public class EnemySpawner : MonoBehaviour
         StartCoroutine(WaveSystem());
     }
 
-    [Obsolete]
     public void SpawnEnemy(GameObject enemyPrefab)
     {
         float spawnOffset = 10f;
@@ -61,7 +60,6 @@ public class EnemySpawner : MonoBehaviour
         }
     }
 
-    [Obsolete]
     IEnumerator WaveSystem()
     {
         while (waveIndex < waves.Count)

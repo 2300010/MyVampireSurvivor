@@ -4,7 +4,8 @@ public class ProjectileBehaviour : MonoBehaviour
 {
     [SerializeField] float speed;
     [SerializeField] int damage;
-    //[SerializeField] float lifetime;
+    [SerializeField] float lifetime;
+    float currentLifetime = 0;
     Vector2 target;
     Rigidbody2D rb;
 
@@ -16,7 +17,15 @@ public class ProjectileBehaviour : MonoBehaviour
     private void Start()
     {
         rb.AddForce(SetTargetDirection() * speed);
-        
+    }
+
+    private void Update()
+    {
+        currentLifetime += Time.deltaTime;
+        if(currentLifetime >= lifetime)
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -27,7 +36,7 @@ public class ProjectileBehaviour : MonoBehaviour
         {
             HpManager playerHpManager = otherCollider.GetComponent<HpManager>();
             playerHpManager.TakeDamage(damage);
-            Debug.Log("Damage dealt = " + damage);
+            //Debug.Log("Damage dealt = " + damage);
             Destroy(gameObject);
         }
     }

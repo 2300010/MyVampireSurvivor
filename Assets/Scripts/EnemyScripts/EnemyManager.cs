@@ -3,9 +3,9 @@ using UnityEngine;
 public class EnemyManager : MonoBehaviour, Ipoolable
 {
 
-    HpManager hpManager;
-    EnemyMouvement enemyMouvement;
-    EnemyAISensor enemyAISensor;
+    [SerializeField] HpManager hpManager;
+    [SerializeField] EnemyMouvement enemyMouvement;
+    [SerializeField] EnemyAISensor enemyAISensor;
 
     [SerializeField] GameObject projectile;
     [SerializeField] AudioClip clip;
@@ -23,13 +23,20 @@ public class EnemyManager : MonoBehaviour, Ipoolable
 
     public void Reset()
     {
-        hpManager = GetComponent<HpManager>();
-        hpManager.CurrentHp = hpManager.MaxHp;
-        enemyMouvement = GetComponent<EnemyMouvement>();
-        enemyMouvement.Speed = enemyMouvement.BaseSpeed;
-        enemyAISensor = GetComponent<EnemyAISensor>();
         HpManager.EnemyDeath += OnDeath;
         enemyAISensor.InRangeToAttackAction += Attack;
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Collider2D collider = collision.collider;
+
+        //Debug.Log("Collision with :" + collider.gameObject.name);
+
+        if (collider.CompareTag("Player"))
+        {
+            DealDamage();
+        }
     }
 
     public void OnDeath(Vector2 pos, int expDropped)
@@ -43,8 +50,8 @@ public class EnemyManager : MonoBehaviour, Ipoolable
         GameObject opponent = PlayerManager.Instance().gameObject;
         HpManager opponentHpManager = opponent.GetComponent<HpManager>();
         opponentHpManager.TakeDamage(damage);
-        Debug.Log("Damage dealt = " + damage);
-        Debug.Log("Player Hp = " + PlayerManager.Instance().GetComponent<HpManager>().CurrentHp);
+        //Debug.Log("Damage dealt = " + damage);
+        //Debug.Log("Player Hp = " + PlayerManager.Instance().GetComponent<HpManager>().CurrentHp);
     }
 
     public void Attack()
