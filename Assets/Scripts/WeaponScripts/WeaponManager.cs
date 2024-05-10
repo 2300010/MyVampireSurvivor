@@ -50,12 +50,12 @@ public class WeaponManager : MonoBehaviour, Ipoolable
         currentLifetime = baseLifetime;
         currentDamage = baseDamage;
         speed = baseSpeed;
-        //GameManager.LevelUp += LevelUpStatUpdate;
+        GameManager.LevelUp += LevelUpStatUpdate;
     }
 
     private void OnDestroy()
     {
-        //GameManager.LevelUp -= LevelUpStatUpdate;
+        GameManager.LevelUp -= LevelUpStatUpdate;
     }
     #endregion
 
@@ -88,6 +88,12 @@ public class WeaponManager : MonoBehaviour, Ipoolable
             direction = transform.right * -1;
         }
     }
+
+    private void LevelUpStatsUpdate()
+    {
+        baseDamage *= 3 / 2;
+    }
+
 
     //To remove??
 
