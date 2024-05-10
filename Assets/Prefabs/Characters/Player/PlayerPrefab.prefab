@@ -98,7 +98,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0013866872, y: -0.001275897}
+  m_Offset: {x: 0.1427697, y: -0.080810726}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -109,7 +109,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5264865, y: 1.1128812}
+  m_Size: {x: 0.6954975, y: 1.2123}
   m_EdgeRadius: 0
 --- !u!114 &-5735677140127155498
 MonoBehaviour:
@@ -136,6 +136,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a5094cb3436f2e49803adb0e128ca15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  weaponPrefab: {fileID: 112894435131411826, guid: ecabf1834db0fa748bf676a7b837f3a2, type: 3}
+  spawnPoint: {fileID: 2283904273022824880}
   playerHpManager: {fileID: -4924310159923508703}
 --- !u!114 &-4924310159923508703
 MonoBehaviour:
@@ -198,7 +200,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8419895421034917423}
@@ -244,12 +246,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -1183106198, guid: 1ccaca900f801a84dade250b3337f849, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0d9512846c772054da4814908582d33b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.16, y: 0.35}
+  m_Size: {x: 0.42, y: 0.545}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -264,7 +266,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2283904273022824880}
-  - component: {fileID: 645331932500511709}
   m_Layer: 0
   m_Name: FrontSpawnPoint
   m_TagString: Untagged
@@ -287,19 +288,3 @@ Transform:
   m_Children: []
   m_Father: {fileID: 8419895421034917423}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &645331932500511709
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3035866360660974441}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3c301187d0577f941a9a2701be2d9f87, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  weapon: {fileID: 112894435131411826, guid: ecabf1834db0fa748bf676a7b837f3a2, type: 3}
-  attackSpeed: 3
-  spawnRate: 0.2
-  nbrOfInstances: 3

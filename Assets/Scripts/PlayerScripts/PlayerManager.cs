@@ -1,7 +1,11 @@
+using System.Collections;
 using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
 {
+    [SerializeField] GameObject weaponPrefab;
+    [SerializeField] Transform spawnPoint;
+
     private static PlayerManager instance;
     public static PlayerManager Instance() => instance;
 
@@ -28,6 +32,7 @@ public class PlayerManager : MonoBehaviour
     private void Start()
     {
         Reset();
+        //StartCoroutine(Attack());
     }
 
     public void Reset()
@@ -37,6 +42,14 @@ public class PlayerManager : MonoBehaviour
         playerHpManager.CurrentHp = playerHpManager.MaxHp;
         HpManager.PlayerDeath += OnDeath;
         GameManager.LevelUp += UpdateStats;
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Attack();
+        }
     }
     #endregion
 
@@ -52,6 +65,12 @@ public class PlayerManager : MonoBehaviour
     {
         exp = GameManager.Instance.PlayerExp;
         level = GameManager.Instance.PlayerLevel;
+    }
+
+    private void Attack()
+    {
+        Instantiate(weaponPrefab, spawnPoint.position, Quaternion.identity);
+
     }
     #endregion
 }

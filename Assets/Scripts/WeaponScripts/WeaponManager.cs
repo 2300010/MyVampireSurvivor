@@ -3,32 +3,31 @@ using UnityEngine;
 public class WeaponManager : MonoBehaviour, Ipoolable
 {
     #region Variables
-    //Declared variables for stats
-    [SerializeField] int numberOfInstances;
+    //Declared variables for stats 
+    [SerializeField] GameObject playerPrefab;
+    [SerializeField] GameObject spawnPoint;
     [SerializeField] float baseLifetime;
     [SerializeField] int baseDamage;
     [SerializeField] float baseSpeed;
     float currentLifetime;
     int currentDamage;
-    float currentSpeed;
+    float speed;
     Vector3 direction;
     #endregion
 
-    public Vector3 Direction { get => direction; set => direction = value; }
-    public int NumberOfInstances { get => numberOfInstances; set => numberOfInstances = value; }
 
     #region Unity Methods
 
     private void OnEnable()
     {
         Reset();
+        SetDirection();
         //Debug.Log("Current damage = " + currentDamage);
     }
-
-    private void Update()
+    private void FixedUpdate()
     {
         LifetimeManager();
-        Movement();
+        transform.position += Vector3.right * speed * Time.deltaTime;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -48,10 +47,9 @@ public class WeaponManager : MonoBehaviour, Ipoolable
 
     public void Reset()
     {
-        transform.localScale = PlayerMouvement.Instance().transform.localScale;
         currentLifetime = baseLifetime;
-        currentSpeed = baseSpeed;
-        currentDamage = GameManager.Instance.ScytheStatBlock.damage;
+        currentDamage = baseDamage;
+        speed = baseSpeed;
         //GameManager.LevelUp += LevelUpStatUpdate;
     }
 
@@ -79,9 +77,16 @@ public class WeaponManager : MonoBehaviour, Ipoolable
         }
     }
 
-    private void Movement()
+    private void SetDirection()
     {
-        transform.position += transform.localScale * currentSpeed * Time.deltaTime;
+        if (PlayerMouvement.Instance().FacingRight)
+        {
+            direction = transform.right;
+        }
+        else if (PlayerMouvement.Instance().FacingRight)
+        {
+            direction = transform.right * -1;
+        }
     }
 
     //To remove??
@@ -89,7 +94,7 @@ public class WeaponManager : MonoBehaviour, Ipoolable
     //private void SetBaseStats()
     //{
     //    baseLifetime = GameManager.Instance.ScytheStatBlock.lifetime;
-    //    baseSpeed = GameManager.Instance.ScytheStatBlock.speed;
+    //    baseSpeed = GameManager.Instance.ScytheStatBlock.baseSpeed;
     //    baseDamage = GameManager.Instance.ScytheStatBlock.damage;
     //}
     #endregion

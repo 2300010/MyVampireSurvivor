@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class PlayerMouvement : MonoBehaviour
@@ -9,6 +10,8 @@ public class PlayerMouvement : MonoBehaviour
     [SerializeField] private float speed;
     private Rigidbody2D body;
     private bool facingRight = true;
+
+    public bool FacingRight { get => facingRight; set => facingRight = value; }
 
     void Awake()
     {
@@ -38,11 +41,11 @@ public class PlayerMouvement : MonoBehaviour
 
         body.velocity = new Vector2(horizontalMove, verticalMove);
 
-        if(horizontalInput > 0 && !facingRight)
+        if(horizontalInput > 0 && !FacingRight)
         {
             FlipCharacter();
         }
-        else if(horizontalInput < 0 && facingRight)
+        else if(horizontalInput < 0 && FacingRight)
         {
             FlipCharacter();
         }
@@ -50,7 +53,7 @@ public class PlayerMouvement : MonoBehaviour
 
     private void FlipCharacter()
     {
-        facingRight = !facingRight;
+        FacingRight = !FacingRight;
         
         Vector3 scale = transform.localScale;
 

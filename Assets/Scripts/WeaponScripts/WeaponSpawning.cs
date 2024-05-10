@@ -3,38 +3,40 @@ using UnityEngine;
 
 public class WeaponSpawning : MonoBehaviour
 {
-    [SerializeField] GameObject weapon;
+    [SerializeField] GameObject weaponPrefab;
+    [SerializeField] GameObject spawnPoint;
+    [SerializeField] int numberOfInstances;
+    [SerializeField] float spawnTime;
     [SerializeField] float attackSpeed;
-    [SerializeField] float spawnRate;
-    [SerializeField] int nbrOfInstances;
+    Vector3 direction;
 
-    // Start is called before the first frame update
-    void Start()
+    public Vector3 Direction { get => direction; set => direction = value; }
+
+    private void Start()
     {
-        StartCoroutine(SpawnWeapon());
+        direction = spawnPoint.transform.position - transform.position;
+        StartCoroutine(SpawnWeapons());
     }
 
-    private IEnumerator SpawnWeapon()
+    private IEnumerator SpawnWeapons()
     {
         while (true)
         {
             yield return new WaitForSeconds(attackSpeed);
 
-            Vector3 position = transform.position;
-
-            for (int i = 0; i < nbrOfInstances; i++)
+            for (int i = 0; i < numberOfInstances; i++)
             {
-                //float direction = PlayerMouvement.Instance().transform.localScale.x > 0 ? 1 : -1;
-
-                //Debug.Log("Direction = " + direction);
-
-                //Vector3 spawnPosition = position + Vector3.right * direction;
-
-                Instantiate(weapon, position, Quaternion.identity);
-
-                yield return new WaitForSeconds(spawnRate);
+                SpawnWeapon();
+                yield return new WaitForSeconds(spawnTime);
             }
         }
-        //weapon.SetActive(false);
+    }
+
+    private void SpawnWeapon()
+    {
+        Vector3 spawnPosition = transform.position + direction.normalized;
+
+        // Instantiate the weapon prefab
+        /*GameObject weapon = */Instantiate(weaponPrefab, spawnPosition, Quaternion.identity);
     }
 }
