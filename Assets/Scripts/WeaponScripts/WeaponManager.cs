@@ -50,12 +50,12 @@ public class WeaponManager : MonoBehaviour, Ipoolable
         currentLifetime = baseLifetime;
         currentDamage = baseDamage;
         speed = baseSpeed;
-        GameManager.LevelUp += LevelUpStatUpdate;
+        //GameManager.LevelUp += LevelUpStatUpdate;
     }
 
     private void OnDestroy()
     {
-        GameManager.LevelUp -= LevelUpStatUpdate;
+        //GameManager.LevelUp -= LevelUpStatUpdate;
     }
     #endregion
 

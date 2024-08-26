@@ -59,23 +59,23 @@ public class ObjectPoolingSystem : MonoBehaviour
     {
         GameObject objectToReturn = null;
         bool inactiveObjectFound = false;
-        if (poolDictionary.ContainsKey(objectName))
-        {
-            poolIndex = 0;
+        //if (poolDictionary.ContainsKey(objectName))
+        //{
+        //    poolIndex = 0;
 
-            while (inactiveObjectFound)
-            {
-                if (!poolDictionary[objectName].poolOfObjects[poolIndex].active)
-                {
-                    objectToReturn = poolDictionary[objectName].poolOfObjects[poolIndex];
-                }
-                else
-                {
-                    poolIndex++;
-                }
-            }
+        //    while (inactiveObjectFound)
+        //    {
+        //        if (!poolDictionary[objectName].poolOfObjects[poolIndex].SetActiveRecursively())
+        //        {
+        //            objectToReturn = poolDictionary[objectName].poolOfObjects[poolIndex];
+        //        }
+        //        else
+        //        {
+        //            poolIndex++;
+        //        }
+        //    }
 
-        }
+        //}
         return objectToReturn;
     }
 
