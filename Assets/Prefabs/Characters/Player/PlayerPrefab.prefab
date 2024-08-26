@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: -5735677140127155498}
   - component: {fileID: -8853066824894738420}
   - component: {fileID: -4924310159923508703}
+  - component: {fileID: 9109950112314269465}
   - component: {fileID: 3893412667660418118}
   m_Layer: 0
   m_Name: PlayerPrefab
@@ -152,6 +153,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxHp: 40
+--- !u!114 &9109950112314269465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 298844276117129421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df342c976f96d1f4095f5b2315538d24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  thisObjectName: 
 --- !u!95 &3893412667660418118
 Animator:
   serializedVersion: 5

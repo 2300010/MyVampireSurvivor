@@ -41,7 +41,7 @@ public class WeaponManager : MonoBehaviour, Ipoolable
             DealDamage(collider.gameObject, currentDamage);
             Debug.Log("Recieved damage = " + currentDamage);
             gameObject.SetActive(false);
-            ObjectPoolingSystem.Instance().ReturnPoolObject(gameObject);
+            //ObjectPoolingSystem.Instance().ReturnPoolObject(gameObject);
         }
     }
 
@@ -89,7 +89,7 @@ public class WeaponManager : MonoBehaviour, Ipoolable
         }
     }
 
-    private void LevelUpStatsUpdate()
+    private void LevelUpStatUpdate()
     {
         baseDamage *= 3 / 2;
     }

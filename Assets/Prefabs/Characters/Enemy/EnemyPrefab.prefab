@@ -233,13 +233,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hpManager: {fileID: -3984050511764974756}
-  enemyMouvement: {fileID: -7752020287925375166}
-  enemyAISensor: {fileID: 1104570089639080590}
-  projectile: {fileID: 0}
   clip: {fileID: 8300000, guid: bebc5e446b7d2034a9809a0f67742851, type: 3}
   expDropped: 2
   damage: 2
-  attackCooldownTime: 0
 --- !u!114 &1104570089639080590
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -14,8 +14,15 @@ public class EnemyMouvement : MonoBehaviour
 
     private void OnEnable()
     {
-        enemyAISensor = GetComponent<EnemyAISensor>();
-        enemyAISensor.OutOfRangeToAttackAction += ChasePlayer;
+        if (gameObject.name == "MistKnightPrefab")
+        {
+            enemyAISensor = GetComponent<EnemyAISensor>();
+            enemyAISensor.OutOfRangeToAttackAction += ChasePlayer;
+        }
+        else
+        {
+            ChasePlayer();
+        }
     }
 
     private void Start()
@@ -53,5 +60,5 @@ public class EnemyMouvement : MonoBehaviour
         scale.x *= -1;
         transform.localScale = scale;
     }
-    
+
 }
