@@ -18,16 +18,26 @@ public class EnemyMouvement : MonoBehaviour
         {
             enemyAISensor = GetComponent<EnemyAISensor>();
             enemyAISensor.OutOfRangeToAttackAction += ChasePlayer;
-        }
-        else
-        {
-            ChasePlayer();
+            enemyAISensor.InRangeToAttackAction += StopMoving;
         }
     }
 
     private void Start()
     {
         SetTargetDestination();
+    }
+
+    private void Update()
+    {
+        float distanceWithTarget = ((Vector2)transform.position - target).magnitude;
+        if (distanceWithTarget > 0.5)
+        {
+            ChasePlayer();
+        }
+        else if(distanceWithTarget <= 0.5)
+        {
+            StopMoving();
+        }
     }
 
     private void SetTargetDestination()
@@ -39,7 +49,7 @@ public class EnemyMouvement : MonoBehaviour
     {
         if (target != null)
         {
-            Speed = BaseSpeed;
+            speed = BaseSpeed;
             Vector2 movementDirection = (target - (Vector2)transform.position).normalized;
 
             if ((movementDirection.x < 0 && facingRight) || (movementDirection.x > 0 && !facingRight))
@@ -49,6 +59,13 @@ public class EnemyMouvement : MonoBehaviour
 
             transform.position = Vector2.MoveTowards(transform.position, target, speed * Time.deltaTime);
         }
+        SetTargetDestination();
+    }
+
+    private void StopMoving()
+    {
+        speed = 0;
+        SetTargetDestination();
     }
 
     private void FlipCharacter()
