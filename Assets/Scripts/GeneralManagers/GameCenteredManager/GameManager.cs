@@ -42,6 +42,7 @@ public class GameManager : MonoBehaviour
     public int PlayerLevel { get => playerLevel; set => playerLevel = value; }
     public int TotalPlayerExp { get => totalPlayerExp; set => totalPlayerExp = value; }
     public int ExpForLevel { get => expForLevel; set => expForLevel = value; }
+    public GameObject ExpPrefab { get => expPrefab; }
     #endregion
 
     #region Unity functions
@@ -62,13 +63,11 @@ public class GameManager : MonoBehaviour
     {
         scytheStatBlock = new WeaponStatBlock();
         scytheStatBlock.damage = 2;
-        HpManager.EnemyDeath += OnEnemyDeath;
         ExpFlameManager.OnExpPickup += PlayerReceiveExp;
     }
 
     private void OnDestroy()
     {
-        HpManager.EnemyDeath -= OnEnemyDeath;
         ExpFlameManager.OnExpPickup -= PlayerReceiveExp;
     }
     #endregion
@@ -94,9 +93,9 @@ public class GameManager : MonoBehaviour
 
     private void ExpFlameDrop(Vector2 position, int expGiven)
     {
-        if (expPrefab != null)
+        if (ExpPrefab != null)
         {
-            GameObject expFlame = Instantiate(expPrefab, position, Quaternion.identity);
+            GameObject expFlame = Instantiate(ExpPrefab, position, Quaternion.identity);
             
             ExpFlameManager flameManager = expFlame.GetComponent<ExpFlameManager>();
             if(flameManager != null)

@@ -2,17 +2,24 @@ using UnityEngine;
 
 public class HpManager : MonoBehaviour
 {
-    public delegate void OnEnemyDeath(Vector2 deathPosition, int expGiven);
     public delegate void OnPlayerDeath();
 
-
-    public static event OnEnemyDeath EnemyDeath;
     public static event OnPlayerDeath PlayerDeath;
 
     [SerializeField] int maxHp;
     private int currentHp;
+    EnemyManager enemyManager;
 
     #region Unity Methods
+
+    private void OnEnable()
+    {
+        if (gameObject.CompareTag("Enemy"))
+        {
+            enemyManager = gameObject.GetComponent<EnemyManager>();
+        }
+    }
+
     public int CurrentHp
     {
         get => currentHp;
@@ -24,10 +31,9 @@ public class HpManager : MonoBehaviour
 
                 if (gameObject.CompareTag("Enemy"))
                 {
-                    EnemyManager enemyManager = gameObject.GetComponent<EnemyManager>();
-                    EnemyDeath?.Invoke(transform.position, enemyManager.ExpDropped);
+                    enemyManager.OnDeath();
                 }
-                else if(gameObject.CompareTag("Player"))
+                else if (gameObject.CompareTag("Player"))
                 {
                     PlayerDeath?.Invoke();
                 }

@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class EnemyManager : MonoBehaviour, Ipoolable
+public class EnemyManager : MonoBehaviour//, Ipoolable
 {
 
     [SerializeField] HpManager hpManager;
@@ -11,15 +11,15 @@ public class EnemyManager : MonoBehaviour, Ipoolable
 
     public int ExpDropped { get => expDropped; set => expDropped = value; }
 
-    private void Start()
-    {
-        Reset();
-    }
+    //private void Start()
+    //{
 
-    public void Reset()
-    {
-        HpManager.EnemyDeath += OnDeath;
-    }
+    //}
+
+    //public void Reset()
+    //{
+
+    //}
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -33,10 +33,31 @@ public class EnemyManager : MonoBehaviour, Ipoolable
         }
     }
 
-    public void OnDeath(Vector2 pos, int expDropped)
+    public void OnDeath()
     {
         AudioManager.GetInstance().PlaySound(clip);
+        if (RNG.Instance.FloatRNG(0, 1) < GameManager.Instance.DropRate)
+        {
+            ExpFlameDrop();
+        }
         gameObject.SetActive(false);
+    }
+
+    private void ExpFlameDrop()
+    {
+        if (GameManager.Instance.ExpPrefab != null)
+        {
+            GameObject expPrefab = GameManager.Instance.ExpPrefab;
+
+            GameObject expFlame = Instantiate(expPrefab, transform.position, Quaternion.identity);
+
+            ExpFlameManager flameManager = expFlame.GetComponent<ExpFlameManager>();
+            if (flameManager != null)
+            {
+                flameManager.ExpGiven = expDropped;
+                //Debug.Log("Exp given = " + expGiven);
+            }
+        }
     }
 
     public void DealDamage()
