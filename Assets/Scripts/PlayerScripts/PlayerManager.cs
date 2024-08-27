@@ -69,7 +69,6 @@ public class PlayerManager : MonoBehaviour
     private void Attack()
     {
         Instantiate(weaponPrefab, spawnPoint.position, Quaternion.identity);
-
     }
     #endregion
 }

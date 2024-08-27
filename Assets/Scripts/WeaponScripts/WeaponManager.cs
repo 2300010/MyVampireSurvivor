@@ -27,7 +27,7 @@ public class WeaponManager : MonoBehaviour, Ipoolable
     private void FixedUpdate()
     {
         LifetimeManager();
-        transform.position += Vector3.right * speed * Time.deltaTime;
+        transform.position += direction * speed * Time.deltaTime;
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -83,8 +83,9 @@ public class WeaponManager : MonoBehaviour, Ipoolable
         {
             direction = transform.right;
         }
-        else if (PlayerMouvement.Instance().FacingRight)
+        else
         {
+            FlipWeapon();
             direction = transform.right * -1;
         }
     }
@@ -92,6 +93,14 @@ public class WeaponManager : MonoBehaviour, Ipoolable
     private void LevelUpStatUpdate()
     {
         baseDamage *= 3 / 2;
+    }
+
+    private void FlipWeapon()
+    {
+        Vector3 scale = transform.localScale;
+
+        scale.x *= -1;
+        transform.localScale = scale;
     }
 
 

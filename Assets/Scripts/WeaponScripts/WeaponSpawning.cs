@@ -10,6 +10,8 @@ public class WeaponSpawning : MonoBehaviour
     [SerializeField] float attackSpeed;
     Vector3 direction;
 
+    WeaponManager weaponManager;
+
     public Vector3 Direction { get => direction; set => direction = value; }
 
     private void Start()

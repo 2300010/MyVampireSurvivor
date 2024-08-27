@@ -16,6 +16,3 @@ MonoBehaviour:
   baseHp: 0
   baseDmg: 0
   baseSpeed: 0
-  characterHp: 0
-  characterDamage: 0
-  characterSpeed: 0
