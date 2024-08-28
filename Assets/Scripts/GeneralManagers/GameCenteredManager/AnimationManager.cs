@@ -3,8 +3,8 @@ using UnityEngine;
 enum AnimationState 
 { 
     Idle,
-    Walking,
-    Attacking,
+    Walk,
+    Attack,
     Hurt,
     Death
 }

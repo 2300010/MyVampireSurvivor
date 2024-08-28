@@ -9,6 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3d8a4dd6485804b4e85a2318c7373cf0, type: 3}
-  m_Name: CurrentPlayerData
+  m_Script: {fileID: 11500000, guid: c89153c906c6ab24a81ce507bffcf907, type: 3}
+  m_Name: SkeletonSoldier
   m_EditorClassIdentifier: 
+  enemyName: SkeletonSoldier
+  baseHp: 0
+  baseDmg: 0
+  baseSpeed: 0

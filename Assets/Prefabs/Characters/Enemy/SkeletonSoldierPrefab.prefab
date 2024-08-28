@@ -12,6 +12,14 @@ PrefabInstance:
       propertyPath: baseSpeed
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -4266221856915494403, guid: 07cee1cb829667e45b737d9cc359ab05, type: 3}
+      propertyPath: enemyData
+      value: 
+      objectReference: {fileID: 11400000, guid: 80ca0e2f5c128fe41a9d6a846b9688ee, type: 2}
+    - target: {fileID: -4266221856915494403, guid: 07cee1cb829667e45b737d9cc359ab05, type: 3}
+      propertyPath: expDropRate
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: -3984050511764974756, guid: 07cee1cb829667e45b737d9cc359ab05, type: 3}
       propertyPath: maxHp
       value: 8
@@ -72,7 +80,23 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: 0.0014284849
       objectReference: {fileID: 0}
+    - target: {fileID: 5024988316782194464, guid: 07cee1cb829667e45b737d9cc359ab05, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.82
+      objectReference: {fileID: 0}
+    - target: {fileID: 5024988316782194464, guid: 07cee1cb829667e45b737d9cc359ab05, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.86
+      objectReference: {fileID: 0}
     - target: {fileID: 5804824923487151243, guid: 07cee1cb829667e45b737d9cc359ab05, type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5804824923487151243, guid: 07cee1cb829667e45b737d9cc359ab05, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -1652318681, guid: 9779680820eb11849b4456df9ea4b158, type: 3}
+    - target: {fileID: 7492332219815780570, guid: 07cee1cb829667e45b737d9cc359ab05, type: 3}
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -1652318681, guid: 9779680820eb11849b4456df9ea4b158, type: 3}
@@ -83,5 +107,34 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8500422194563544544, guid: 07cee1cb829667e45b737d9cc359ab05, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -3689367821381723024}
   m_SourcePrefab: {fileID: 100100000, guid: 07cee1cb829667e45b737d9cc359ab05, type: 3}
+--- !u!1 &5432207266973009546 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8500422194563544544, guid: 07cee1cb829667e45b737d9cc359ab05, type: 3}
+  m_PrefabInstance: {fileID: 4509373474547348330}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &-3689367821381723024
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5432207266973009546}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 03cc55b3434e8c54390733388bd9c060, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

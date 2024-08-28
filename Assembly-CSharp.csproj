@@ -72,7 +72,6 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SimpleScript.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
-    <Compile Include="Assets\Scripts\ScriptableObjects\PlayerData.cs" />
     <Compile Include="Assets\Scripts\PlayerScripts\PlayerManager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
@@ -115,6 +114,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ShaderPropAnimator.cs" />
     <Compile Include="Assets\Scripts\GeneralManagers\GameCenteredManager\AudioManager.cs" />
+    <Compile Include="Assets\Scripts\ScriptableObjects\Enemies\ScriptSO\CommonEnemyData.cs" />
     <Compile Include="Assets\Scripts\GeneralManagers\UIManager\DeathMenuUIManager.cs" />
     <Compile Include="Assets\Scripts\GeneralManagers\UIManager\GameplayUIManager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />

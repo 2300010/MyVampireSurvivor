@@ -2,67 +2,40 @@ using UnityEngine;
 
 public class EnemyMouvement : MonoBehaviour
 {
-    EnemyAISensor enemyAISensor;
-
-    Vector2 target;
+    private Vector2 target;
     [SerializeField] float baseSpeed;
     private float speed;
     private bool facingRight = false;
 
+    
+
     public float BaseSpeed { get => baseSpeed; set => baseSpeed = value; }
     public float Speed { get => speed; set => speed = value; }
-
-    private void OnEnable()
-    {
-        if (gameObject.name == "MistKnightPrefab")
-        {
-            enemyAISensor = GetComponent<EnemyAISensor>();
-            enemyAISensor.OutOfRangeToAttackAction += ChasePlayer;
-            enemyAISensor.InRangeToAttackAction += StopMoving;
-        }
-    }
-
-    private void Start()
-    {
-        SetTargetDestination();
-    }
-
-    private void Update()
-    {
-        float distanceWithTarget = ((Vector2)transform.position - target).magnitude;
-        if (distanceWithTarget > 0.5)
-        {
-            ChasePlayer();
-        }
-        else if(distanceWithTarget <= 0.5)
-        {
-            StopMoving();
-        }
-    }
+    public Vector2 Target { get => target; set => target = value; }
 
     private void SetTargetDestination()
     {
-        target = PlayerMouvement.Instance().transform.position;
+        Target = PlayerMouvement.Instance().transform.position;
     }
 
-    private void ChasePlayer()
+    public void ChasePlayer()
     {
-        if (target != null)
+        if (Target != null)
         {
             speed = BaseSpeed;
-            Vector2 movementDirection = (target - (Vector2)transform.position).normalized;
+            Vector2 movementDirection = (Target - (Vector2)transform.position).normalized;
 
             if ((movementDirection.x < 0 && facingRight) || (movementDirection.x > 0 && !facingRight))
             {
                 FlipCharacter();
             }
 
-            transform.position = Vector2.MoveTowards(transform.position, target, speed * Time.deltaTime);
+            transform.position = Vector2.MoveTowards(transform.position, Target, speed * Time.deltaTime);
         }
         SetTargetDestination();
     }
 
-    private void StopMoving()
+    public void StopMoving()
     {
         speed = 0;
         SetTargetDestination();

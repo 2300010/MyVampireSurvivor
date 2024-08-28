@@ -136,7 +136,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Skeleton Soldier_0
+      name: Skeleton Soldier_Idle_0
       rect:
         serializedVersion: 2
         x: 5
@@ -144,7 +144,7 @@ TextureImporter:
         width: 82
         height: 86
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -157,7 +157,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Skeleton Soldier_1
+      name: Skeleton Soldier_Idle_1
       rect:
         serializedVersion: 2
         x: 102
@@ -165,7 +165,7 @@ TextureImporter:
         width: 82
         height: 85
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -178,7 +178,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Skeleton Soldier_2
+      name: Skeleton Soldier_Idle_2
       rect:
         serializedVersion: 2
         x: 203
@@ -186,7 +186,7 @@ TextureImporter:
         width: 83
         height: 84
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -199,7 +199,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Skeleton Soldier_3
+      name: Skeleton Soldier_Idle_3
       rect:
         serializedVersion: 2
         x: 302
@@ -207,7 +207,7 @@ TextureImporter:
         width: 82
         height: 85
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -220,7 +220,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Skeleton Soldier_4
+      name: Skeleton Soldier_Walk_0
       rect:
         serializedVersion: 2
         x: 3
@@ -228,7 +228,7 @@ TextureImporter:
         width: 82
         height: 86
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -241,7 +241,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Skeleton Soldier_5
+      name: Skeleton Soldier_Walk_1
       rect:
         serializedVersion: 2
         x: 93
@@ -249,7 +249,7 @@ TextureImporter:
         width: 84
         height: 88
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -262,7 +262,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Skeleton Soldier_6
+      name: Skeleton Soldier_Walk_2
       rect:
         serializedVersion: 2
         x: 188
@@ -270,7 +270,7 @@ TextureImporter:
         width: 82
         height: 86
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -283,15 +283,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Skeleton Soldier_7
+      name: Skeleton Soldier_Walk_3
       rect:
         serializedVersion: 2
-        x: 283
+        x: 284
         y: 483
         width: 84
         height: 88
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -304,7 +304,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Skeleton Soldier_8
+      name: Skeleton Soldier_Hurt
       rect:
         serializedVersion: 2
         x: 5
@@ -312,7 +312,7 @@ TextureImporter:
         width: 89
         height: 89
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -333,7 +333,7 @@ TextureImporter:
         width: 4
         height: 4
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -346,7 +346,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Skeleton Soldier_23
+      name: Skeleton Soldier_Attack_0
       rect:
         serializedVersion: 2
         x: 5
@@ -354,7 +354,7 @@ TextureImporter:
         width: 74
         height: 101
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -367,7 +367,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Skeleton Soldier_24
+      name: Skeleton Soldier_Attack_1
       rect:
         serializedVersion: 2
         x: 93
@@ -375,7 +375,7 @@ TextureImporter:
         width: 99
         height: 84
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -388,7 +388,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Skeleton Soldier_25
+      name: Skeleton Soldier_Attack_2
       rect:
         serializedVersion: 2
         x: 212
@@ -396,7 +396,7 @@ TextureImporter:
         width: 83
         height: 85
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -409,7 +409,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Skeleton Soldier_26
+      name: Skeleton Soldier_Attack_3
       rect:
         serializedVersion: 2
         x: 315
@@ -417,7 +417,7 @@ TextureImporter:
         width: 74
         height: 86
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -430,7 +430,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Skeleton Soldier_27
+      name: Skeleton Soldier_Hit_0
       rect:
         serializedVersion: 2
         x: 5
@@ -438,7 +438,7 @@ TextureImporter:
         width: 99
         height: 107
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -451,7 +451,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Skeleton Soldier_28
+      name: Skeleton Soldier_Hit_1
       rect:
         serializedVersion: 2
         x: 120
@@ -459,7 +459,7 @@ TextureImporter:
         width: 80
         height: 77
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -472,7 +472,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Skeleton Soldier_29
+      name: Skeleton Soldier_Death_0
       rect:
         serializedVersion: 2
         x: 6
@@ -480,7 +480,7 @@ TextureImporter:
         width: 82
         height: 86
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -493,7 +493,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Skeleton Soldier_30
+      name: Skeleton Soldier_Death_1
       rect:
         serializedVersion: 2
         x: 103
@@ -501,7 +501,7 @@ TextureImporter:
         width: 82
         height: 68
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -514,7 +514,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Skeleton Soldier_31
+      name: Skeleton Soldier_Death_2
       rect:
         serializedVersion: 2
         x: 198
@@ -522,7 +522,7 @@ TextureImporter:
         width: 82
         height: 60
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -535,7 +535,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Skeleton Soldier_32
+      name: Skeleton Soldier_Death_3
       rect:
         serializedVersion: 2
         x: 296
@@ -543,7 +543,7 @@ TextureImporter:
         width: 82
         height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -556,7 +556,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Skeleton Soldier_33
+      name: Skeleton Soldier_Death_4
       rect:
         serializedVersion: 2
         x: 395
@@ -564,7 +564,7 @@ TextureImporter:
         width: 69
         height: 52
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -577,7 +577,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Skeleton Soldier_34
+      name: Skeleton Soldier_Death_5
       rect:
         serializedVersion: 2
         x: 486
@@ -585,7 +585,7 @@ TextureImporter:
         width: 48
         height: 52
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -608,8 +608,6 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Skeleton Soldier_0: -1652318681
-      Skeleton Soldier_1: 647515619
       Skeleton Soldier_10: -1171982643
       Skeleton Soldier_11: 668839186
       Skeleton Soldier_12: -798265444
@@ -620,29 +618,31 @@ TextureImporter:
       Skeleton Soldier_17: 723480650
       Skeleton Soldier_18: -1301124069
       Skeleton Soldier_19: -1692887339
-      Skeleton Soldier_2: 473485308
       Skeleton Soldier_20: 856473105
       Skeleton Soldier_21: -1744986831
       Skeleton Soldier_22: 1419921111
-      Skeleton Soldier_23: 1605244256
-      Skeleton Soldier_24: 335967356
-      Skeleton Soldier_25: 1704575760
-      Skeleton Soldier_26: 13881174
-      Skeleton Soldier_27: 1846007735
-      Skeleton Soldier_28: -99893347
-      Skeleton Soldier_29: -1359920057
-      Skeleton Soldier_3: 852761035
-      Skeleton Soldier_30: -1707087421
-      Skeleton Soldier_31: -936050553
-      Skeleton Soldier_32: -545400824
-      Skeleton Soldier_33: -2040510372
-      Skeleton Soldier_34: -1743263451
-      Skeleton Soldier_4: -1986104352
-      Skeleton Soldier_5: -1623882132
-      Skeleton Soldier_6: 1789929872
-      Skeleton Soldier_7: 141968093
-      Skeleton Soldier_8: -1279230565
       Skeleton Soldier_9: 1534793242
+      Skeleton Soldier_Attack_0: 1605244256
+      Skeleton Soldier_Attack_1: 335967356
+      Skeleton Soldier_Attack_2: 1704575760
+      Skeleton Soldier_Attack_3: 13881174
+      Skeleton Soldier_Death_0: -1359920057
+      Skeleton Soldier_Death_1: -1707087421
+      Skeleton Soldier_Death_2: -936050553
+      Skeleton Soldier_Death_3: -545400824
+      Skeleton Soldier_Death_4: -2040510372
+      Skeleton Soldier_Death_5: -1743263451
+      Skeleton Soldier_Hit_0: 1846007735
+      Skeleton Soldier_Hit_1: -99893347
+      Skeleton Soldier_Hurt: -1279230565
+      Skeleton Soldier_Idle_0: -1652318681
+      Skeleton Soldier_Idle_1: 647515619
+      Skeleton Soldier_Idle_2: 473485308
+      Skeleton Soldier_Idle_3: 852761035
+      Skeleton Soldier_Walk_0: -1986104352
+      Skeleton Soldier_Walk_1: -1623882132
+      Skeleton Soldier_Walk_2: 1789929872
+      Skeleton Soldier_Walk_3: 141968093
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

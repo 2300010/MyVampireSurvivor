@@ -4,18 +4,40 @@ public class EnemyManager : MonoBehaviour//, Ipoolable
 {
 
     [SerializeField] HpManager hpManager;
-
+    [SerializeField] EnemyData enemyData;
     [SerializeField] AudioClip clip;
+
     [SerializeField] int expDropped;
     [SerializeField] float expDropRate;
     [SerializeField] int damage;
 
+    EnemyMouvement enemyMouvement;
+    AnimationManager animationManager;
+    EnemyAISensor enemyAISensor;
+
+    private string enemyName;
+
     public int ExpDropped { get => expDropped; set => expDropped = value; }
+    public string EnemyName { get => enemyName; }
 
-    //private void Start()
-    //{
+    private void OnEnable()
+    {
+        enemyName = enemyData.enemyName;
+        enemyMouvement = GetComponent<EnemyMouvement>();
+        animationManager = GetComponent<AnimationManager>();
 
-    //}
+        if (gameObject.name == "MistKnightPrefab")
+        {
+            enemyAISensor = GetComponent<EnemyAISensor>();
+            enemyAISensor.OutOfRangeToAttackAction += enemyMouvement.ChasePlayer;
+            enemyAISensor.InRangeToAttackAction += enemyMouvement.StopMoving;
+        }
+    }
+
+    private void FixedUpdate()
+    {
+        ManageMouvement();
+    }
 
     //public void Reset()
     //{
@@ -36,7 +58,13 @@ public class EnemyManager : MonoBehaviour//, Ipoolable
 
     public void OnDeath()
     {
+        if (gameObject.name == "MistKnightPrefab")
+        {
+            enemyAISensor.OutOfRangeToAttackAction += enemyMouvement.ChasePlayer;
+            enemyAISensor.InRangeToAttackAction += enemyMouvement.StopMoving;
+        }
         AudioManager.GetInstance().PlaySound(clip);
+
         if (RNG.Instance.FloatRNG(0, 1) < expDropRate)
         {
             DropExpFlame();
@@ -68,6 +96,21 @@ public class EnemyManager : MonoBehaviour//, Ipoolable
         opponentHpManager.TakeDamage(damage);
         //Debug.Log("Damage dealt = " + damage);
         //Debug.Log("Player Hp = " + PlayerManager.Instance().GetComponent<HpManager>().CurrentHp);
+    }
+
+    private void ManageMouvement()
+    {
+        float distanceWithTarget = ((Vector2)transform.position - enemyMouvement.Target).magnitude;
+        if (distanceWithTarget > 0.5)
+        {
+            animationManager.ChangeAnimationState("SkeletonSoldier_Walk");
+            enemyMouvement.ChasePlayer();
+        }
+        else if (distanceWithTarget <= 0.5)
+        {
+            animationManager.ChangeAnimationState("SkeletonSoldier_Idle");
+            enemyMouvement.StopMoving();
+        }
     }
 
 }
