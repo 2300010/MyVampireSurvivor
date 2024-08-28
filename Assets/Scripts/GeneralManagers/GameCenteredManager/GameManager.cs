@@ -21,7 +21,6 @@ public class GameManager : MonoBehaviour
 
     //Declare exp variables
     [SerializeField] GameObject expPrefab;
-    float dropRate = 0.5f;
     
     //Declare player exp stats variables
     int playerExp = 0;
@@ -37,7 +36,6 @@ public class GameManager : MonoBehaviour
 
     #region Getters and Setters
     public WeaponStatBlock ScytheStatBlock { get => scytheStatBlock; set => scytheStatBlock = value; }
-    public float DropRate { get => dropRate; set => dropRate = value; }
     public int PlayerExp { get => playerExp; set => playerExp = value; }
     public int PlayerLevel { get => playerLevel; set => playerLevel = value; }
     public int TotalPlayerExp { get => totalPlayerExp; set => totalPlayerExp = value; }
@@ -83,28 +81,6 @@ public class GameManager : MonoBehaviour
     //}
 
     #region Custom functions
-    private void OnEnemyDeath(Vector2 deathPosition, int expDropped)
-    {
-        if (RNG.Instance.FloatRNG(0, 1) < DropRate)
-        {
-            ExpFlameDrop(deathPosition, expDropped);
-        }
-    }
-
-    private void ExpFlameDrop(Vector2 position, int expGiven)
-    {
-        if (ExpPrefab != null)
-        {
-            GameObject expFlame = Instantiate(ExpPrefab, position, Quaternion.identity);
-            
-            ExpFlameManager flameManager = expFlame.GetComponent<ExpFlameManager>();
-            if(flameManager != null)
-            {
-                flameManager.ExpGiven = expGiven;
-                //Debug.Log("Exp given = " + expGiven);
-            }
-        }
-    }
 
     private void PlayerReceiveExp(int expReceived)
     {

@@ -7,6 +7,7 @@ public class EnemyManager : MonoBehaviour//, Ipoolable
 
     [SerializeField] AudioClip clip;
     [SerializeField] int expDropped;
+    [SerializeField] float expDropRate;
     [SerializeField] int damage;
 
     public int ExpDropped { get => expDropped; set => expDropped = value; }
@@ -36,14 +37,14 @@ public class EnemyManager : MonoBehaviour//, Ipoolable
     public void OnDeath()
     {
         AudioManager.GetInstance().PlaySound(clip);
-        if (RNG.Instance.FloatRNG(0, 1) < GameManager.Instance.DropRate)
+        if (RNG.Instance.FloatRNG(0, 1) < expDropRate)
         {
-            ExpFlameDrop();
+            DropExpFlame();
         }
         gameObject.SetActive(false);
     }
 
-    private void ExpFlameDrop()
+    private void DropExpFlame()
     {
         if (GameManager.Instance.ExpPrefab != null)
         {
