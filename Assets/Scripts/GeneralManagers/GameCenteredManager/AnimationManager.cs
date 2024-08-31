@@ -1,6 +1,7 @@
+using System;
 using UnityEngine;
 
-enum AnimationState 
+public enum AnimationState 
 { 
     Idle,
     Walk,
@@ -12,7 +13,7 @@ enum AnimationState
 public class AnimationManager : MonoBehaviour
 {
     Animator animator;
-    private string currentState;
+    private AnimationState currentState;
     public string thisObjectName;
 
     private void Start()
@@ -20,11 +21,13 @@ public class AnimationManager : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
-    public void ChangeAnimationState(string newState)
+    public void ChangeAnimationState(Enum characterName, AnimationState newState)
     {
         if (currentState == newState) return;
 
-        animator.Play(newState);
+        string newAnimation = characterName.ToString() + newState.ToString();
+
+        animator.Play(newAnimation);
 
         currentState = newState;
     }

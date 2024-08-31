@@ -29,42 +29,7 @@ public class PlayerMouvement : MonoBehaviour
     private void Start()
     {
         body = GetComponent<Rigidbody2D>();
-        animationManager = GetComponent<AnimationManager>();
-        animationManager.ChangeAnimationState("Wizard_Idle");
-    }
-
-    // OnStateUpdate is called once per frame
-    void FixedUpdate()
-    {
-        ManageMouvement();
-    }
-
-    private void ManageMouvement()
-    {
-        float horizontalInput = Input.GetAxisRaw("Horizontal");
-
-        float horizontalMove = horizontalInput * speed * Time.deltaTime;
-        float verticalMove = Input.GetAxisRaw("Vertical") * speed * Time.deltaTime;
-
-        body.velocity = new Vector2(horizontalMove, verticalMove);
-
-        if (VelocityIsZero())
-        {
-            animationManager.ChangeAnimationState("Wizard_Idle");
-        }
-        else
-        {
-            if (horizontalInput > 0 && !FacingRight)
-            {
-                FlipCharacter();
-            }
-            else if (horizontalInput < 0 && FacingRight)
-            {
-                FlipCharacter();
-            }
-            animationManager.ChangeAnimationState("Wizard_Walking");
-        }
-    }
+    } 
 
     private void FlipCharacter()
     {

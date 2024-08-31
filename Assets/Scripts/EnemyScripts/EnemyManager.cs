@@ -1,6 +1,5 @@
 using UnityEngine;
-
-enum EnemyType
+public enum EnemyName
 {
     SkeletonSoldier,
     OfficerSkeleton,
@@ -24,17 +23,12 @@ public class EnemyManager : MonoBehaviour//, Ipoolable
     AnimationManager animationManager;
     EnemyAISensor enemyAISensor;
 
-    private string enemyName;
-
     public int ExpDropped { get => expDropped; set => expDropped = value; }
-    public string EnemyName { get => enemyName; }
 
     #region Unity Methods
     private void OnEnable()
     {
-        enemyName = enemyData.enemyType;
-        
-
+       
         if (gameObject.name == "MistKnightPrefab")
         {
             enemyAISensor = GetComponent<EnemyAISensor>();
@@ -70,7 +64,7 @@ public class EnemyManager : MonoBehaviour//, Ipoolable
 
     public void OnDeath()
     {
-        if (gameObject.name == "MistKnightPrefab")
+        if (enemyData.enemyName == EnemyName.MistKnight)
         {
             enemyAISensor.OutOfRangeToAttackAction += enemyMouvement.ChasePlayer;
             enemyAISensor.InRangeToAttackAction += enemyMouvement.StopMoving;
@@ -115,12 +109,12 @@ public class EnemyManager : MonoBehaviour//, Ipoolable
         float distanceWithTarget = ((Vector2)transform.position - enemyMouvement.Target).magnitude;
         if (distanceWithTarget > 0.5)
         {
-            animationManager.ChangeAnimationState("SkeletonSoldier_Walk");
+            animationManager.ChangeAnimationState(enemyData.enemyName, AnimationState.Walk);
             enemyMouvement.ChasePlayer();
         }
         else if (distanceWithTarget <= 0.5)
         {
-            animationManager.ChangeAnimationState("SkeletonSoldier_Idle");
+            animationManager.ChangeAnimationState(enemyData.enemyName, AnimationState.Idle);
             enemyMouvement.StopMoving();
         }
     }

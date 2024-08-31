@@ -9,15 +9,3 @@ public abstract class CharacterData : ScriptableObject
 
     public abstract void InitializeData(int characterBaseHp, int characterBaseDmg, float characterBaseSpeed);
 }
-
-
-[CreateAssetMenu(fileName = "WizardData", menuName = "ScriptableObjects/Characters/Wizard")]
-public class WizardData : CharacterData
-{
-    public override void InitializeData(int hp, int dmg, float speed)
-    {
-        baseHp = hp;
-        baseDmg = dmg;
-        baseSpeed = speed;
-    }
-}

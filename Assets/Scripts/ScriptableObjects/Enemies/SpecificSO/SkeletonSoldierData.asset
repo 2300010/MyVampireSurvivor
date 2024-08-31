@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c89153c906c6ab24a81ce507bffcf907, type: 3}
-  m_Name: SkeletonSoldier
+  m_Name: SkeletonSoldierData
   m_EditorClassIdentifier: 
-  enemyName: SkeletonSoldier
+  enemyName: 
   baseHp: 0
   baseDmg: 0
   baseSpeed: 0

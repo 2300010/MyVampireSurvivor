@@ -1,9 +1,19 @@
 using UnityEngine;
 
+public enum CharacterType
+{
+    Wizard,
+    Warrior,
+    Archer,
+    Thief,
+    Pirate
+}
+
 public class PlayerManager : MonoBehaviour
 {
     [SerializeField] GameObject weaponPrefab;
     [SerializeField] Transform spawnPoint;
+    [SerializeField] CharacterData characterData;
 
     private static PlayerManager instance;
     public static PlayerManager Instance() => instance;
@@ -11,6 +21,8 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] HpManager playerHpManager;
     int exp;
     int level;
+    private AnimationManager animationManager;
+
     public int Exp { get => exp; set => exp = value; }
     public int Level { get => level; set => level = value; }
 
@@ -41,6 +53,7 @@ public class PlayerManager : MonoBehaviour
         playerHpManager.CurrentHp = playerHpManager.MaxHp;
         HpManager.PlayerDeath += OnDeath;
         GameManager.LevelUp += UpdateStats;
+        animationManager = GetComponent<AnimationManager>();
     }
 
     private void Update()
@@ -49,6 +62,11 @@ public class PlayerManager : MonoBehaviour
         {
             Attack();
         }
+    }
+
+    private void FixedUpdate()
+    {
+        ManageMouvement();
     }
     #endregion
 
@@ -69,6 +87,33 @@ public class PlayerManager : MonoBehaviour
     private void Attack()
     {
         Instantiate(weaponPrefab, spawnPoint.position, Quaternion.identity);
+    }
+
+    private void ManageMouvement()
+    {
+        float horizontalInput = Input.GetAxisRaw("Horizontal");
+
+        float horizontalMove = horizontalInput * speed * Time.deltaTime;
+        float verticalMove = Input.GetAxisRaw("Vertical") * speed * Time.deltaTime;
+
+        body.velocity = new Vector2(horizontalMove, verticalMove);
+
+        if (VelocityIsZero())
+        {
+            animationManager.ChangeAnimationState("Wizard_Idle");
+        }
+        else
+        {
+            if (horizontalInput > 0 && !FacingRight)
+            {
+                FlipCharacter();
+            }
+            else if (horizontalInput < 0 && FacingRight)
+            {
+                FlipCharacter();
+            }
+            animationManager.ChangeAnimationState("Wizard_Walking");
+        }
     }
     #endregion
 }

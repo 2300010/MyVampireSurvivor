@@ -2,7 +2,7 @@ using UnityEngine;
 
 public abstract class EnemyData : ScriptableObject
 {
-    public EnemyType enemyType;
+    public EnemyName enemyName;
     public int baseHp;
     public int baseDmg;
     public float baseSpeed;
