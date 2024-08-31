@@ -15,7 +15,7 @@ PrefabInstance:
     - target: {fileID: -4266221856915494403, guid: 07cee1cb829667e45b737d9cc359ab05, type: 3}
       propertyPath: enemyData
       value: 
-      objectReference: {fileID: 11400000, guid: 80ca0e2f5c128fe41a9d6a846b9688ee, type: 2}
+      objectReference: {fileID: 11400000, guid: ab3d608e28c020e4aa8174c51439c094, type: 2}
     - target: {fileID: -4266221856915494403, guid: 07cee1cb829667e45b737d9cc359ab05, type: 3}
       propertyPath: expDropRate
       value: 0.5

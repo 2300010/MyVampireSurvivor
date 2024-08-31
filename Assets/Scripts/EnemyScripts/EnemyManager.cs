@@ -1,5 +1,14 @@
 using UnityEngine;
 
+enum EnemyType
+{
+    SkeletonSoldier,
+    OfficerSkeleton,
+    JrBalrog,
+    MistKnight,
+    DarkCornian
+}
+
 public class EnemyManager : MonoBehaviour//, Ipoolable
 {
 
@@ -20,11 +29,11 @@ public class EnemyManager : MonoBehaviour//, Ipoolable
     public int ExpDropped { get => expDropped; set => expDropped = value; }
     public string EnemyName { get => enemyName; }
 
+    #region Unity Methods
     private void OnEnable()
     {
-        enemyName = enemyData.enemyName;
-        enemyMouvement = GetComponent<EnemyMouvement>();
-        animationManager = GetComponent<AnimationManager>();
+        enemyName = enemyData.enemyType;
+        
 
         if (gameObject.name == "MistKnightPrefab")
         {
@@ -55,6 +64,9 @@ public class EnemyManager : MonoBehaviour//, Ipoolable
             DealDamage();
         }
     }
+    #endregion
+
+    #region Custom Method
 
     public void OnDeath()
     {
@@ -113,4 +125,10 @@ public class EnemyManager : MonoBehaviour//, Ipoolable
         }
     }
 
+    private void GetComponentsOnEnable()
+    {
+        enemyMouvement = GetComponent<EnemyMouvement>();
+        animationManager = GetComponent<AnimationManager>();
+    }
+    #endregion
 }
