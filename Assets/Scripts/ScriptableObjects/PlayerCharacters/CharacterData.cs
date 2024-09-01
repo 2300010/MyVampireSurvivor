@@ -2,7 +2,7 @@ using UnityEngine;
 
 public abstract class CharacterData : ScriptableObject
 {
-    public string characterName;
+    public CharacterName characterName;
     public int baseHp;
     public int baseDmg;
     public float baseSpeed;

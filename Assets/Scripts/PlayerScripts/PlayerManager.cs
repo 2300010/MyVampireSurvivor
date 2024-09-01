@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public enum CharacterType
+public enum CharacterName
 {
     Wizard,
     Warrior,
@@ -22,6 +22,12 @@ public class PlayerManager : MonoBehaviour
     int exp;
     int level;
     private AnimationManager animationManager;
+    private PlayerMouvement playerMouvement;
+    private float speed;
+    private Rigidbody2D body;
+    private bool facingRight = true;
+
+    public bool FacingRight { get => facingRight; set => facingRight = value; }
 
     public int Exp { get => exp; set => exp = value; }
     public int Level { get => level; set => level = value; }
@@ -50,6 +56,7 @@ public class PlayerManager : MonoBehaviour
     {
         Exp = 0;
         Level = 0;
+        speed = characterData.baseSpeed;
         playerHpManager.CurrentHp = playerHpManager.MaxHp;
         HpManager.PlayerDeath += OnDeath;
         GameManager.LevelUp += UpdateStats;
@@ -100,7 +107,7 @@ public class PlayerManager : MonoBehaviour
 
         if (VelocityIsZero())
         {
-            animationManager.ChangeAnimationState("Wizard_Idle");
+            animationManager.ChangeAnimationState(characterData.characterName, AnimationState.Idle);
         }
         else
         {
@@ -112,8 +119,27 @@ public class PlayerManager : MonoBehaviour
             {
                 FlipCharacter();
             }
-            animationManager.ChangeAnimationState("Wizard_Walking");
+            animationManager.ChangeAnimationState(characterData.characterName, AnimationState.Walk);
         }
+    }
+
+    private bool VelocityIsZero()
+    {
+        if (body.velocity.sqrMagnitude > 0)
+        {
+            return false;
+        }
+        return true;
+    }
+
+    private void FlipCharacter()
+    {
+        FacingRight = !FacingRight;
+
+        Vector3 scale = transform.localScale;
+
+        scale.x *= -1;
+        transform.localScale = scale;
     }
     #endregion
 }
