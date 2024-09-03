@@ -1,6 +1,12 @@
 using System;
 using UnityEngine;
 
+public enum ObjectTag
+{
+    Player,
+    Enemy
+}
+
 public class WeaponStatBlock
 {
     public int damage;

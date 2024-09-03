@@ -38,7 +38,7 @@ public class EnemyMouvement : MonoBehaviour
     public void StopMoving()
     {
         speed = 0;
-        SetTargetDestination();
+        target = Vector2.zero;
     }
 
     private void FlipCharacter()

@@ -124,7 +124,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f139f80e56ef8084d871b201ba5ad736, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 180
 --- !u!114 &-8853066824894738420
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -139,7 +138,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weaponPrefab: {fileID: 112894435131411826, guid: ecabf1834db0fa748bf676a7b837f3a2, type: 3}
   spawnPoint: {fileID: 2283904273022824880}
+  characterData: {fileID: 11400000, guid: 426f62b5e4881d946ba7e44d286ca9aa, type: 2}
   playerHpManager: {fileID: -4924310159923508703}
+  speed: 100
 --- !u!114 &-4924310159923508703
 MonoBehaviour:
   m_ObjectHideFlags: 0

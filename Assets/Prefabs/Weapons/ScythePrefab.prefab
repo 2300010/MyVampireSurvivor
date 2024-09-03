@@ -94,7 +94,7 @@ MonoBehaviour:
   playerPrefab: {fileID: 0}
   spawnPoint: {fileID: 0}
   baseLifetime: 4
-  baseDamage: 5
+  baseDamage: 1
   baseSpeed: 5
 --- !u!1 &3400929684938795866
 GameObject:

@@ -22,8 +22,7 @@ public class PlayerManager : MonoBehaviour
     int exp;
     int level;
     private AnimationManager animationManager;
-    private PlayerMouvement playerMouvement;
-    private float speed;
+    [SerializeField] private float speed;
     private Rigidbody2D body;
     private bool facingRight = true;
 
@@ -56,11 +55,13 @@ public class PlayerManager : MonoBehaviour
     {
         Exp = 0;
         Level = 0;
-        speed = characterData.baseSpeed;
+        //speed = characterData.baseSpeed;
         playerHpManager.CurrentHp = playerHpManager.MaxHp;
         HpManager.PlayerDeath += OnDeath;
+        //HpManager.PlayerIsTakingDamage += OnDamageTaken;
         GameManager.LevelUp += UpdateStats;
         animationManager = GetComponent<AnimationManager>();
+        body = GetComponent<Rigidbody2D>();
     }
 
     private void Update()
@@ -82,7 +83,13 @@ public class PlayerManager : MonoBehaviour
     {
         HpManager.PlayerDeath -= OnDeath;
         GameManager.LevelUp -= UpdateStats;
+        ManageAnimation(characterData, AnimationState.Death);
         gameObject.SetActive(false);
+    }
+
+    private void OnDamageTaken()
+    {
+        ManageAnimation(characterData, AnimationState.Hurt);
     }
 
     private void UpdateStats()
@@ -100,6 +107,8 @@ public class PlayerManager : MonoBehaviour
     {
         float horizontalInput = Input.GetAxisRaw("Horizontal");
 
+        //Debug.Log("Horizontal input = " + horizontalInput);
+
         float horizontalMove = horizontalInput * speed * Time.deltaTime;
         float verticalMove = Input.GetAxisRaw("Vertical") * speed * Time.deltaTime;
 
@@ -107,7 +116,7 @@ public class PlayerManager : MonoBehaviour
 
         if (VelocityIsZero())
         {
-            animationManager.ChangeAnimationState(characterData.characterName, AnimationState.Idle);
+            ManageAnimation(characterData, AnimationState.Idle);
         }
         else
         {
@@ -119,7 +128,7 @@ public class PlayerManager : MonoBehaviour
             {
                 FlipCharacter();
             }
-            animationManager.ChangeAnimationState(characterData.characterName, AnimationState.Walk);
+            ManageAnimation(characterData, AnimationState.Walk);
         }
     }
 
@@ -140,6 +149,11 @@ public class PlayerManager : MonoBehaviour
 
         scale.x *= -1;
         transform.localScale = scale;
+    }
+
+    private void ManageAnimation(CharacterData currentCharacterData, AnimationState wantedAnimationState)
+    {
+        animationManager.ChangeAnimationState(currentCharacterData.characterName, wantedAnimationState);
     }
     #endregion
 }

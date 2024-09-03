@@ -6,17 +6,27 @@ public class HpManager : MonoBehaviour
 
     public static event OnPlayerDeath PlayerDeath;
 
+    public delegate void OnPlayerDamaged();
+
+    public static event OnPlayerDamaged PlayerIsTakingDamage;
+
     [SerializeField] int maxHp;
     private int currentHp;
-    EnemyManager enemyManager;
+    private EnemyManager enemyManager;
+    private ObjectTag currentObjectTag;
 
     #region Unity Methods
 
     private void OnEnable()
     {
-        if (gameObject.CompareTag("Enemy"))
+        if (gameObject.CompareTag(ObjectTag.Enemy.ToString()))
         {
+            currentObjectTag = ObjectTag.Enemy;
             enemyManager = gameObject.GetComponent<EnemyManager>();
+        }
+        else
+        {
+            currentObjectTag = ObjectTag.Player;
         }
     }
 
@@ -29,11 +39,11 @@ public class HpManager : MonoBehaviour
             {
                 value = 0;
 
-                if (gameObject.CompareTag("Enemy"))
+                if (currentObjectTag == ObjectTag.Enemy)
                 {
                     enemyManager.OnDeath();
                 }
-                else if (gameObject.CompareTag("Player"))
+                else if (currentObjectTag == ObjectTag.Player)
                 {
                     PlayerDeath?.Invoke();
                 }
@@ -48,6 +58,15 @@ public class HpManager : MonoBehaviour
     public void TakeDamage(int damage)
     {
         CurrentHp -= damage;
+        if(currentObjectTag == ObjectTag.Enemy)
+        {
+            enemyManager.OnDamageTaken();
+        }
+        else if (currentObjectTag == ObjectTag.Player)
+        {
+            PlayerIsTakingDamage?.Invoke();
+        }
+        
 
         Debug.Log("Character " + gameObject.name + "'s current hp = " + currentHp);
     }

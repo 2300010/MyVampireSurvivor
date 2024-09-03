@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 public enum EnemyName
 {
@@ -18,23 +19,34 @@ public class EnemyManager : MonoBehaviour//, Ipoolable
     [SerializeField] int expDropped;
     [SerializeField] float expDropRate;
     [SerializeField] int damage;
+    [SerializeField] float delayOnDamageTaken;
+    private bool isDamaged;
+    private bool isDead;
 
     EnemyMouvement enemyMouvement;
     AnimationManager animationManager;
     EnemyAISensor enemyAISensor;
+    private float damageTimer;
 
     public int ExpDropped { get => expDropped; set => expDropped = value; }
 
     #region Unity Methods
     private void OnEnable()
     {
-       
+        SetComponentsOnEnable();
         if (gameObject.name == "MistKnightPrefab")
         {
             enemyAISensor = GetComponent<EnemyAISensor>();
             enemyAISensor.OutOfRangeToAttackAction += enemyMouvement.ChasePlayer;
             enemyAISensor.InRangeToAttackAction += enemyMouvement.StopMoving;
         }
+
+        hpManager.CurrentHp = enemyData.baseHp;
+        isDamaged = false;
+        isDead = false;
+        damageTimer = 0f;
+
+        //Debug.Log("HP = " + hpManager.CurrentHp + " Character = " + enemyData.enemyName);
     }
 
     private void FixedUpdate()
@@ -53,7 +65,7 @@ public class EnemyManager : MonoBehaviour//, Ipoolable
 
         //Debug.Log("Collision with :" + collider.gameObject.name);
 
-        if (collider.CompareTag("Player"))
+        if (collider.CompareTag(ObjectTag.Player.ToString()))
         {
             DealDamage();
         }
@@ -64,18 +76,21 @@ public class EnemyManager : MonoBehaviour//, Ipoolable
 
     public void OnDeath()
     {
-        if (enemyData.enemyName == EnemyName.MistKnight)
-        {
-            enemyAISensor.OutOfRangeToAttackAction += enemyMouvement.ChasePlayer;
-            enemyAISensor.InRangeToAttackAction += enemyMouvement.StopMoving;
-        }
-        AudioManager.GetInstance().PlaySound(clip);
+        isDead = true;
+        StartCoroutine(DeathSequence());
+    }
 
-        if (RNG.Instance.FloatRNG(0, 1) < expDropRate)
+    public void OnDamageTaken()
+    {
+        if (!isDamaged)
         {
-            DropExpFlame();
+            enemyMouvement.StopMoving();
+
+            ManageEnemyAnimation(AnimationState.Hurt);
+
+            damageTimer = 0f;
+            isDamaged = true;
         }
-        gameObject.SetActive(false);
     }
 
     private void DropExpFlame()
@@ -107,22 +122,95 @@ public class EnemyManager : MonoBehaviour//, Ipoolable
     private void ManageMouvement()
     {
         float distanceWithTarget = ((Vector2)transform.position - enemyMouvement.Target).magnitude;
-        if (distanceWithTarget > 0.5)
+
+        if (isDamaged)
         {
-            animationManager.ChangeAnimationState(enemyData.enemyName, AnimationState.Walk);
-            enemyMouvement.ChasePlayer();
+            if (!isDead)
+            {
+                damageTimer += Time.fixedDeltaTime;
+
+                if (damageTimer >= delayOnDamageTaken)
+                {
+                    if (distanceWithTarget > 0.5)
+                    {
+                        ManageEnemyAnimation(AnimationState.Walk);
+                        enemyMouvement.ChasePlayer();
+                    }
+                    else if (distanceWithTarget <= 0.5)
+                    {
+                        ManageEnemyAnimation(AnimationState.Idle);
+                        enemyMouvement.StopMoving();
+                    }
+                    isDamaged = false;
+
+                }
+            }
+            else
+            {
+                return;
+            }
         }
-        else if (distanceWithTarget <= 0.5)
+        else
         {
-            animationManager.ChangeAnimationState(enemyData.enemyName, AnimationState.Idle);
-            enemyMouvement.StopMoving();
+            if (distanceWithTarget > 0.5)
+            {
+                ManageEnemyAnimation(AnimationState.Walk);
+                enemyMouvement.ChasePlayer();
+            }
+            else if (distanceWithTarget <= 0.5)
+            {
+                ManageEnemyAnimation(AnimationState.Idle);
+                enemyMouvement.StopMoving();
+            }
         }
     }
 
-    private void GetComponentsOnEnable()
+    private void SetComponentsOnEnable()
     {
         enemyMouvement = GetComponent<EnemyMouvement>();
         animationManager = GetComponent<AnimationManager>();
+    }
+
+    private void ManageEnemyAnimation(AnimationState wantedAnimationState)
+    {
+        animationManager.ChangeAnimationState(enemyData.enemyName, wantedAnimationState);
+    }
+
+    IEnumerator DeathSequence()
+    {
+        //ManageEnemyAnimation(AnimationState.Hurt);
+
+        Debug.Log("Playing Hurt animation!");
+
+        yield return new WaitUntil(() => IsAnimationFinished(AnimationState.Hurt));
+
+        yield return new WaitForSeconds(0.5f);
+
+
+        AudioManager.GetInstance().PlaySound(clip);
+        ManageEnemyAnimation(AnimationState.Death);
+
+        yield return new WaitUntil(() => IsAnimationFinished(AnimationState.Death));
+
+        if (enemyData.enemyName == EnemyName.MistKnight)
+        {
+            enemyAISensor.OutOfRangeToAttackAction -= enemyMouvement.ChasePlayer;
+            enemyAISensor.InRangeToAttackAction -= enemyMouvement.StopMoving;
+        }
+
+        gameObject.SetActive(false);
+
+        if (RNG.Instance.FloatRNG(0, 1) < expDropRate)
+        {
+            DropExpFlame();
+        }
+    }
+
+    private bool IsAnimationFinished(AnimationState animation)
+    {
+        AnimatorStateInfo stateInfo = animationManager.GetAnimationState();
+        //Debug.Log($"Current State: {stateInfo.fullPathHash}, Expected: {Animator.StringToHash(animation.ToString())}, Normalized Time: {stateInfo.normalizedTime}");
+        return stateInfo.IsName(enemyData.enemyName.ToString() + "_" + animation.ToString()) && stateInfo.normalizedTime >= 1f;
     }
     #endregion
 }

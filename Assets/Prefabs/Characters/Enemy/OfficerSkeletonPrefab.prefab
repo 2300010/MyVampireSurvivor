@@ -8,6 +8,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -3689367821381723024, guid: af97c38ab72398a42b16c8fb9cefc702, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: d404cdf67796ac14da98c35616b5b88b, type: 2}
     - target: {fileID: 3098416990476344360, guid: af97c38ab72398a42b16c8fb9cefc702, type: 3}
       propertyPath: baseSpeed
       value: 0.8
@@ -79,7 +83,7 @@ PrefabInstance:
     - target: {fileID: 8818002559181380247, guid: af97c38ab72398a42b16c8fb9cefc702, type: 3}
       propertyPath: enemyData
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11400000, guid: 4995c5ac19150e142b2ddd6d5605b4fc, type: 2}
     - target: {fileID: 8874583896021064778, guid: af97c38ab72398a42b16c8fb9cefc702, type: 3}
       propertyPath: m_Size.x
       value: 2.1086736

@@ -9,10 +9,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c89153c906c6ab24a81ce507bffcf907, type: 3}
-  m_Name: SkeletonSoldierData
+  m_Script: {fileID: 11500000, guid: 8d98931494d7f4e4ca8ba6015cfa01be, type: 3}
+  m_Name: WizardData
   m_EditorClassIdentifier: 
-  enemyName: 0
-  baseHp: 2
-  baseDmg: 2
+  characterName: 0
+  baseHp: 10
+  baseDmg: 1
   baseSpeed: 0

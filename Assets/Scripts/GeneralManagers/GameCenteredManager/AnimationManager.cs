@@ -25,10 +25,15 @@ public class AnimationManager : MonoBehaviour
     {
         if (currentState == newState) return;
 
-        string newAnimation = characterName.ToString() + newState.ToString();
+        string newAnimation = characterName.ToString() + "_" + newState.ToString();
 
         animator.Play(newAnimation);
 
         currentState = newState;
+    }
+
+    public AnimatorStateInfo GetAnimationState()
+    {
+        return animator.GetCurrentAnimatorStateInfo(0);
     }
 }
