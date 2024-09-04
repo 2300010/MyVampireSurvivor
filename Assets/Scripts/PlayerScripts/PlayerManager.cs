@@ -58,7 +58,7 @@ public class PlayerManager : MonoBehaviour
         //speed = characterData.baseSpeed;
         playerHpManager.CurrentHp = playerHpManager.MaxHp;
         HpManager.PlayerDeath += OnDeath;
-        //HpManager.PlayerIsTakingDamage += OnDamageTaken;
+        HpManager.PlayerIsTakingDamage += OnDamageTaken;
         GameManager.LevelUp += UpdateStats;
         animationManager = GetComponent<AnimationManager>();
         body = GetComponent<Rigidbody2D>();
@@ -82,6 +82,7 @@ public class PlayerManager : MonoBehaviour
     private void OnDeath()
     {
         HpManager.PlayerDeath -= OnDeath;
+        HpManager.PlayerIsTakingDamage -= OnDamageTaken;
         GameManager.LevelUp -= UpdateStats;
         ManageAnimation(characterData, AnimationState.Death);
         gameObject.SetActive(false);
@@ -128,7 +129,7 @@ public class PlayerManager : MonoBehaviour
             {
                 FlipCharacter();
             }
-            ManageAnimation(characterData, AnimationState.Walk);
+            ManageAnimation(characterData, AnimationState.Move);
         }
     }
 

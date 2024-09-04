@@ -136,7 +136,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: PC Computer - MapleStory - Goblin Fire_0
+      name: Goblin Fire_Idle_0
       rect:
         serializedVersion: 2
         x: 4
@@ -157,10 +157,10 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - MapleStory - Goblin Fire_1
+      name: Goblin Fire_Idle_1
       rect:
         serializedVersion: 2
-        x: 58
+        x: 59
         y: 202
         width: 39
         height: 48
@@ -178,7 +178,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - MapleStory - Goblin Fire_2
+      name: Goblin Fire_Idle_2
       rect:
         serializedVersion: 2
         x: 115
@@ -199,7 +199,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - MapleStory - Goblin Fire_3
+      name: Goblin Fire_Idle_3
       rect:
         serializedVersion: 2
         x: 174
@@ -220,7 +220,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - MapleStory - Goblin Fire_4
+      name: Goblin Fire_Idle_4
       rect:
         serializedVersion: 2
         x: 229
@@ -241,7 +241,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - MapleStory - Goblin Fire_6
+      name: Goblin Fire_Idle_5
       rect:
         serializedVersion: 2
         x: 284
@@ -262,7 +262,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - MapleStory - Goblin Fire_8
+      name: Goblin Fire_Idle_6
       rect:
         serializedVersion: 2
         x: 337
@@ -283,7 +283,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - MapleStory - Goblin Fire_9
+      name: Goblin Fire_Idle_7
       rect:
         serializedVersion: 2
         x: 389
@@ -304,7 +304,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - MapleStory - Goblin Fire_10
+      name: Goblin Fire_Hurt
       rect:
         serializedVersion: 2
         x: 5
@@ -325,7 +325,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - MapleStory - Goblin Fire_11
+      name: Goblin Fire_Death_0
       rect:
         serializedVersion: 2
         x: 4
@@ -346,7 +346,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - MapleStory - Goblin Fire_12
+      name: Goblin Fire_Death_1
       rect:
         serializedVersion: 2
         x: 57
@@ -367,7 +367,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - MapleStory - Goblin Fire_14
+      name: Goblin Fire_Death_2
       rect:
         serializedVersion: 2
         x: 114
@@ -388,7 +388,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - MapleStory - Goblin Fire_16
+      name: Goblin Fire_Death_3
       rect:
         serializedVersion: 2
         x: 170
@@ -409,7 +409,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: PC Computer - MapleStory - Goblin Fire_17
+      name: Goblin Fire_Death_4
       rect:
         serializedVersion: 2
         x: 226
@@ -440,19 +440,24 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      PC Computer - MapleStory - Goblin Fire_0: 1684517022
-      PC Computer - MapleStory - Goblin Fire_1: 1554418652
-      PC Computer - MapleStory - Goblin Fire_10: 1744968890
-      PC Computer - MapleStory - Goblin Fire_11: 1705562989
-      PC Computer - MapleStory - Goblin Fire_12: 1230450382
+      Goblin Fire_Death_0: 1705562989
+      Goblin Fire_Death_1: 1230450382
+      Goblin Fire_Death_2: 1101111986
+      Goblin Fire_Death_3: -425594028
+      Goblin Fire_Death_4: 1041586291
+      Goblin Fire_Hurt: 1744968890
+      Goblin Fire_Idle_0: 1684517022
+      Goblin Fire_Idle_1: 1554418652
+      Goblin Fire_Idle_2: 1055413526
+      Goblin Fire_Idle_3: -193528895
+      Goblin Fire_Idle_4: 1831209163
+      Goblin Fire_Idle_5: 1132481426
+      Goblin Fire_Idle_6: 2041529408
+      Goblin Fire_Idle_7: -482864765
       PC Computer - MapleStory - Goblin Fire_13: 235554384
-      PC Computer - MapleStory - Goblin Fire_14: 1101111986
       PC Computer - MapleStory - Goblin Fire_15: 664851195
-      PC Computer - MapleStory - Goblin Fire_16: -425594028
-      PC Computer - MapleStory - Goblin Fire_17: 1041586291
       PC Computer - MapleStory - Goblin Fire_18: 1000757088
       PC Computer - MapleStory - Goblin Fire_19: 1593707310
-      PC Computer - MapleStory - Goblin Fire_2: 1055413526
       PC Computer - MapleStory - Goblin Fire_20: -1757586323
       PC Computer - MapleStory - Goblin Fire_21: -1569426235
       PC Computer - MapleStory - Goblin Fire_22: 834830284
@@ -463,14 +468,9 @@ TextureImporter:
       PC Computer - MapleStory - Goblin Fire_27: -960490449
       PC Computer - MapleStory - Goblin Fire_28: 431956658
       PC Computer - MapleStory - Goblin Fire_29: -518392419
-      PC Computer - MapleStory - Goblin Fire_3: -193528895
       PC Computer - MapleStory - Goblin Fire_30: 31748767
-      PC Computer - MapleStory - Goblin Fire_4: 1831209163
       PC Computer - MapleStory - Goblin Fire_5: 2071361653
-      PC Computer - MapleStory - Goblin Fire_6: 1132481426
       PC Computer - MapleStory - Goblin Fire_7: 1766076862
-      PC Computer - MapleStory - Goblin Fire_8: 2041529408
-      PC Computer - MapleStory - Goblin Fire_9: -482864765
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

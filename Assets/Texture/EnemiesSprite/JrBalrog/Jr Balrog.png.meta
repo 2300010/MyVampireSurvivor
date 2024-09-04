@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 50
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -136,7 +136,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Jr Balrog_3
+      name: Jr Balrog_Idle_0
       rect:
         serializedVersion: 2
         x: 13
@@ -144,7 +144,7 @@ TextureImporter:
         width: 161
         height: 158
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -157,7 +157,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jr Balrog_4
+      name: Jr Balrog_Idle_1
       rect:
         serializedVersion: 2
         x: 195
@@ -165,7 +165,7 @@ TextureImporter:
         width: 162
         height: 158
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -178,7 +178,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jr Balrog_6
+      name: Jr Balrog_Move_0
       rect:
         serializedVersion: 2
         x: 9
@@ -186,7 +186,7 @@ TextureImporter:
         width: 173
         height: 163
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -199,7 +199,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jr Balrog_7
+      name: Jr Balrog_Move_1
       rect:
         serializedVersion: 2
         x: 196
@@ -207,7 +207,7 @@ TextureImporter:
         width: 160
         height: 157
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -220,7 +220,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jr Balrog_8
+      name: Jr Balrog_Move_2
       rect:
         serializedVersion: 2
         x: 371
@@ -228,7 +228,7 @@ TextureImporter:
         width: 177
         height: 168
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -241,7 +241,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jr Balrog_9
+      name: Jr Balrog_Move_3
       rect:
         serializedVersion: 2
         x: 562
@@ -249,7 +249,7 @@ TextureImporter:
         width: 169
         height: 159
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -262,7 +262,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jr Balrog_10
+      name: Jr Balrog_Move_4
       rect:
         serializedVersion: 2
         x: 747
@@ -270,7 +270,7 @@ TextureImporter:
         width: 178
         height: 172
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -283,7 +283,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jr Balrog_16
+      name: Jr Balrog_CometAttack_0
       rect:
         serializedVersion: 2
         x: 21
@@ -291,7 +291,7 @@ TextureImporter:
         width: 178
         height: 162
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -304,7 +304,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jr Balrog_17
+      name: Jr Balrog_CometAttack_1
       rect:
         serializedVersion: 2
         x: 210
@@ -312,7 +312,7 @@ TextureImporter:
         width: 162
         height: 158
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -325,7 +325,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jr Balrog_18
+      name: Jr Balrog_CometAttack_2
       rect:
         serializedVersion: 2
         x: 384
@@ -333,7 +333,7 @@ TextureImporter:
         width: 161
         height: 158
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -346,7 +346,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jr Balrog_19
+      name: Jr Balrog_CometAttack_3
       rect:
         serializedVersion: 2
         x: 558
@@ -354,7 +354,7 @@ TextureImporter:
         width: 248
         height: 195
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -367,7 +367,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jr Balrog_20
+      name: Jr Balrog_CometAttack_4
       rect:
         serializedVersion: 2
         x: 818
@@ -375,7 +375,7 @@ TextureImporter:
         width: 245
         height: 195
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -388,7 +388,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jr Balrog_21
+      name: Jr Balrog_CometAttack_5
       rect:
         serializedVersion: 2
         x: 16
@@ -396,7 +396,7 @@ TextureImporter:
         width: 503
         height: 181
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -409,7 +409,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jr Balrog_22
+      name: Jr Balrog_CometAttack_6
       rect:
         serializedVersion: 2
         x: 539
@@ -417,7 +417,7 @@ TextureImporter:
         width: 246
         height: 194
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -430,7 +430,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jr Balrog_23
+      name: Jr Balrog_CometAttack_7
       rect:
         serializedVersion: 2
         x: 809
@@ -438,7 +438,7 @@ TextureImporter:
         width: 160
         height: 157
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -451,7 +451,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jr Balrog_24
+      name: Jr Balrog_CometEffect_0
       rect:
         serializedVersion: 2
         x: 16
@@ -459,7 +459,7 @@ TextureImporter:
         width: 26
         height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -472,7 +472,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jr Balrog_25
+      name: Jr Balrog_CometEffect_1
       rect:
         serializedVersion: 2
         x: 48
@@ -480,7 +480,7 @@ TextureImporter:
         width: 26
         height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -493,7 +493,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jr Balrog_26
+      name: Jr Balrog_CometEffect_2
       rect:
         serializedVersion: 2
         x: 81
@@ -501,7 +501,7 @@ TextureImporter:
         width: 106
         height: 102
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -514,7 +514,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jr Balrog_27
+      name: Jr Balrog_CometEffect_3
       rect:
         serializedVersion: 2
         x: 204
@@ -522,7 +522,7 @@ TextureImporter:
         width: 105
         height: 103
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -535,7 +535,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jr Balrog_28
+      name: Jr Balrog_CometEffect_4
       rect:
         serializedVersion: 2
         x: 329
@@ -543,7 +543,7 @@ TextureImporter:
         width: 114
         height: 111
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -556,7 +556,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jr Balrog_29
+      name: Jr Balrog_CometEffect_5
       rect:
         serializedVersion: 2
         x: 455
@@ -564,7 +564,7 @@ TextureImporter:
         width: 120
         height: 113
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -577,7 +577,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jr Balrog_30
+      name: Jr Balrog_CometEffect_6
       rect:
         serializedVersion: 2
         x: 578
@@ -585,7 +585,7 @@ TextureImporter:
         width: 128
         height: 113
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -598,7 +598,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jr Balrog_31
+      name: Jr Balrog_CometEffect_7
       rect:
         serializedVersion: 2
         x: 709
@@ -606,7 +606,7 @@ TextureImporter:
         width: 125
         height: 113
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -619,7 +619,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jr Balrog_32
+      name: Jr Balrog_Comet_1
       rect:
         serializedVersion: 2
         x: 134
@@ -627,7 +627,7 @@ TextureImporter:
         width: 142
         height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -640,15 +640,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jr Balrog_37
+      name: Jr Balrog_Comet_0
       rect:
         serializedVersion: 2
-        x: 10
+        x: 12
         y: 1365
         width: 115
         height: 115
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -661,7 +661,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jr Balrog_54
+      name: Jr Balrog_Comet_2
       rect:
         serializedVersion: 2
         x: 301
@@ -669,7 +669,7 @@ TextureImporter:
         width: 142
         height: 135
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -682,7 +682,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jr Balrog_62
+      name: Jr Balrog_Comet_4
       rect:
         serializedVersion: 2
         x: 621
@@ -690,7 +690,7 @@ TextureImporter:
         width: 62
         height: 129
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -703,7 +703,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jr Balrog_64
+      name: Jr Balrog_Comet_3
       rect:
         serializedVersion: 2
         x: 460
@@ -711,7 +711,7 @@ TextureImporter:
         width: 136
         height: 136
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -724,7 +724,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jr Balrog_65
+      name: Jr Balrog_Comet_5
       rect:
         serializedVersion: 2
         x: 715
@@ -732,7 +732,7 @@ TextureImporter:
         width: 61
         height: 129
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -745,7 +745,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jr Balrog_67
+      name: Jr Balrog_Comet_6
       rect:
         serializedVersion: 2
         x: 805
@@ -753,7 +753,7 @@ TextureImporter:
         width: 48
         height: 128
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -766,7 +766,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jr Balrog_78
+      name: Jr Balrog_FIreFistAttack_0
       rect:
         serializedVersion: 2
         x: 10
@@ -774,7 +774,7 @@ TextureImporter:
         width: 202
         height: 159
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -787,7 +787,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jr Balrog_79
+      name: Jr Balrog_FIreFistAttack_1
       rect:
         serializedVersion: 2
         x: 229
@@ -795,7 +795,7 @@ TextureImporter:
         width: 194
         height: 162
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -808,7 +808,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jr Balrog_80
+      name: Jr Balrog_FIreFistAttack_2
       rect:
         serializedVersion: 2
         x: 439
@@ -816,7 +816,7 @@ TextureImporter:
         width: 193
         height: 171
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -829,7 +829,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jr Balrog_81
+      name: Jr Balrog_FIreFistAttack_3
       rect:
         serializedVersion: 2
         x: 652
@@ -837,7 +837,7 @@ TextureImporter:
         width: 193
         height: 171
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -850,7 +850,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jr Balrog_82
+      name: Jr Balrog_FireFist_0
       rect:
         serializedVersion: 2
         x: 10
@@ -858,7 +858,7 @@ TextureImporter:
         width: 48
         height: 75
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -871,7 +871,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jr Balrog_83
+      name: Jr Balrog_FireFist_1
       rect:
         serializedVersion: 2
         x: 66
@@ -879,7 +879,7 @@ TextureImporter:
         width: 48
         height: 70
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -892,7 +892,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jr Balrog_84
+      name: Jr Balrog_FireFist_2
       rect:
         serializedVersion: 2
         x: 124
@@ -900,7 +900,7 @@ TextureImporter:
         width: 48
         height: 70
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -913,7 +913,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jr Balrog_85
+      name: Jr Balrog_FireFist_CircleEffect_0
       rect:
         serializedVersion: 2
         x: 188
@@ -921,7 +921,7 @@ TextureImporter:
         width: 73
         height: 91
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -934,7 +934,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jr Balrog_87
+      name: Jr Balrog_FireFist_CircleEffect_1
       rect:
         serializedVersion: 2
         x: 263
@@ -942,7 +942,7 @@ TextureImporter:
         width: 84
         height: 35
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -955,7 +955,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jr Balrog_88
+      name: Jr Balrog_FireFist_CircleEffect_2
       rect:
         serializedVersion: 2
         x: 361
@@ -963,7 +963,7 @@ TextureImporter:
         width: 87
         height: 109
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -976,7 +976,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jr Balrog_89
+      name: Jr Balrog_FireFist_CircleEffect_3
       rect:
         serializedVersion: 2
         x: 460
@@ -984,7 +984,7 @@ TextureImporter:
         width: 97
         height: 117
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -997,7 +997,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jr Balrog_90
+      name: Jr Balrog_FireFist_CircleEffect_4
       rect:
         serializedVersion: 2
         x: 563
@@ -1005,7 +1005,7 @@ TextureImporter:
         width: 101
         height: 123
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1018,7 +1018,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jr Balrog_95
+      name: Jr Balrog_FireBall_0
       rect:
         serializedVersion: 2
         x: 9
@@ -1026,7 +1026,7 @@ TextureImporter:
         width: 62
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1039,7 +1039,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jr Balrog_96
+      name: Jr Balrog_FireBall_1
       rect:
         serializedVersion: 2
         x: 81
@@ -1047,7 +1047,7 @@ TextureImporter:
         width: 70
         height: 34
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1060,7 +1060,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jr Balrog_97
+      name: Jr Balrog_FireBall_2
       rect:
         serializedVersion: 2
         x: 164
@@ -1068,7 +1068,7 @@ TextureImporter:
         width: 61
         height: 32
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1081,7 +1081,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jr Balrog_98
+      name: Jr Balrog_FireBallHit_0
       rect:
         serializedVersion: 2
         x: 13
@@ -1089,7 +1089,7 @@ TextureImporter:
         width: 101
         height: 115
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1102,7 +1102,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jr Balrog_102
+      name: Jr Balrog_FireBallHit_1
       rect:
         serializedVersion: 2
         x: 146
@@ -1110,7 +1110,7 @@ TextureImporter:
         width: 104
         height: 108
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1123,7 +1123,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jr Balrog_107
+      name: Jr Balrog_FireBallHit_3
       rect:
         serializedVersion: 2
         x: 430
@@ -1131,7 +1131,7 @@ TextureImporter:
         width: 112
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1144,7 +1144,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jr Balrog_121
+      name: Jr Balrog_FireBallHit_2
       rect:
         serializedVersion: 2
         x: 280
@@ -1152,7 +1152,7 @@ TextureImporter:
         width: 112
         height: 119
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1165,7 +1165,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jr Balrog_128
+      name: Jr Balrog_SlashAttack_2
       rect:
         serializedVersion: 2
         x: 415
@@ -1173,7 +1173,7 @@ TextureImporter:
         width: 191
         height: 173
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1186,7 +1186,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jr Balrog_129
+      name: Jr Balrog_SlashAttack_0
       rect:
         serializedVersion: 2
         x: 7
@@ -1194,7 +1194,7 @@ TextureImporter:
         width: 177
         height: 162
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1207,7 +1207,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jr Balrog_130
+      name: Jr Balrog_SlashAttack_1
       rect:
         serializedVersion: 2
         x: 201
@@ -1215,7 +1215,7 @@ TextureImporter:
         width: 194
         height: 163
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1228,7 +1228,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jr Balrog_131
+      name: Jr Balrog_SlashAttack_3
       rect:
         serializedVersion: 2
         x: 626
@@ -1236,7 +1236,7 @@ TextureImporter:
         width: 203
         height: 161
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1249,7 +1249,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jr Balrog_132
+      name: Jr Balrog_SlashEffect_0
       rect:
         serializedVersion: 2
         x: 7
@@ -1257,7 +1257,7 @@ TextureImporter:
         width: 245
         height: 114
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1270,7 +1270,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jr Balrog_133
+      name: Jr Balrog_SlashEffect_1
       rect:
         serializedVersion: 2
         x: 264
@@ -1278,7 +1278,7 @@ TextureImporter:
         width: 244
         height: 114
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1291,7 +1291,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jr Balrog_134
+      name: Jr Balrog_SlashEffect_2
       rect:
         serializedVersion: 2
         x: 519
@@ -1299,7 +1299,7 @@ TextureImporter:
         width: 244
         height: 113
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1312,7 +1312,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jr Balrog_135
+      name: Jr Balrog_SlashEffect_3
       rect:
         serializedVersion: 2
         x: 772
@@ -1320,7 +1320,7 @@ TextureImporter:
         width: 242
         height: 112
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1333,7 +1333,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jr Balrog_136
+      name: Jr Balrog_SlashHit_0
       rect:
         serializedVersion: 2
         x: 9
@@ -1341,7 +1341,7 @@ TextureImporter:
         width: 78
         height: 72
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1354,7 +1354,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jr Balrog_137
+      name: Jr Balrog_SlashHit_1
       rect:
         serializedVersion: 2
         x: 101
@@ -1362,7 +1362,7 @@ TextureImporter:
         width: 78
         height: 80
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1375,7 +1375,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jr Balrog_138
+      name: Jr Balrog_SlashHit_2
       rect:
         serializedVersion: 2
         x: 188
@@ -1383,7 +1383,7 @@ TextureImporter:
         width: 83
         height: 96
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1396,7 +1396,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jr Balrog_139
+      name: Jr Balrog_SlashHit_3
       rect:
         serializedVersion: 2
         x: 281
@@ -1404,7 +1404,7 @@ TextureImporter:
         width: 77
         height: 80
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1417,7 +1417,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jr Balrog_141
+      name: Jr Balrog_Hurt
       rect:
         serializedVersion: 2
         x: 11
@@ -1425,7 +1425,7 @@ TextureImporter:
         width: 173
         height: 162
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1438,7 +1438,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jr Balrog_144
+      name: Jr Balrog_Death_0
       rect:
         serializedVersion: 2
         x: 11
@@ -1446,7 +1446,7 @@ TextureImporter:
         width: 153
         height: 159
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1459,7 +1459,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jr Balrog_145
+      name: Jr Balrog_Death_1
       rect:
         serializedVersion: 2
         x: 179
@@ -1467,7 +1467,7 @@ TextureImporter:
         width: 226
         height: 160
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1480,7 +1480,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Jr Balrog_146
+      name: Jr Balrog_Death_2
       rect:
         serializedVersion: 2
         x: 421
@@ -1488,7 +1488,7 @@ TextureImporter:
         width: 242
         height: 121
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1513,15 +1513,12 @@ TextureImporter:
     nameFileIdTable:
       Jr Balrog_0: 1571150500
       Jr Balrog_1: 1887272614
-      Jr Balrog_10: -398772595
       Jr Balrog_100: -1120206442
       Jr Balrog_101: -1670961028
-      Jr Balrog_102: 1551620850
       Jr Balrog_103: -566099285
       Jr Balrog_104: -986840565
       Jr Balrog_105: 1275331956
       Jr Balrog_106: -800448189
-      Jr Balrog_107: 722659640
       Jr Balrog_108: -657984926
       Jr Balrog_109: 479188103
       Jr Balrog_11: 1018234099
@@ -1537,34 +1534,17 @@ TextureImporter:
       Jr Balrog_119: 324624997
       Jr Balrog_12: -1346738645
       Jr Balrog_120: 1765159605
-      Jr Balrog_121: 1219788883
       Jr Balrog_122: 50582403
       Jr Balrog_123: 1861725439
       Jr Balrog_124: -1835469188
       Jr Balrog_125: -734931818
       Jr Balrog_126: 1346962637
       Jr Balrog_127: -1741542419
-      Jr Balrog_128: 1288132137
-      Jr Balrog_129: 1253211189
       Jr Balrog_13: -1671109292
-      Jr Balrog_130: -1814535515
-      Jr Balrog_131: 1308606525
-      Jr Balrog_132: 763084084
-      Jr Balrog_133: 782328856
-      Jr Balrog_134: 915992847
-      Jr Balrog_135: -742118200
-      Jr Balrog_136: -1544693371
-      Jr Balrog_137: -940371244
-      Jr Balrog_138: 933739203
-      Jr Balrog_139: -749839160
       Jr Balrog_14: 204988004
       Jr Balrog_140: 2040698224
-      Jr Balrog_141: -1887705965
       Jr Balrog_142: -1589441981
       Jr Balrog_143: -943608032
-      Jr Balrog_144: -468398468
-      Jr Balrog_145: 1226696972
-      Jr Balrog_146: -371009438
       Jr Balrog_147: 231945973
       Jr Balrog_148: 447286385
       Jr Balrog_149: -36158245
@@ -1579,7 +1559,6 @@ TextureImporter:
       Jr Balrog_157: -208793101
       Jr Balrog_158: -235689469
       Jr Balrog_159: 1849835094
-      Jr Balrog_16: 1030328691
       Jr Balrog_160: -2126137029
       Jr Balrog_161: 1195084384
       Jr Balrog_162: -1690764225
@@ -1590,33 +1569,14 @@ TextureImporter:
       Jr Balrog_167: -1842771508
       Jr Balrog_168: 815344609
       Jr Balrog_169: -384934113
-      Jr Balrog_17: 816607109
       Jr Balrog_170: -549589254
-      Jr Balrog_18: 1169382980
-      Jr Balrog_19: -274366810
       Jr Balrog_2: -1719305534
-      Jr Balrog_20: 1022713206
-      Jr Balrog_21: -1961567748
-      Jr Balrog_22: 1474814435
-      Jr Balrog_23: 1529808576
-      Jr Balrog_24: 626319011
-      Jr Balrog_25: -13559545
-      Jr Balrog_26: 1075741463
-      Jr Balrog_27: 465761050
-      Jr Balrog_28: 1405771303
-      Jr Balrog_29: 1232584957
-      Jr Balrog_3: 1355248328
-      Jr Balrog_30: 865476869
-      Jr Balrog_31: -637141402
-      Jr Balrog_32: 2033524840
       Jr Balrog_33: -952524158
       Jr Balrog_34: -2056443154
       Jr Balrog_35: -1722917302
       Jr Balrog_36: -1337002522
-      Jr Balrog_37: -508997383
       Jr Balrog_38: -284934
       Jr Balrog_39: -1777762543
-      Jr Balrog_4: -1984949583
       Jr Balrog_40: -1650207912
       Jr Balrog_41: -1947883320
       Jr Balrog_42: 1436811476
@@ -1627,29 +1587,21 @@ TextureImporter:
       Jr Balrog_47: -74799983
       Jr Balrog_48: 1042807516
       Jr Balrog_49: 174488727
-      Jr Balrog_5: 2040925500
       Jr Balrog_50: -1584472067
       Jr Balrog_51: -838304793
       Jr Balrog_52: 180930327
       Jr Balrog_53: -315815967
-      Jr Balrog_54: -229797658
       Jr Balrog_55: 1701558137
       Jr Balrog_56: 1865933987
       Jr Balrog_57: 1806220022
       Jr Balrog_58: 1972416266
       Jr Balrog_59: -96116044
-      Jr Balrog_6: 51694273
       Jr Balrog_60: 1490341315
       Jr Balrog_61: 1142725980
-      Jr Balrog_62: -1970530082
       Jr Balrog_63: 1556914267
-      Jr Balrog_64: 1123155574
-      Jr Balrog_65: 1714312419
       Jr Balrog_66: -64376325
-      Jr Balrog_67: 1590133644
       Jr Balrog_68: -378645302
       Jr Balrog_69: 196842580
-      Jr Balrog_7: 1580943989
       Jr Balrog_70: -317346651
       Jr Balrog_71: 98595413
       Jr Balrog_72: -1798321734
@@ -1658,30 +1610,77 @@ TextureImporter:
       Jr Balrog_75: -985515186
       Jr Balrog_76: -58934173
       Jr Balrog_77: -158283234
-      Jr Balrog_78: 1270089904
-      Jr Balrog_79: -1816177045
-      Jr Balrog_8: 572457025
-      Jr Balrog_80: -532573061
-      Jr Balrog_81: 694904039
-      Jr Balrog_82: -1771104245
-      Jr Balrog_83: 1759356357
-      Jr Balrog_84: 249836243
-      Jr Balrog_85: 989066656
       Jr Balrog_86: 1010170490
-      Jr Balrog_87: -1539811406
-      Jr Balrog_88: 1843383763
-      Jr Balrog_89: -1991551111
-      Jr Balrog_9: 558328470
-      Jr Balrog_90: -1403228665
       Jr Balrog_91: 1082439459
       Jr Balrog_92: -2124185293
       Jr Balrog_93: -1492668060
       Jr Balrog_94: -827412568
-      Jr Balrog_95: -412091899
-      Jr Balrog_96: -591039584
-      Jr Balrog_97: 1609469418
-      Jr Balrog_98: -2049468430
       Jr Balrog_99: -996666612
+      Jr Balrog_CometAttack_0: 1030328691
+      Jr Balrog_CometAttack_1: 816607109
+      Jr Balrog_CometAttack_2: 1169382980
+      Jr Balrog_CometAttack_3: -274366810
+      Jr Balrog_CometAttack_4: 1022713206
+      Jr Balrog_CometAttack_5: -1961567748
+      Jr Balrog_CometAttack_6: 1474814435
+      Jr Balrog_CometAttack_7: 1529808576
+      Jr Balrog_CometEffect_0: 626319011
+      Jr Balrog_CometEffect_1: -13559545
+      Jr Balrog_CometEffect_2: 1075741463
+      Jr Balrog_CometEffect_3: 465761050
+      Jr Balrog_CometEffect_4: 1405771303
+      Jr Balrog_CometEffect_5: 1232584957
+      Jr Balrog_CometEffect_6: 865476869
+      Jr Balrog_CometEffect_7: -637141402
+      Jr Balrog_Comet_0: -508997383
+      Jr Balrog_Comet_1: 2033524840
+      Jr Balrog_Comet_2: -229797658
+      Jr Balrog_Comet_3: 1123155574
+      Jr Balrog_Comet_4: -1970530082
+      Jr Balrog_Comet_5: 1714312419
+      Jr Balrog_Comet_6: 1590133644
+      Jr Balrog_Death_0: -468398468
+      Jr Balrog_Death_1: 1226696972
+      Jr Balrog_Death_2: -371009438
+      Jr Balrog_FIreFistAttack_0: 1270089904
+      Jr Balrog_FIreFistAttack_1: -1816177045
+      Jr Balrog_FIreFistAttack_2: -532573061
+      Jr Balrog_FIreFistAttack_3: 694904039
+      Jr Balrog_FireBallHit_0: -2049468430
+      Jr Balrog_FireBallHit_1: 1551620850
+      Jr Balrog_FireBallHit_2: 1219788883
+      Jr Balrog_FireBallHit_3: 722659640
+      Jr Balrog_FireBall_0: -412091899
+      Jr Balrog_FireBall_1: -591039584
+      Jr Balrog_FireBall_2: 1609469418
+      Jr Balrog_FireFist_0: -1771104245
+      Jr Balrog_FireFist_1: 1759356357
+      Jr Balrog_FireFist_2: 249836243
+      Jr Balrog_FireFist_CircleEffect_0: 989066656
+      Jr Balrog_FireFist_CircleEffect_1: -1539811406
+      Jr Balrog_FireFist_CircleEffect_2: 1843383763
+      Jr Balrog_FireFist_CircleEffect_3: -1991551111
+      Jr Balrog_FireFist_CircleEffect_4: -1403228665
+      Jr Balrog_Hurt: -1887705965
+      Jr Balrog_Idle_0: 1355248328
+      Jr Balrog_Idle_1: -1984949583
+      Jr Balrog_Move_0: 51694273
+      Jr Balrog_Move_1: 1580943989
+      Jr Balrog_Move_2: 572457025
+      Jr Balrog_Move_3: 558328470
+      Jr Balrog_Move_4: -398772595
+      Jr Balrog_SlashAttack_0: 1253211189
+      Jr Balrog_SlashAttack_1: -1814535515
+      Jr Balrog_SlashAttack_2: 1288132137
+      Jr Balrog_SlashAttack_3: 1308606525
+      Jr Balrog_SlashEffect_0: 763084084
+      Jr Balrog_SlashEffect_1: 782328856
+      Jr Balrog_SlashEffect_2: 915992847
+      Jr Balrog_SlashEffect_3: -742118200
+      Jr Balrog_SlashHit_0: -1544693371
+      Jr Balrog_SlashHit_1: -940371244
+      Jr Balrog_SlashHit_2: 933739203
+      Jr Balrog_SlashHit_3: -749839160
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -8,7 +8,7 @@ public class MistKnightManager : MonoBehaviour
     [SerializeField] float attackCooldownTime;
     float timer = 0;
 
-    private void Start()
+    private void OnEnable()
     {
         enemyAISensor.InRangeToAttackAction += RangedAttack;
     }

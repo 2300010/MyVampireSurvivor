@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: OfficerSkeletonData
   m_EditorClassIdentifier: 
   enemyName: 1
-  baseHp: 1
+  baseHp: 8
   baseDmg: 4
   baseSpeed: 0

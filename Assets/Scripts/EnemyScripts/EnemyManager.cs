@@ -46,6 +46,7 @@ public class EnemyManager : MonoBehaviour//, Ipoolable
         isDead = false;
         damageTimer = 0f;
 
+
         //Debug.Log("HP = " + hpManager.CurrentHp + " Character = " + enemyData.enemyName);
     }
 
@@ -105,6 +106,7 @@ public class EnemyManager : MonoBehaviour//, Ipoolable
             if (flameManager != null)
             {
                 flameManager.ExpGiven = expDropped;
+                flameManager.SetupOnEnable();
                 //Debug.Log("Exp given = " + expGiven);
             }
         }
@@ -133,7 +135,7 @@ public class EnemyManager : MonoBehaviour//, Ipoolable
                 {
                     if (distanceWithTarget > 0.5)
                     {
-                        ManageEnemyAnimation(AnimationState.Walk);
+                        ManageEnemyAnimation(AnimationState.Move);
                         enemyMouvement.ChasePlayer();
                     }
                     else if (distanceWithTarget <= 0.5)
@@ -154,7 +156,7 @@ public class EnemyManager : MonoBehaviour//, Ipoolable
         {
             if (distanceWithTarget > 0.5)
             {
-                ManageEnemyAnimation(AnimationState.Walk);
+                ManageEnemyAnimation(AnimationState.Move);
                 enemyMouvement.ChasePlayer();
             }
             else if (distanceWithTarget <= 0.5)

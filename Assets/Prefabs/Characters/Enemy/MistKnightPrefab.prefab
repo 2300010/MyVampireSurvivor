@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: baseSpeed
       value: 0.8
       objectReference: {fileID: 0}
+    - target: {fileID: -6407313544486041272, guid: 07cee1cb829667e45b737d9cc359ab05, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 35dcfd237233b254d88a51601e391a6b, type: 2}
     - target: {fileID: -4266221856915494403, guid: 07cee1cb829667e45b737d9cc359ab05, type: 3}
       propertyPath: damage
       value: 10
@@ -28,17 +32,29 @@ PrefabInstance:
       propertyPath: attackCooldownTime
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: -4266221856915494403, guid: 07cee1cb829667e45b737d9cc359ab05, type: 3}
+      propertyPath: delayOnDamageTaken
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: -3984050511764974756, guid: 07cee1cb829667e45b737d9cc359ab05, type: 3}
       propertyPath: maxHp
       value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 265756699005110493, guid: 07cee1cb829667e45b737d9cc359ab05, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 265756699005110493, guid: 07cee1cb829667e45b737d9cc359ab05, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 265756699005110493, guid: 07cee1cb829667e45b737d9cc359ab05, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.9774928
+      value: 4.981983
       objectReference: {fileID: 0}
     - target: {fileID: 265756699005110493, guid: 07cee1cb829667e45b737d9cc359ab05, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.8591368
+      value: 1.7785501
       objectReference: {fileID: 0}
     - target: {fileID: 265756699005110493, guid: 07cee1cb829667e45b737d9cc359ab05, type: 3}
       propertyPath: m_LocalPosition.z
@@ -143,7 +159,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 428966748442396499}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 13fc7b4597e6d1b40b0147f7109a9dd6, type: 3}
   m_Name: 
@@ -159,7 +175,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 428966748442396499}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 319a4c7b9dbce3148b64616cb4afc0c1, type: 3}
   m_Name: 

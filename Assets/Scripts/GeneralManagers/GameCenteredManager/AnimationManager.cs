@@ -4,7 +4,7 @@ using UnityEngine;
 public enum AnimationState 
 { 
     Idle,
-    Walk,
+    Move,
     Attack,
     Hurt,
     Death
@@ -12,13 +12,14 @@ public enum AnimationState
 
 public class AnimationManager : MonoBehaviour
 {
-    Animator animator;
+    private Animator animator;
     private AnimationState currentState;
-    public string thisObjectName;
 
-    private void Start()
+    public Animator Animator { get => animator; set => animator = value; }
+
+    private void OnEnable()
     {
-        animator = GetComponent<Animator>();
+        Animator = GetComponent<Animator>();
     }
 
     public void ChangeAnimationState(Enum characterName, AnimationState newState)
@@ -27,13 +28,13 @@ public class AnimationManager : MonoBehaviour
 
         string newAnimation = characterName.ToString() + "_" + newState.ToString();
 
-        animator.Play(newAnimation);
+        Animator.Play(newAnimation);
 
         currentState = newState;
     }
 
     public AnimatorStateInfo GetAnimationState()
     {
-        return animator.GetCurrentAnimatorStateInfo(0);
+        return Animator.GetCurrentAnimatorStateInfo(0);
     }
 }

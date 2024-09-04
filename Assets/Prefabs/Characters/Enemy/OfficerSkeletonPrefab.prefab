@@ -17,12 +17,20 @@ PrefabInstance:
       value: 0.8
       objectReference: {fileID: 0}
     - target: {fileID: 4405834385334991799, guid: af97c38ab72398a42b16c8fb9cefc702, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 4405834385334991799, guid: af97c38ab72398a42b16c8fb9cefc702, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 4405834385334991799, guid: af97c38ab72398a42b16c8fb9cefc702, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.41683617
+      value: 4.7826114
       objectReference: {fileID: 0}
     - target: {fileID: 4405834385334991799, guid: af97c38ab72398a42b16c8fb9cefc702, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.3242732
+      value: 1.8539345
       objectReference: {fileID: 0}
     - target: {fileID: 4405834385334991799, guid: af97c38ab72398a42b16c8fb9cefc702, type: 3}
       propertyPath: m_LocalPosition.z
@@ -84,6 +92,10 @@ PrefabInstance:
       propertyPath: enemyData
       value: 
       objectReference: {fileID: 11400000, guid: 4995c5ac19150e142b2ddd6d5605b4fc, type: 2}
+    - target: {fileID: 8818002559181380247, guid: af97c38ab72398a42b16c8fb9cefc702, type: 3}
+      propertyPath: expDropped
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 8874583896021064778, guid: af97c38ab72398a42b16c8fb9cefc702, type: 3}
       propertyPath: m_Size.x
       value: 2.1086736
