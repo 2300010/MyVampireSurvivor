@@ -30,6 +30,7 @@ public class PlayerManager : MonoBehaviour
 
     public int Exp { get => exp; set => exp = value; }
     public int Level { get => level; set => level = value; }
+    public Rigidbody2D Body { get => body; }
 
     #region Unity Methods
     private void Awake()
@@ -113,7 +114,7 @@ public class PlayerManager : MonoBehaviour
         float horizontalMove = horizontalInput * speed * Time.deltaTime;
         float verticalMove = Input.GetAxisRaw("Vertical") * speed * Time.deltaTime;
 
-        body.velocity = new Vector2(horizontalMove, verticalMove);
+        Body.velocity = new Vector2(horizontalMove, verticalMove);
 
         if (VelocityIsZero())
         {
@@ -135,7 +136,7 @@ public class PlayerManager : MonoBehaviour
 
     private bool VelocityIsZero()
     {
-        if (body.velocity.sqrMagnitude > 0)
+        if (Body.velocity.sqrMagnitude > 0)
         {
             return false;
         }

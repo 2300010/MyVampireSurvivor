@@ -22,6 +22,7 @@ public class EnemySpawner : MonoBehaviour
 {
     public List<WaveSystem> waves;
     private int waveIndex = 0;
+    float spawnOffset = 10f;
 
     const EnemyName WEAK_ENEMY = EnemyName.SkeletonSoldier;
     const EnemyName AVERAGE_ENEMY = EnemyName.OfficerSkeleton;
@@ -33,10 +34,11 @@ public class EnemySpawner : MonoBehaviour
         StartCoroutine(WaveSystem());
     }
 
+
+
     public void SpawnEnemy(GameObject enemyPrefab)
     {
-        float spawnOffset = 10f;
-        Vector2 spawnPos = Random.insideUnitCircle.normalized * spawnOffset;
+        Vector2 spawnPos = PlayerManager.Instance().Body.position + Random.insideUnitCircle.normalized * spawnOffset;
         if (enemyPrefab != null)
         {
             EnemyManager currentEnemyManager = enemyPrefab.GetComponent<EnemyManager>();
