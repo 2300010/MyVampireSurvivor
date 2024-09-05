@@ -499,16 +499,16 @@ MonoBehaviour:
     spawnInterval: 0.5
     timeBetweenWaves: 2
   - enemies:
-    - enemyPrefab: {fileID: 3854555810807067451, guid: b24e2c93f2013f141999fc62fc33c06e, type: 3}
-    spawnInterval: 0
-    timeBetweenWaves: 25
-  - enemies:
     - enemyPrefab: {fileID: 1753798854542891556, guid: af87d5c0a07fb3d4996e4fae2f013b8c, type: 3}
     - enemyPrefab: {fileID: 1753798854542891556, guid: af87d5c0a07fb3d4996e4fae2f013b8c, type: 3}
     - enemyPrefab: {fileID: 1753798854542891556, guid: af87d5c0a07fb3d4996e4fae2f013b8c, type: 3}
     - enemyPrefab: {fileID: 1753798854542891556, guid: af87d5c0a07fb3d4996e4fae2f013b8c, type: 3}
     spawnInterval: 0.5
     timeBetweenWaves: 2
+  - enemies:
+    - enemyPrefab: {fileID: 3854555810807067451, guid: b24e2c93f2013f141999fc62fc33c06e, type: 3}
+    spawnInterval: 0
+    timeBetweenWaves: 25
 --- !u!1 &390578628
 GameObject:
   m_ObjectHideFlags: 0
@@ -930,7 +930,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weakEnemyPrefab: {fileID: 5432207266973009546, guid: af97c38ab72398a42b16c8fb9cefc702, type: 3}
   averageEnemyPrefab: {fileID: 1753798854542891556, guid: af87d5c0a07fb3d4996e4fae2f013b8c, type: 3}
-  strongEnemyPrefab: {fileID: 428966748442396499, guid: 9176a720a8628b44dbed365c4db432ba, type: 3}
+  strongEnemyPrefab: {fileID: 3854555810807067451, guid: b24e2c93f2013f141999fc62fc33c06e, type: 3}
 --- !u!1 &619394800
 GameObject:
   m_ObjectHideFlags: 0

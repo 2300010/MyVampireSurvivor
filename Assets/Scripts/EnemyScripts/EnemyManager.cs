@@ -29,6 +29,7 @@ public class EnemyManager : MonoBehaviour//, Ipoolable
     private float damageTimer;
 
     public int ExpDropped { get => expDropped; set => expDropped = value; }
+    public EnemyData EnemyData { get => enemyData; }
 
     #region Unity Methods
     private void OnEnable()
@@ -41,7 +42,7 @@ public class EnemyManager : MonoBehaviour//, Ipoolable
             enemyAISensor.InRangeToAttackAction += enemyMouvement.StopMoving;
         }
 
-        hpManager.CurrentHp = enemyData.baseHp;
+        hpManager.CurrentHp = EnemyData.baseHp;
         isDamaged = false;
         isDead = false;
         damageTimer = 0f;
@@ -175,7 +176,7 @@ public class EnemyManager : MonoBehaviour//, Ipoolable
 
     private void ManageEnemyAnimation(AnimationState wantedAnimationState)
     {
-        animationManager.ChangeAnimationState(enemyData.enemyName, wantedAnimationState);
+        animationManager.ChangeAnimationState(EnemyData.enemyName, wantedAnimationState);
     }
 
     IEnumerator DeathSequence()
@@ -194,7 +195,7 @@ public class EnemyManager : MonoBehaviour//, Ipoolable
 
         yield return new WaitUntil(() => IsAnimationFinished(AnimationState.Death));
 
-        if (enemyData.enemyName == EnemyName.MistKnight)
+        if (EnemyData.enemyName == EnemyName.MistKnight)
         {
             enemyAISensor.OutOfRangeToAttackAction -= enemyMouvement.ChasePlayer;
             enemyAISensor.InRangeToAttackAction -= enemyMouvement.StopMoving;
@@ -212,7 +213,7 @@ public class EnemyManager : MonoBehaviour//, Ipoolable
     {
         AnimatorStateInfo stateInfo = animationManager.GetAnimationState();
         //Debug.Log($"Current State: {stateInfo.fullPathHash}, Expected: {Animator.StringToHash(animation.ToString())}, Normalized Time: {stateInfo.normalizedTime}");
-        return stateInfo.IsName(enemyData.enemyName.ToString() + "_" + animation.ToString()) && stateInfo.normalizedTime >= 1f;
+        return stateInfo.IsName(EnemyData.enemyName.ToString() + "_" + animation.ToString()) && stateInfo.normalizedTime >= 1f;
     }
     #endregion
 }

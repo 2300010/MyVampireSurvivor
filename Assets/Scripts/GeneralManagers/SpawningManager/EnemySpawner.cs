@@ -23,9 +23,9 @@ public class EnemySpawner : MonoBehaviour
     public List<WaveSystem> waves;
     private int waveIndex = 0;
 
-    const string WEAK_ENEMY = "SkeletonSoldierPrefab";
-    const string AVERAGE_ENEMY = "OfficerSkeletonPrefab";
-    const string STRONG_ENEMY = "MistKnightPrefab";
+    const EnemyName WEAK_ENEMY = EnemyName.SkeletonSoldier;
+    const EnemyName AVERAGE_ENEMY = EnemyName.OfficerSkeleton;
+    const EnemyName STRONG_ENEMY = EnemyName.JrBalrog;
 
     // Start is called before the first frame update
     void Start()
@@ -39,19 +39,20 @@ public class EnemySpawner : MonoBehaviour
         Vector2 spawnPos = Random.insideUnitCircle.normalized * spawnOffset;
         if (enemyPrefab != null)
         {
-            if (enemyPrefab.name == WEAK_ENEMY)
+            EnemyManager currentEnemyManager = enemyPrefab.GetComponent<EnemyManager>();
+            if (currentEnemyManager.EnemyData.enemyName == WEAK_ENEMY)
             {
                 Debug.Log("Enemy is weak");
                 enemyPrefab = EnemyFactory.Instance().CreateWeakEnemy(spawnPos, Quaternion.identity);
                 enemyPrefab.SetActive(true);
             }
-            else if (enemyPrefab.name == AVERAGE_ENEMY)
+            else if (currentEnemyManager.EnemyData.enemyName == AVERAGE_ENEMY)
             {
                 Debug.Log("Enemy is average");
                 enemyPrefab = EnemyFactory.Instance().CreateAverageEnemy(spawnPos, Quaternion.identity);
                 enemyPrefab.SetActive(true);
             }
-            else if (enemyPrefab.name == STRONG_ENEMY)
+            else if (currentEnemyManager.EnemyData.enemyName == STRONG_ENEMY)
             {
                 Debug.Log("Enemy is strong");
                 enemyPrefab = EnemyFactory.Instance().CreateStrongEnemy(spawnPos, Quaternion.identity);
