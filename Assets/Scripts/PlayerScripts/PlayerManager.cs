@@ -31,6 +31,8 @@ public class PlayerManager : MonoBehaviour
     public int Exp { get => exp; set => exp = value; }
     public int Level { get => level; set => level = value; }
     public Rigidbody2D Body { get => body; }
+    public HpManager PlayerHpManager { get => playerHpManager; }
+    public CharacterData CharacterData { get => characterData; }
 
     #region Unity Methods
     private void Awake()
@@ -57,7 +59,7 @@ public class PlayerManager : MonoBehaviour
         Exp = 0;
         Level = 0;
         //speed = characterData.baseSpeed;
-        playerHpManager.CurrentHp = playerHpManager.MaxHp;
+        PlayerHpManager.CurrentHp = PlayerHpManager.MaxHp;
         HpManager.PlayerDeath += OnDeath;
         HpManager.PlayerIsTakingDamage += OnDamageTaken;
         GameManager.LevelUp += UpdateStats;
@@ -85,13 +87,13 @@ public class PlayerManager : MonoBehaviour
         HpManager.PlayerDeath -= OnDeath;
         HpManager.PlayerIsTakingDamage -= OnDamageTaken;
         GameManager.LevelUp -= UpdateStats;
-        ManageAnimation(characterData, AnimationState.Death);
+        ManageAnimation(CharacterData, AnimationState.Death);
         gameObject.SetActive(false);
     }
 
     private void OnDamageTaken()
     {
-        ManageAnimation(characterData, AnimationState.Hurt);
+        ManageAnimation(CharacterData, AnimationState.Hurt);
     }
 
     private void UpdateStats()
@@ -118,7 +120,7 @@ public class PlayerManager : MonoBehaviour
 
         if (VelocityIsZero())
         {
-            ManageAnimation(characterData, AnimationState.Idle);
+            ManageAnimation(CharacterData, AnimationState.Idle);
         }
         else
         {
@@ -130,7 +132,7 @@ public class PlayerManager : MonoBehaviour
             {
                 FlipCharacter();
             }
-            ManageAnimation(characterData, AnimationState.Move);
+            ManageAnimation(CharacterData, AnimationState.Move);
         }
     }
 

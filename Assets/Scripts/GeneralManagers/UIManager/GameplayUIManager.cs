@@ -9,6 +9,7 @@ public class GameplayUIManager : MonoBehaviour
 
     [SerializeField] Text levelValueText;
     [SerializeField] Text expValueText;
+    [SerializeField] Slider hpSlider;
 
     #region Unity Functions
     private void Start()
@@ -21,14 +22,17 @@ public class GameplayUIManager : MonoBehaviour
     {
         UpdateExpValue();
         UpdateLevelValue();
+        HealthBarSetup();
         GameManager.LevelUp += UpdateLevelValue;
         GameManager.ExpGained += UpdateExpValue;
+        HpManager.PlayerIsTakingDamage += UpdateHpValue;
     }
     
     private void OnDestroy()
     {
         GameManager.LevelUp -= UpdateLevelValue;
         GameManager.ExpGained -= UpdateExpValue;
+        HpManager.PlayerIsTakingDamage -= UpdateHpValue;
     }
     #endregion
 
@@ -41,6 +45,17 @@ public class GameplayUIManager : MonoBehaviour
     private void UpdateExpValue()
     {
         expValueText.text = GameManager.Instance.PlayerExp.ToString();
+    }
+
+    private void HealthBarSetup()
+    {
+        hpSlider.maxValue = PlayerManager.Instance().CharacterData.baseHp;
+        UpdateHpValue();
+    }
+
+    private void UpdateHpValue()
+    {
+        hpSlider.value = PlayerManager.Instance().PlayerHpManager.CurrentHp;
     }
     #endregion
 }
