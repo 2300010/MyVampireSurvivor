@@ -12,6 +12,10 @@ PrefabInstance:
       propertyPath: baseSpeed
       value: 0.8
       objectReference: {fileID: 0}
+    - target: {fileID: -6407313544486041272, guid: 07cee1cb829667e45b737d9cc359ab05, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 811a99f14d3e8cd468d8fbe98d7abaa4, type: 2}
     - target: {fileID: -4266221856915494403, guid: 07cee1cb829667e45b737d9cc359ab05, type: 3}
       propertyPath: enemyData
       value: 
@@ -70,19 +74,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5024988316782194464, guid: 07cee1cb829667e45b737d9cc359ab05, type: 3}
       propertyPath: m_Size.x
-      value: 3.6842124
+      value: 2.639419
       objectReference: {fileID: 0}
     - target: {fileID: 5024988316782194464, guid: 07cee1cb829667e45b737d9cc359ab05, type: 3}
       propertyPath: m_Size.y
-      value: 3.9845634
+      value: 3.7080004
       objectReference: {fileID: 0}
     - target: {fileID: 5024988316782194464, guid: 07cee1cb829667e45b737d9cc359ab05, type: 3}
       propertyPath: m_Offset.x
-      value: 0.1789118
+      value: 0.14818317
       objectReference: {fileID: 0}
     - target: {fileID: 5024988316782194464, guid: 07cee1cb829667e45b737d9cc359ab05, type: 3}
       propertyPath: m_Offset.y
-      value: -0.5088494
+      value: -0.64713085
       objectReference: {fileID: 0}
     - target: {fileID: 5024988316782194464, guid: 07cee1cb829667e45b737d9cc359ab05, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x

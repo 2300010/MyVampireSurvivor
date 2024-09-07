@@ -22,7 +22,7 @@ public class EnemySpawner : MonoBehaviour
 {
     public List<WaveSystem> waves;
     private int waveIndex = 0;
-    float spawnOffset = 10f;
+    [SerializeField] float spawnOffset;
 
     const EnemyName WEAK_ENEMY = EnemyName.SkeletonSoldier;
     const EnemyName AVERAGE_ENEMY = EnemyName.OfficerSkeleton;

@@ -348,7 +348,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 167157105}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
   m_Name: 
@@ -647,13 +647,13 @@ MonoBehaviour:
     - enemyPrefab: {fileID: 5432207266973009546, guid: af97c38ab72398a42b16c8fb9cefc702, type: 3}
     - enemyPrefab: {fileID: 1753798854542891556, guid: af87d5c0a07fb3d4996e4fae2f013b8c, type: 3}
     spawnInterval: 1
-    timeBetweenWaves: 12
+    timeBetweenWaves: 15
   - enemies:
     - enemyPrefab: {fileID: 5432207266973009546, guid: af97c38ab72398a42b16c8fb9cefc702, type: 3}
     - enemyPrefab: {fileID: 1753798854542891556, guid: af87d5c0a07fb3d4996e4fae2f013b8c, type: 3}
     - enemyPrefab: {fileID: 5432207266973009546, guid: af97c38ab72398a42b16c8fb9cefc702, type: 3}
     - enemyPrefab: {fileID: 1753798854542891556, guid: af87d5c0a07fb3d4996e4fae2f013b8c, type: 3}
-    spawnInterval: 0.5
+    spawnInterval: 1
     timeBetweenWaves: 8
   - enemies:
     - enemyPrefab: {fileID: 5432207266973009546, guid: af97c38ab72398a42b16c8fb9cefc702, type: 3}
@@ -664,19 +664,18 @@ MonoBehaviour:
     - enemyPrefab: {fileID: 1753798854542891556, guid: af87d5c0a07fb3d4996e4fae2f013b8c, type: 3}
     - enemyPrefab: {fileID: 5432207266973009546, guid: af97c38ab72398a42b16c8fb9cefc702, type: 3}
     - enemyPrefab: {fileID: 1753798854542891556, guid: af87d5c0a07fb3d4996e4fae2f013b8c, type: 3}
-    spawnInterval: 0.5
-    timeBetweenWaves: 2
-  - enemies:
-    - enemyPrefab: {fileID: 1753798854542891556, guid: af87d5c0a07fb3d4996e4fae2f013b8c, type: 3}
-    - enemyPrefab: {fileID: 1753798854542891556, guid: af87d5c0a07fb3d4996e4fae2f013b8c, type: 3}
-    - enemyPrefab: {fileID: 1753798854542891556, guid: af87d5c0a07fb3d4996e4fae2f013b8c, type: 3}
-    - enemyPrefab: {fileID: 1753798854542891556, guid: af87d5c0a07fb3d4996e4fae2f013b8c, type: 3}
-    spawnInterval: 0.5
-    timeBetweenWaves: 2
+    spawnInterval: 1.5
+    timeBetweenWaves: 20
   - enemies:
     - enemyPrefab: {fileID: 3854555810807067451, guid: b24e2c93f2013f141999fc62fc33c06e, type: 3}
     spawnInterval: 0
-    timeBetweenWaves: 25
+    timeBetweenWaves: 5
+  - enemies:
+    - enemyPrefab: {fileID: 1753798854542891556, guid: af87d5c0a07fb3d4996e4fae2f013b8c, type: 3}
+    - enemyPrefab: {fileID: 1753798854542891556, guid: af87d5c0a07fb3d4996e4fae2f013b8c, type: 3}
+    spawnInterval: 0.5
+    timeBetweenWaves: 2
+  spawnOffset: 15
 --- !u!1 &390578628
 GameObject:
   m_ObjectHideFlags: 0
@@ -1476,6 +1475,7 @@ GameObject:
   - component: {fileID: 1082996820}
   - component: {fileID: 1082996819}
   - component: {fileID: 1082996823}
+  - component: {fileID: 1082996824}
   m_Layer: 5
   m_Name: PlayerUI
   m_TagString: Untagged
@@ -1586,7 +1586,58 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   levelValueText: {fileID: 1851503843}
   expValueText: {fileID: 1434109623}
-  hpSlider: {fileID: 0}
+  hpSlider: {fileID: 1082996824}
+--- !u!114 &1082996824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1082996818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 0}
+  m_FillRect: {fileID: 1654942342}
+  m_HandleRect: {fileID: 0}
+  m_Direction: 0
+  m_MinValue: 0
+  m_MaxValue: 1
+  m_WholeNumbers: 0
+  m_Value: 0
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1100605622
 GameObject:
   m_ObjectHideFlags: 0
@@ -2907,7 +2958,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2100286996
 Transform:
   m_ObjectHideFlags: 0
@@ -2917,7 +2968,7 @@ Transform:
   m_GameObject: {fileID: 2100286995}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.1261649, y: 1.8993311, z: -0.07058717}
+  m_LocalPosition: {x: -1.35, y: 2.07, z: -0.07058717}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
