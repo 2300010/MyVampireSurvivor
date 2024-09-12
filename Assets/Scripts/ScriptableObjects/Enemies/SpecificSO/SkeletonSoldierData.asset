@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: SkeletonSoldierData
   m_EditorClassIdentifier: 
   enemyName: 0
-  baseHp: 2
+  baseHp: 5
   baseDmg: 2
   baseSpeed: 0

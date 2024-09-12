@@ -38,11 +38,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 265756699005110493, guid: 07cee1cb829667e45b737d9cc359ab05, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.8360605
+      value: 6.2941976
       objectReference: {fileID: 0}
     - target: {fileID: 265756699005110493, guid: 07cee1cb829667e45b737d9cc359ab05, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.66167194
+      value: 2.8957586
       objectReference: {fileID: 0}
     - target: {fileID: 265756699005110493, guid: 07cee1cb829667e45b737d9cc359ab05, type: 3}
       propertyPath: m_LocalPosition.z
@@ -112,6 +112,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -1652318681, guid: 9779680820eb11849b4456df9ea4b158, type: 3}
+    - target: {fileID: 7492332219815780570, guid: 07cee1cb829667e45b737d9cc359ab05, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 482ffd3c227e3864698468126e0403da, type: 2}
     - target: {fileID: 8500422194563544544, guid: 07cee1cb829667e45b737d9cc359ab05, type: 3}
       propertyPath: m_Name
       value: SkeletonSoldierPrefab

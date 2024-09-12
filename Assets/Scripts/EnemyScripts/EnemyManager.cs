@@ -20,13 +20,15 @@ public class EnemyManager : MonoBehaviour//, Ipoolable
     [SerializeField] float expDropRate;
     [SerializeField] int damage;
     [SerializeField] float delayOnDamageTaken;
-    private bool isDamaged;
     private bool isDead;
 
     EnemyMouvement enemyMouvement;
     AnimationManager animationManager;
     EnemyAISensor enemyAISensor;
-    private float damageTimer;
+
+    [SerializeField] private Color flashColor = Color.white;
+    [SerializeField] private float flashTime = 0.25f;
+    private Material enemyMaterial;
 
     public int ExpDropped { get => expDropped; set => expDropped = value; }
     public EnemyData EnemyData { get => enemyData; }
@@ -43,10 +45,8 @@ public class EnemyManager : MonoBehaviour//, Ipoolable
         }
 
         hpManager.CurrentHp = EnemyData.baseHp;
-        isDamaged = false;
         isDead = false;
-        damageTimer = 0f;
-
+        enemyMaterial = GetComponent<SpriteRenderer>().material;
 
         //Debug.Log("HP = " + hpManager.CurrentHp + " Character = " + enemyData.enemyName);
     }
@@ -84,15 +84,7 @@ public class EnemyManager : MonoBehaviour//, Ipoolable
 
     public void OnDamageTaken()
     {
-        if (!isDamaged)
-        {
-            enemyMouvement.StopMoving();
-
-            ManageEnemyAnimation(AnimationState.Hurt);
-
-            damageTimer = 0f;
-            isDamaged = true;
-        }
+        StartCoroutine(DamageFlash());
     }
 
     private void DropExpFlame()
@@ -126,34 +118,7 @@ public class EnemyManager : MonoBehaviour//, Ipoolable
     {
         float distanceWithTarget = ((Vector2)transform.position - enemyMouvement.Target).magnitude;
 
-        if (isDamaged)
-        {
-            if (!isDead)
-            {
-                damageTimer += Time.fixedDeltaTime;
-
-                if (damageTimer >= delayOnDamageTaken)
-                {
-                    if (distanceWithTarget > 0.5)
-                    {
-                        ManageEnemyAnimation(AnimationState.Move);
-                        enemyMouvement.ChasePlayer();
-                    }
-                    else if (distanceWithTarget <= 0.5)
-                    {
-                        ManageEnemyAnimation(AnimationState.Idle);
-                        enemyMouvement.StopMoving();
-                    }
-                    isDamaged = false;
-
-                }
-            }
-            else
-            {
-                return;
-            }
-        }
-        else
+        if (!isDead)
         {
             if (distanceWithTarget > 0.5)
             {
@@ -165,6 +130,10 @@ public class EnemyManager : MonoBehaviour//, Ipoolable
                 ManageEnemyAnimation(AnimationState.Idle);
                 enemyMouvement.StopMoving();
             }
+        }
+        else
+        {
+            return;
         }
     }
 
@@ -179,11 +148,11 @@ public class EnemyManager : MonoBehaviour//, Ipoolable
         animationManager.ChangeAnimationState(EnemyData.enemyName, wantedAnimationState);
     }
 
-    IEnumerator DeathSequence()
+    private IEnumerator DeathSequence()
     {
-        //ManageEnemyAnimation(AnimationState.Hurt);
+        ManageEnemyAnimation(AnimationState.Hurt);
 
-        Debug.Log("Playing Hurt animation!");
+        //Debug.Log("Playing Hurt animation!");
 
         yield return new WaitUntil(() => IsAnimationFinished(AnimationState.Hurt));
 
@@ -206,6 +175,24 @@ public class EnemyManager : MonoBehaviour//, Ipoolable
         if (RNG.Instance.FloatRNG(0, 1) < expDropRate)
         {
             DropExpFlame();
+        }
+    }
+
+    private IEnumerator DamageFlash()
+    {
+        enemyMaterial.SetColor("_FlashColor", flashColor);
+
+        float currentFlashAmount = 0f;
+        float elaspedTime = 0f;
+
+        while (elaspedTime < flashTime)
+        {
+            elaspedTime += Time.deltaTime;
+
+            currentFlashAmount = Mathf.Lerp(1f, 0f, (elaspedTime / flashTime));
+            enemyMaterial.SetFloat("_FlashAmount", currentFlashAmount);
+
+            yield return null;
         }
     }
 
