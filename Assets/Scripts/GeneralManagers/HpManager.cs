@@ -10,7 +10,6 @@ public class HpManager : MonoBehaviour
 
     public static event OnPlayerDamaged PlayerIsTakingDamage;
 
-    [SerializeField] int maxHp;
     [SerializeField] private int currentHp;
     private EnemyManager enemyManager;
     private ObjectTag currentObjectTag;
@@ -51,7 +50,6 @@ public class HpManager : MonoBehaviour
             currentHp = value;
         }
     }
-    public int MaxHp { get => maxHp; set => maxHp = value; }
     #endregion
 
     #region Custom Methods
@@ -66,7 +64,7 @@ public class HpManager : MonoBehaviour
         {
             PlayerIsTakingDamage?.Invoke();
         }
-        //Debug.Log("Character " + gameObject.name + "'s current hp = " + currentHp);
+        Debug.Log("Character " + gameObject.name + "'s current hp = " + currentHp);
     }
     #endregion
 }

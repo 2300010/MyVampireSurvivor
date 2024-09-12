@@ -47,6 +47,7 @@ public class EnemyManager : MonoBehaviour//, Ipoolable
         hpManager.CurrentHp = EnemyData.baseHp;
         isDead = false;
         enemyMaterial = GetComponent<SpriteRenderer>().material;
+        HpManager.PlayerDeath += PlayerIsDead;
 
         //Debug.Log("HP = " + hpManager.CurrentHp + " Character = " + enemyData.enemyName);
     }
@@ -117,8 +118,7 @@ public class EnemyManager : MonoBehaviour//, Ipoolable
     private void ManageMouvement()
     {
         float distanceWithTarget = ((Vector2)transform.position - enemyMouvement.Target).magnitude;
-
-        if (!isDead)
+        if(!isDead && !PlayerManager.Instance().IsDead)
         {
             if (distanceWithTarget > 0.5)
             {
@@ -201,6 +201,12 @@ public class EnemyManager : MonoBehaviour//, Ipoolable
         AnimatorStateInfo stateInfo = animationManager.GetAnimationState();
         //Debug.Log($"Current State: {stateInfo.fullPathHash}, Expected: {Animator.StringToHash(animation.ToString())}, Normalized Time: {stateInfo.normalizedTime}");
         return stateInfo.IsName(EnemyData.enemyName.ToString() + "_" + animation.ToString()) && stateInfo.normalizedTime >= 1f;
+    }
+
+    private void PlayerIsDead()
+    {
+        enemyMouvement.StopMoving();
+        ManageEnemyAnimation(AnimationState.Idle);
     }
     #endregion
 }

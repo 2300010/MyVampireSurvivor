@@ -25,6 +25,7 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] private float speed;
     private Rigidbody2D body;
     private bool facingRight = true;
+    private bool isDead = false;
 
     public bool FacingRight { get => facingRight; set => facingRight = value; }
 
@@ -33,6 +34,7 @@ public class PlayerManager : MonoBehaviour
     public Rigidbody2D Body { get => body; }
     public HpManager PlayerHpManager { get => playerHpManager; }
     public CharacterData CharacterData { get => characterData; }
+    public bool IsDead { get => isDead; set => isDead = value; }
 
     #region Unity Methods
     private void Awake()
@@ -59,7 +61,7 @@ public class PlayerManager : MonoBehaviour
         Exp = 0;
         Level = 0;
         //speed = characterData.baseSpeed;
-        PlayerHpManager.CurrentHp = PlayerHpManager.MaxHp;
+        PlayerHpManager.CurrentHp = characterData.baseHp;
         HpManager.PlayerDeath += OnDeath;
         HpManager.PlayerIsTakingDamage += OnDamageTaken;
         GameManager.LevelUp += UpdateStats;
@@ -84,10 +86,11 @@ public class PlayerManager : MonoBehaviour
     #region Custom Methods
     private void OnDeath()
     {
+        isDead = true;
         HpManager.PlayerDeath -= OnDeath;
         HpManager.PlayerIsTakingDamage -= OnDamageTaken;
         GameManager.LevelUp -= UpdateStats;
-        ManageAnimation(CharacterData, AnimationState.Death);
+        //ManageAnimation(CharacterData, AnimationState.Death);
         gameObject.SetActive(false);
     }
 

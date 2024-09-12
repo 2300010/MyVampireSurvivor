@@ -47,10 +47,11 @@ public class GameplayUIManager : MonoBehaviour
         expValueText.text = GameManager.Instance.PlayerExp.ToString();
     }
 
-    private void HealthBarSetup()
+    public void HealthBarSetup()
     {
         hpSlider.maxValue = PlayerManager.Instance().CharacterData.baseHp;
         UpdateHpValue();
+        Debug.Log("Slider max value = " + hpSlider.maxValue);
     }
 
     private void UpdateHpValue()

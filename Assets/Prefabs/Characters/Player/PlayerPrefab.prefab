@@ -153,7 +153,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c410f52ba5cf7c468002541f79ee814, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxHp: 40
+  maxHp: 1
+  currentHp: 0
 --- !u!114 &9109950112314269465
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -166,7 +167,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df342c976f96d1f4095f5b2315538d24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  thisObjectName: 
 --- !u!95 &3893412667660418118
 Animator:
   serializedVersion: 5

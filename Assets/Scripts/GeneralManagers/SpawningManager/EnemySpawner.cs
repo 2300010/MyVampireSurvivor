@@ -44,19 +44,16 @@ public class EnemySpawner : MonoBehaviour
             EnemyManager currentEnemyManager = enemyPrefab.GetComponent<EnemyManager>();
             if (currentEnemyManager.EnemyData.enemyName == WEAK_ENEMY)
             {
-                Debug.Log("Enemy is weak");
                 enemyPrefab = EnemyFactory.Instance().CreateWeakEnemy(spawnPos, Quaternion.identity);
                 enemyPrefab.SetActive(true);
             }
             else if (currentEnemyManager.EnemyData.enemyName == AVERAGE_ENEMY)
             {
-                Debug.Log("Enemy is average");
                 enemyPrefab = EnemyFactory.Instance().CreateAverageEnemy(spawnPos, Quaternion.identity);
                 enemyPrefab.SetActive(true);
             }
             else if (currentEnemyManager.EnemyData.enemyName == STRONG_ENEMY)
             {
-                Debug.Log("Enemy is strong");
                 enemyPrefab = EnemyFactory.Instance().CreateStrongEnemy(spawnPos, Quaternion.identity);
                 enemyPrefab.SetActive(true);
             }
