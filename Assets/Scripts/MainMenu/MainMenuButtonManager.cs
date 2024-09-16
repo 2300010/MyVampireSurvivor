@@ -21,18 +21,18 @@ public class MainMenuButtonManager : MonoBehaviour
 
     public void StartButtonClick()
     {
-        
+        RunTimeSceneManager.Instance.SwitchScene("Level1", 4f);
     }
 
     public void QuitButtonClick()
     {
-        if (UnityEditor.EditorApplication.isPlaying)
-        {
-            UnityEditor.EditorApplication.isPlaying = false;
-        }
-        else
-        {
-            Application.Quit();
-        }
+#if UNITY_EDITOR
+
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+
+        Application.Quit();
+#endif
+
     }
 }

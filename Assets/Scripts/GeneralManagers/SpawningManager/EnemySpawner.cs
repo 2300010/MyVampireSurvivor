@@ -31,9 +31,13 @@ public class EnemySpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        StartCoroutine(WaveSystem());
+        RunTimeSceneManager.FadeInIsDone += StartLevel;
     }
 
+    private void StartLevel()
+    {
+        StartCoroutine(WaveSystem());
+    }
 
 
     public void SpawnEnemy(GameObject enemyPrefab)
