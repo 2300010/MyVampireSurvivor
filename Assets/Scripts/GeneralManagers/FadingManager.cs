@@ -3,18 +3,23 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class RunTimeSceneManager : MonoBehaviour
+public class FadingManager : MonoBehaviour
 {
-    private static RunTimeSceneManager instance;
+    private static FadingManager instance;
 
-    public static RunTimeSceneManager Instance => instance;
+    public static FadingManager Instance => instance;
 
-    public delegate void OnFadeInFinished();
+    public delegate void OnFadeInCompleted(string scene);
 
-    public static event OnFadeInFinished FadeInIsDone;
+    public static event OnFadeInCompleted FadeInIsCompleted;
 
-    private float startingFadeTime = 4f;
+    public delegate void OnFadeOutCompleted(string scene);
+
+    public static event OnFadeOutCompleted FadeOutIsCompleted;
+
+    private float startingFadeTime = 1.5f;
     [SerializeField] private Image fadeImage = null;
+
 
     private void Awake()
     {
@@ -33,10 +38,12 @@ public class RunTimeSceneManager : MonoBehaviour
     {
         FindFadePanel();
 
-        StartCoroutine(FadeIn(startingFadeTime));
+        SceneMasterManager.NewSceneIsLoaded += FindFadePanel;
+
+        StartFadeInCoroutine(startingFadeTime, "MainMenu");
     }
 
-    private void FindFadePanel()
+    public void FindFadePanel()
     {
         Image[] images = FindObjectsOfType<Image>();
 
@@ -52,14 +59,17 @@ public class RunTimeSceneManager : MonoBehaviour
         CustomAssert.Ensure(fadeImage != null, "Fade Panel is null in current scene => " + SceneManager.GetActiveScene().name);
     }
 
-    public void SwitchScene(string scene, float fadeTime)
+    public void StartFadeOutCoroutine(float fadeTime, string scene)
     {
-        SceneManager.LoadScene(scene);
-
-        StartCoroutine(FadeOut(fadeTime));
+        StartCoroutine(FadeOut(fadeTime, scene));
     }
 
-    IEnumerator FadeIn(float fadeTime)
+    public void StartFadeInCoroutine(float fadeTime, string scene)
+    {
+        StartCoroutine(FadeIn(fadeTime, scene));
+    }
+
+    IEnumerator FadeIn(float fadeTime, string scene)
     {
         float elapsedTime = 0f;
         Color tempColor = fadeImage.color;
@@ -75,11 +85,15 @@ public class RunTimeSceneManager : MonoBehaviour
         tempColor.a = 0f;
         fadeImage.color = tempColor;
 
-        FadeInIsDone?.Invoke();
+        fadeImage.gameObject.SetActive(false);
+
+        FadeInIsCompleted?.Invoke(scene);
     }
 
-    IEnumerator FadeOut(float fadeTime)
+    IEnumerator FadeOut(float fadeTime, string scene)
     {
+        fadeImage.gameObject.SetActive(true);
+
         float elapsedTime = 0f;
         Color tempColor = fadeImage.color;
 
@@ -93,5 +107,7 @@ public class RunTimeSceneManager : MonoBehaviour
 
         tempColor.a = 1f;
         fadeImage.color = tempColor;
+
+        FadeOutIsCompleted?.Invoke(scene);
     }
 }

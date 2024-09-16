@@ -21,7 +21,7 @@ public class MainMenuButtonManager : MonoBehaviour
 
     public void StartButtonClick()
     {
-        RunTimeSceneManager.Instance.SwitchScene("Level1", 4f);
+        SceneMasterManager.Instance.SwitchScene("Level1");
     }
 
     public void QuitButtonClick()
