@@ -38,7 +38,7 @@ public class EnemySpawner : MonoBehaviour
 
     public void SpawnEnemy(GameObject enemyPrefab)
     {
-        Vector2 spawnPos = PlayerManager.Instance().Body.position + Random.insideUnitCircle.normalized * spawnOffset;
+        Vector2 spawnPos = PlayerManager.Instance.Body.position + Random.insideUnitCircle.normalized * spawnOffset;
         if (enemyPrefab != null)
         {
             EnemyManager currentEnemyManager = enemyPrefab.GetComponent<EnemyManager>();

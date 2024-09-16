@@ -79,7 +79,7 @@ public class WeaponManager : MonoBehaviour, Ipoolable
 
     private void SetDirection()
     {
-        if (PlayerManager.Instance().FacingRight)
+        if (PlayerManager.Instance.FacingRight)
         {
             direction = transform.right;
         }

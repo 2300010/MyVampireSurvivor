@@ -49,14 +49,14 @@ public class GameplayUIManager : MonoBehaviour
 
     public void HealthBarSetup()
     {
-        hpSlider.maxValue = PlayerManager.Instance().CharacterData.baseHp;
+        hpSlider.maxValue = PlayerManager.Instance.CharacterData.baseHp;
         UpdateHpValue();
         Debug.Log("Slider max value = " + hpSlider.maxValue);
     }
 
     private void UpdateHpValue()
     {
-        hpSlider.value = PlayerManager.Instance().PlayerHpManager.CurrentHp;
+        hpSlider.value = PlayerManager.Instance.PlayerHpManager.CurrentHp;
     }
     #endregion
 }

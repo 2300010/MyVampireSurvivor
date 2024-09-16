@@ -17,8 +17,8 @@ public class EnemyAISensor : MonoBehaviour
 
     private void IsInRange()
     {
-        Vector2 playerPosition = new(PlayerManager.Instance().transform.position.x,
-            PlayerManager.Instance().transform.position.y);
+        Vector2 playerPosition = new(PlayerManager.Instance.transform.position.x,
+            PlayerManager.Instance.transform.position.y);
         Vector2 thisPosition = new(transform.position.x, transform.position.y);
 
         if (Vector2.Distance(playerPosition, thisPosition) <= rangeRequiredToAttack)

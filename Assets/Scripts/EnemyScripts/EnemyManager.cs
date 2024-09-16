@@ -108,17 +108,17 @@ public class EnemyManager : MonoBehaviour//, Ipoolable
 
     public void DealDamage()
     {
-        GameObject opponent = PlayerManager.Instance().gameObject;
+        GameObject opponent = PlayerManager.Instance.gameObject;
         HpManager opponentHpManager = opponent.GetComponent<HpManager>();
         opponentHpManager.TakeDamage(damage);
         //Debug.Log("Damage dealt = " + damage);
-        //Debug.Log("Player Hp = " + PlayerManager.Instance().GetComponent<HpManager>().CurrentHp);
+        //Debug.Log("Player Hp = " + PlayerManager.Instance.GetComponent<HpManager>().CurrentHp);
     }
 
     private void ManageMouvement()
     {
         float distanceWithTarget = ((Vector2)transform.position - enemyMouvement.Target).magnitude;
-        if(!isDead && !PlayerManager.Instance().IsDead)
+        if(!isDead && !PlayerManager.Instance.IsDead)
         {
             if (distanceWithTarget > 0.5)
             {

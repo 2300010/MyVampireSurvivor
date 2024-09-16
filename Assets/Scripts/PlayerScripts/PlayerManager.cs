@@ -16,7 +16,7 @@ public class PlayerManager : MonoBehaviour
     [SerializeField] CharacterData characterData;
 
     private static PlayerManager instance;
-    public static PlayerManager Instance() => instance;
+    public static PlayerManager Instance => instance;
 
     [SerializeField] HpManager playerHpManager;
     int exp;
