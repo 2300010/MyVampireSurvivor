@@ -19,23 +19,18 @@ public class DeathMenuUIManager : MonoBehaviour
         }
     }
 
-    // Start is called before the first frame update
-    void Start()
+    public void OnEnable()
     {
         HpManager.PlayerDeath += ActivateUI;
-        gameObject.SetActive(false);
     }
 
-    private void OnDestroy()
+    private void OnDisable()
     {
         HpManager.PlayerDeath -= ActivateUI;
     }
 
     private void ActivateUI()
     {
-        if (gameObject.name == "DeathMenu")
-        {
-            gameObject.SetActive(true);
-        }
+        gameObject.SetActive(true);
     }
 }

@@ -12,9 +12,21 @@ public class GameplayUIManager : MonoBehaviour
     [SerializeField] Slider hpSlider;
 
     #region Unity Functions
-    private void Start()
+    private void Awake()
     {
-        instance = this;
+        if (instance == null)
+        {
+            instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+    
+    private void OnEnable()
+    {
         Reset();
     }
     
@@ -28,7 +40,7 @@ public class GameplayUIManager : MonoBehaviour
         HpManager.PlayerIsTakingDamage += UpdateHpValue;
     }
     
-    private void OnDestroy()
+    private void OnDisable()
     {
         GameManager.LevelUp -= UpdateLevelValue;
         GameManager.ExpGained -= UpdateExpValue;

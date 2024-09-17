@@ -31,7 +31,8 @@ public class EnemySpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       SceneMasterManager.NewSceneIsLoaded  += StartLevel;
+        StartLevel();
+       //SceneMasterManager.NewSceneIsLoaded  += StartLevel;
     }
 
     private void StartLevel()

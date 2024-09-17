@@ -1,10 +1,10 @@
 using UnityEngine;
 
-public class MainMenuButtonManager : MonoBehaviour
+public class ButtonManager : MonoBehaviour
 {
-    private static MainMenuButtonManager instance;
+    private static ButtonManager instance;
 
-    public static MainMenuButtonManager Instance => instance;
+    public static ButtonManager Instance => instance;
 
     private void Awake()
     {
@@ -19,12 +19,12 @@ public class MainMenuButtonManager : MonoBehaviour
         }
     }
 
-    public void StartButtonClick()
+    public void StartGameButtonClick()
     {
-        SceneMasterManager.Instance.SwitchScene("Level1");
+        LoadingManager.Instance.SwitchScene("Level1", 1.5f, UnityEngine.SceneManagement.LoadSceneMode.Additive);
     }
 
-    public void QuitButtonClick()
+    public void QuitAppButtonClick()
     {
 #if UNITY_EDITOR
 
